@@ -1,0 +1,51 @@
+.control-panel {
+  @extend %reset-list;
+
+  display: flex;
+  align-items: center;
+  gap: .975em;
+  padding: .75em 1.25em;
+
+  &__list {
+    @extend %reset-list;
+
+    display: flex;
+    gap: .975em;
+
+  }
+
+  &__icon-btn {
+    font-size: 2em;
+
+    cursor: pointer;
+    
+  }
+
+  &__search-field {
+
+    & label {
+      color: var(--light);
+    }
+
+    & input {
+      background-color: transparent;
+      color: var(--light);
+      border-color: var(--lightLow);
+
+      @include placeholder {
+        color: var(--lightLow);
+      }
+
+      &:focus,
+      &:not(:disabled):hover,
+      &:not(:focus):valid:not(:placeholder-shown) {
+        border-color: var(--light);
+  
+        &~.--type-label {
+          color: var(--light);
+        }
+      }
+
+    }
+  }
+}

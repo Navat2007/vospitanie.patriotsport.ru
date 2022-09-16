@@ -1,0 +1,63 @@
+.content {
+  overflow: hidden;
+  flex: auto;
+  
+  display: flex;
+
+  &__asside {
+    flex: none;
+  }
+
+  &__section {
+    overflow-y: auto;
+    flex: auto;
+    padding: 1.5em 1.75em 3em;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    margin: .75em 0;
+    font-size: 2.25em;
+    font-weight: bold;
+
+    &.--place-tab {
+      font-weight: 600;
+      text-align: center;
+      padding: .25em 0;
+      border-top: 4px solid var(--g100);
+      border-bottom: 4px solid var(--g100);
+    }
+  }
+
+  &__caption {
+    margin: .75em 0;
+    font-size: 1.125em;
+    font-weight: bold;
+
+    &.--place-tab {
+      font-weight: 600;
+      text-align: center;
+      padding: .25em 0;
+      border-top: 4px solid var(--g100);
+      border-bottom: 4px solid var(--g100);
+    }
+  }
+}
+
+@include media(lg, max) {
+  .content {
+    position: relative;
+    &__asside {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 6px 0 15px rgba($color: #000000, $alpha: .26);
+    }
+
+    &__section {
+      padding-top: 2.5em;
+    }
+  }
+}

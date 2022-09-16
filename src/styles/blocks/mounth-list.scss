@@ -1,0 +1,26 @@
+.mounth-list {
+  @extend %reset-list;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(12, max-content);
+  // grid-template-columns: repeat(auto-fit, minmax(9.375em, .5fr));
+  gap: .5em;
+  overflow-x: auto;
+
+  & &__btn {
+    min-width: unset;
+    width: 100%;
+    border-radius: 5px;
+
+    &.--selected {
+      background-color: lighten($color: get-color("primary"), $amount: 10%);
+      color: var(--light);
+    }
+  }
+}
+
+@include media(md) {
+  .mounth-list {
+    grid-template-columns: repeat(auto-fit, minmax(9.375em, 1.67fr));
+  }
+}

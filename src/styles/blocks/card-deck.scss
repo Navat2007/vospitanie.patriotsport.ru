@@ -1,0 +1,25 @@
+.card-deck {
+  @extend %reset-list;
+
+  display: grid;
+  gap: 1.25em;
+
+  &.--place-accordion {
+    margin-bottom: 1.25em;
+  }
+}
+
+@include media(sm) {
+  .card-deck {
+
+  // 2 
+  &.--size-lg {
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  }
+
+  // 3 
+  &.--size-md {
+    grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
+  }
+  }
+}

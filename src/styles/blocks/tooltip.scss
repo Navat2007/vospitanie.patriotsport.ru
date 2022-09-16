@@ -1,0 +1,25 @@
+.tooltip {
+
+  &__content {
+    padding: 1em 1.25em;
+    border-radius: 5px;
+    border: 1px solid var(--g300);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  &__span-accent {
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 87.5%;
+    color: var(--darkLow);
+  }
+}

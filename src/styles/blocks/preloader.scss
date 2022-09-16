@@ -1,0 +1,127 @@
+@use "sass:math";
+ 
+// Главный прелоадер
+.preloader {
+  $count: 10;
+  $time: 2; //in seconds
+  --preloaderSize: 60;
+  --preloaderColor: var(--primary);
+  --preloaderDuration: .7;
+ 
+  background-color: var(--white);
+  position: absolute;
+  top: 0; 
+  left: 0;
+  @include box(100%);
+  z-index: 5000; 
+
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  @extend %visibility-block;
+
+  &.--hidden {
+    @extend %hidden-block;
+    transition: visibility 0s calc(#{var(--preloaderDuration)} * 1s), opacity calc(#{var(--preloaderDuration)} * 1s);
+  }
+
+  // Полоски по кругу (4 div)
+  &.--lines {
+    & .preloader__item {
+      @include box(calc(#{var(--preloaderSize)} * 1px));
+      transform: rotate(-135deg);
+
+      & > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-width: calc(#{var(--preloaderSize)} * 0.05px);
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: #{var(--preloaderColor)};
+        border-left-color: #{var(--preloaderColor)};
+        border-radius: 50%;
+        animation: lines 2s infinite;
+        transform: translate3d(-50%, -50%, 0);
+
+        &:first-child {
+          @include box(calc(#{var(--preloaderSize)} * 0.4px));
+          opacity: .4;
+        }
+
+        &:nth-of-type(2) {
+          @include box(calc(#{var(--preloaderSize)} * 0.6px));
+          opacity: .6;
+          animation-delay: .2s;
+        }
+
+        &:nth-of-type(3) {
+          @include box(calc(#{var(--preloaderSize)} * 0.9px));
+          opacity: .8;
+          animation-delay: .4s;
+        }
+
+        &:last-of-type {
+          @include box(calc(#{var(--preloaderSize)} * 1.2px));
+          animation-delay: .6s;
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    flex: none;
+  }
+
+  &__text {
+    max-width: calc(#{var(--preloaderSize)} * 3px);
+    line-height: 150%;
+    padding-top: 1em;
+    text-align: center;
+    color: var(--preloaderTextColor);
+  }
+}
+
+@include keyframes(lines) {
+  50% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg) scale(0.8);
+  }
+}
+
+// @include keyframes(spin) {
+//   0%, 100% {
+//     transform: translate3d(-150%, -150%, 0)
+//   }
+//   25% {
+//     transform: translate3d(50%, -150%, 0)
+//   }
+//   50% {
+//     transform: translate3d(50%, 50%, 0)
+//   }
+//   75% {
+//     transform: translate3d(-150%, 50%, 0)
+//   }
+// }
+
+// @include keyframes(rotatePreloader) {
+//   0% {
+//     transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+//     transform: rotateZ(0deg);
+//   }
+//   100% {
+//     transform: translateX(-50%) translateY(-50%) rotateZ(-360deg);
+//     transform: rotateZ(-360deg);
+//   }
+// }
+
+// @include keyframes(stretchdelay) {
+//   0%, 40%, 100% {
+//     transform: scaleY(0.5);
+//   }
+//   20% {
+//     transform: scaleY(1.1);
+//   }
+// }

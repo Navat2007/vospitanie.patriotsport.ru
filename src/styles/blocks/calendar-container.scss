@@ -1,0 +1,22 @@
+.calendar-container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+
+  &__tooltip.--hidden {
+    @extend %hidden-block;
+    height: 0;
+  }
+}
+
+@include media(sm) {
+  .calendar-container {
+    grid-template-columns: minmax(max-content, 1fr) minmax(min-content, 1fr);
+  }
+}
+
+@include media(md) {
+  .calendar-container {
+    grid-template-columns: minmax(max-content, .65fr) minmax(min-content, .35fr);
+  }
+}

@@ -1,0 +1,35 @@
+// COLORS
+$colors: (
+  primary: #326186,
+  accent: #dd4459,
+  white: #ffffff,
+  black: #000000,
+  g100: #F2F2F2,
+  g200: #A6A6A6,
+  g300: #777777,
+  g400: #333333,
+  g500: #0D0D0D,
+  light: #F2F2F2,
+  lightLow: #A6A6A6,
+  dark: #0D0D0D,
+  darkLow: #777777,
+  error: #da1717, 
+  success: #04BF8A,
+  alert: #F2994B,
+  info: #4098EA,
+);
+
+:root {
+
+  @each $name,
+  $color in $colors {
+    --#{"" + $name}: #{$color};
+  }
+
+  // FONT 
+  --ff-base: 'Open Sans', sans-serif;
+  // --ff-heading: 'Open Sans', sans-serif;
+
+  --main-width: 90em;
+  --main-pad: 2.5em;
+}

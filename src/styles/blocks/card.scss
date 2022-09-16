@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: .875em;
+
+  text-decoration: none;
+  color: inherit;
+
+  @extend %card-design;
+  overflow: hidden;
+  padding-bottom: 1.25em;
+  box-sizing: border-box;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+
+    &.--ratio-half {
+      aspect-ratio: 10/5.2;
+    }
+  }
+
+  &__more-btn {
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 1.25em;
+  }
+}

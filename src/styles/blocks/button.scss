@@ -1,0 +1,57 @@
+.button {
+  @extend %reset-btn;
+
+  text-transform: uppercase;
+  font-weight: 500;
+
+  font-size: 1.125em;
+  padding: .75em 1.25em;
+  border-radius: 2px;
+  min-width: 10em;
+  text-align: center;
+
+  transition: .35s ease-out;
+  transition-property: background-color, color;
+
+  &:active {}
+
+  &.--theme-primary {
+    color: var(--light);
+    background-color: var(--primary);
+
+    &:hover {
+      background-color: lighten($color: get-color("primary"), $amount: 10%);
+      // color: var(--light);
+    }
+  }
+
+  &.--theme-light-primary {
+    // color: var(--dark);
+    background-color: lighten($color: get-color("primary"), $amount: 25%);
+
+    &:hover {
+      background-color: lighten($color: get-color("primary"), $amount: 10%);
+      color: var(--light);
+    }
+  }
+
+  &.--theme-cancel {
+    color: var(--darkLow);
+    background-color: var(--g100);
+
+    &:hover {
+      color: var(--error);
+      background-color: rgba($color: get-color("error"), $alpha: .15);
+    }
+  }
+
+  &.--outline {
+    color: var(--dark);
+    background-color: transparent;
+
+    &:hover {
+      // color: var(--dark);
+      background-color: rgba($color: get-color("primary"), $alpha: .15);
+    }
+  }
+}

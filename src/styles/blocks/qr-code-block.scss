@@ -1,0 +1,10 @@
+.qr-code-block {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  & img {
+    width: 100%;
+    max-width: 10em;
+    object-fit: contain;
+  }
+}

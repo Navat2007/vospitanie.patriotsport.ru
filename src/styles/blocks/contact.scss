@@ -1,0 +1,46 @@
+.contact {
+
+  &__card {
+    display: flex;
+    padding: .75em 0;
+  }
+
+  &__info {
+    min-width: 350px;
+  }
+
+  &__caption {
+    margin: 0 0 1rem;
+    color: var(--accent);
+    font-size: 1.75em;
+    font-weight: bold;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: inherit;
+    
+    & .mdi {
+      font-size: 125%;
+      vertical-align: middle;
+      color: var(--primary);
+      margin-right: .5rem;
+    }
+
+    &.--logo {
+      flex: auto;
+      margin-left: 1.25em;
+      padding-top: .875em;
+      max-width: 450px;
+      
+      & img {
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+  }
+
+}

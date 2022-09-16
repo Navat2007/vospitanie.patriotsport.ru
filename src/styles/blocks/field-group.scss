@@ -1,0 +1,11 @@
+.field-group {
+  display: grid;
+  gap: 1.5em;
+
+  &__info-msg {
+    font-size: .875em;
+    font-style: italic; 
+    text-align: center;
+    color: var(--error);
+  }
+}

@@ -1,0 +1,39 @@
+.page {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+
+  &__container {
+    flex: auto;
+    
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+  }
+} 
+
+@include media(xxl) {
+  .page {
+    background-image: var(--g100);
+  
+    padding: 1em;
+    box-sizing: border-box;
+
+    &__container {
+      max-width: var(--main-width);
+      margin: 0 auto;
+  
+      background-color: var(--white); 
+      box-shadow: 0 0 15px rgba(black, .25);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  } 
+}

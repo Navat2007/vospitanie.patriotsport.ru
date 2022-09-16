@@ -1,0 +1,57 @@
+.list {
+  @extend %reset-list;
+  list-style-type: square;
+  padding-left: 2em;
+
+  &.--type-number {
+    list-style-type: decimal;
+
+    &>li::before {
+      content: unset;
+    }
+  }
+
+  &.--type-chevron-right {
+    list-style-type: none;
+    & >li {
+      margin-bottom: .25em;
+  
+      &::before {
+        content: '\F0142';
+        margin-left: -1em;
+        @extend %icon-on-before;
+        vertical-align: middle;
+        color: var(--primary);
+      }
+    }
+  }
+
+  &.--type-number-label {
+    list-style-type: none;
+    padding-left: 3.375em;
+    counter-reset: numbers;
+    
+    &>li {
+      margin-bottom: .875em;
+
+      &::before {
+        content: counter(numbers);
+        counter-increment: numbers;
+        margin-left: -3.375em;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        @include box(2.5em);
+        margin-right: .875em;
+        font-weight: bold;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &.--theme-accent>li::before {
+    background-color: var(--accent);
+    color: var(--light);
+  }
+}

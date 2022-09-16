@@ -1,0 +1,23 @@
+.social {
+  @extend %reset-list;
+
+  display: flex;
+  gap: .975em;
+  
+  &.--place-contact {
+    padding: 1em 0;
+  }
+
+  &__icon-link {
+    text-decoration: none;
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    & img {
+      @include box(4em);
+      transition: transform .25s ease-in-out;
+    }
+  }
+}

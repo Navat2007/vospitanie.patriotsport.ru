@@ -1,0 +1,20 @@
+@use "sass:math";
+@use "sass:map";
+
+// перевод пикселе в em/rem
+@function units-px-em($px) {
+  @return math.div($px, 16) * 1em
+}
+
+@function units-px-rem($px) {
+  @return math.div($px, 16) * 1rem
+}
+
+// перевод пикселе в vmax
+@function units-vmax($px) {
+  @return math.div($px, 16) * 1.25vmax
+}
+
+@function get-color($name) {
+  @return map.get($colors, $name);
+}

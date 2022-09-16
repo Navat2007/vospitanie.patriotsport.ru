@@ -1,0 +1,59 @@
+@import url(../../node_modules/normalize.css/normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://cdn.jsdelivr.net/npm/@mdi/font@6.6.96/css/materialdesignicons.min.css);
+@import "_assets/variables";
+@import "_assets/functions";
+@import "_assets/mixins";
+@import "_assets/extends";
+
+html { 
+  color: var(--dark);
+  font-family: var(--ff-base);
+}
+
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/lk-block.scss"; 
+@import "blocks/button.scss";
+@import "blocks/preloader.scss";
+@import "blocks/field.scss";
+@import "blocks/field-group.scss";
+@import "blocks/accordion.scss";
+@import "blocks/content.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/contact.scss";
+@import "blocks/social.scss";
+@import "blocks/control-panel.scss";
+@import "blocks/popup.scss";
+@import "blocks/tab.scss";
+@import "blocks/qr-code-block.scss";
+@import "blocks/calendar.scss";
+@import "blocks/tooltip.scss";
+@import "blocks/mounth-list.scss";
+@import "blocks/calendar-container.scss";
+@import "blocks/link.scss";
+@import "blocks/list.scss";
+@import "blocks/iframe.scss";
+@import "blocks/card-deck.scss";
+@import "blocks/card.scss";
+@import "blocks/image.scss";
+@import "blocks/table.scss";
+
+
+// Общие 
+
+.--hide {
+  display: none;
+}
+
+.--color-primary {
+  color: var(--primary);
+}
+.--color-accent {
+  color: var(--accent);
+}
+.--fw-bold {
+  font-weight: bold;
+
+}

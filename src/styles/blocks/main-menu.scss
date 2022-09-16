@@ -1,0 +1,128 @@
+.main-menu {
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  flex-direction: column;
+  
+  width: 19.75em;
+  background-color: var(--primary);
+
+  color: var(--light);
+
+  &.--wrapped {
+    width: unset;
+    & .main-menu__list {
+      display: none;
+    }
+
+    & .main-menu__control-panel {
+      display: none;
+    }
+
+    & .main-menu__wrap-btn {
+      flex: auto;
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__list {
+    flex: auto;
+    overflow-y: auto;
+    @include scroll-bar();
+
+    @extend %reset-list;
+    display: flex;
+    flex-direction: column;
+
+    & > li > .main-menu__link {
+      text-transform: uppercase;
+      font-weight: 500
+    }
+  }
+
+  &__sublist {
+    @extend %reset-list;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(black, .1); 
+
+    & > li > .main-menu__link {
+      padding: .75em 1.25em .75em 2em;
+    }
+
+    & .main-menu__sublist > li > .main-menu__link {
+      padding-left: 4em;
+    }
+  }
+
+  &__link {
+    display: flex;
+    gap: .5em;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    margin: 0;
+    padding: 1em 1.25em;
+
+    cursor: pointer;
+    transition: .25s ease-out;
+    transition-property: background-color;
+
+    & .mdi {
+      margin-left: auto;
+    }
+
+    &:not(.--active):hover {
+      background-color: rgba(black, .15); 
+    }
+
+    &.--active {
+      background-color: rgba(black, .15); 
+      cursor: default;
+    }
+  }
+
+  &__wrap-btn {
+    flex: none;
+
+    @extend .button;
+    min-width: unset;
+    text-align: right;
+    color: var(--light);
+    font-size: 1.5em;
+    padding: .75rem 1.25rem;
+    background-color: darken(map-get($map: $colors, $key: "primary"), 7%);
+  }
+
+  &__control-panel {
+    background-color: darken(map-get($map: $colors, $key: "primary"), 7%);
+  }
+}
+
+@include media(lg, max) {
+  .main-menu {
+    width: 20em;
+  
+    &.--wrapped {
+      width: unset;
+      & .main-menu__list {
+        display: none;
+      }
+  
+      & .main-menu__control-panel {
+        display: none;
+      }
+  
+      & .main-menu__wrap-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        padding: .25rem 1.5rem;
+      }
+    }
+  }
+}
