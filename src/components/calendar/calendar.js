@@ -1,5 +1,5 @@
 import tippy, {animateFill} from 'tippy.js';
-import 'tippy.js/dist/backdrop.css';
+//import 'tippy.js/dist/backdrop.css';
 import 'tippy.js/animations/shift-away.css';
 
 let Calendar = function (divId) {
@@ -25,7 +25,7 @@ let Calendar = function (divId) {
 };
 // Переход к следующему месяцу
 Calendar.prototype.nextMonth = function () {
-    if (this.currMonth == 11) {
+    if (this.currMonth === 11) {
         this.currMonth = 0;
         this.currYear = this.currYear + 1;
     } else {
@@ -35,7 +35,7 @@ Calendar.prototype.nextMonth = function () {
 };
 // Переход к предыдущему месяцу
 Calendar.prototype.previousMonth = function () {
-    if (this.currMonth == 0) {
+    if (this.currMonth === 0) {
         this.currMonth = 11;
         this.currYear = this.currYear - 1;
     } else {
@@ -55,13 +55,12 @@ Calendar.prototype.showMonth = function (y, m) {
 
     document.getElementById(this.divId).innerHTML = '';
 
-    let d = new Date();
     // Первый день недели в выбранном месяце
     let firstDayOfMonth = new Date(y, m, 7).getDay();
     // Последний день выбранного месяца
     let lastDateOfMonth = new Date(y, m + 1, 0).getDate();
     // Последний день предыдущего месяца
-    let lastDayOfLastMonth = m == 0 ? new Date(y - 1, 11, 0).getDate() : new Date(y, m, 0).getDate();
+    let lastDayOfLastMonth = m === 0 ? new Date(y - 1, 11, 0).getDate() : new Date(y, m, 0).getDate();
 
     let table = document.createElement('table');
     table.className = "calendar__table";
@@ -92,12 +91,12 @@ Calendar.prototype.showMonth = function (y, m) {
     do {
         let dow = new Date(y, m, i).getDay();
         // Начать новую строку в понедельник
-        if (dow == 1) {
+        if (dow === 1) {
             currentTr = document.createElement('tr');
             currentTr.className = "calendar__row";
         }
         // Если первый день недели не понедельник показать последние дни предыдущего месяца
-        else if (i == 1) {
+        else if (i === 1) {
             currentTr = document.createElement('tr');
             currentTr.className = "calendar__row";
             let k = lastDayOfLastMonth - firstDayOfMonth + 1;
@@ -113,17 +112,16 @@ Calendar.prototype.showMonth = function (y, m) {
         let chk = new Date();
         let chkY = chk.getFullYear();
         let chkM = chk.getMonth();
-        let chkD = chk.getDate();
 
         let currentDayElement = document.createElement('td');
         currentDayElement.className = "calendar__day";
         currentDayElement.textContent = i;
 
-        if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay && m == this.currMonth) {
+        if (chkY === this.currYear && chkM === this.currMonth && i === this.currDay && m === this.currMonth) {
             currentDayElement.classList.add('--today');
         }
 
-        if (y == 2022 && m == 8 && i == 1) {
+        if (y === 2022 && m === 8 && i === 1) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">День знаний</p>
@@ -134,7 +132,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 3) {
+        if (y === 2022 && m === 8 && i === 3) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">День солидарности в борьбе с терроризмом</p>
@@ -142,7 +140,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 8) {
+        if (y === 2022 && m === 8 && i === 8) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">Международный день распространения грамотности</p>
@@ -150,7 +148,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 11) {
+        if (y === 2022 && m === 8 && i === 11) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">125 лет со дня рождения В.Л. Гончарова</p>
@@ -158,7 +156,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 14) {
+        if (y === 2022 && m === 8 && i === 14) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">130 лет со дня рождения И.М. Виноградова</p>
@@ -166,7 +164,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 23) {
+        if (y === 2022 && m === 8 && i === 23) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">Международный день жестовых языков</p>
@@ -174,7 +172,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 25) {
+        if (y === 2022 && m === 8 && i === 25) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">Неделя безопасности дорожного движения</p>
@@ -182,7 +180,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 26) {
+        if (y === 2022 && m === 8 && i === 26) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">Неделя безопасности дорожного движения</p>
@@ -191,7 +189,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 27) {
+        if (y === 2022 && m === 8 && i === 27) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">Неделя безопасности дорожного движения</p>
@@ -200,7 +198,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 28) {
+        if (y === 2022 && m === 8 && i === 28) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">Неделя безопасности дорожного движения</p>
@@ -208,7 +206,7 @@ Calendar.prototype.showMonth = function (y, m) {
 
         }
 
-        if (y == 2022 && m == 8 && i == 29) {
+        if (y === 2022 && m === 8 && i === 29) {
 
             this.addTooltip(currentDayElement, `
                 <p class="tooltip__title">Неделя безопасности дорожного движения</p>
@@ -219,11 +217,11 @@ Calendar.prototype.showMonth = function (y, m) {
         currentTr.append(currentDayElement);
 
         // закрыть строку в воскресенье
-        if (dow == 0) {
+        if (dow === 0) {
             tbody.append(currentTr);
         }
         // Если последний день месяца не воскресенье, показать первые дни следующего месяца
-        else if (i == lastDateOfMonth) {
+        else if (i === lastDateOfMonth) {
             let k = 1;
             for (dow; dow < 7; dow++) {
                 let td = document.createElement('td');
@@ -274,7 +272,7 @@ Calendar.prototype.initMonthButtons = function () {
 
 Calendar.prototype.selectMonth = function (button, year, month) {
 
-    Array.from(document.querySelector('#calendar_section').getElementsByTagName('button')).map(item => {
+    Array.from(document.querySelector('#calendar_section').getElementsByTagName('button')).forEach(item => {
         item.classList.remove('--selected');
     });
 
@@ -308,7 +306,7 @@ Calendar.prototype.addTooltip = function (element, data, calendar_static_tooltip
 
         Array.from(document.getElementsByClassName('calendar__day --selected')).map(item => item.classList.remove('--selected'));
 
-        if(calendar_static_tooltip.dataset.day == day)
+        if(calendar_static_tooltip.dataset.day === day)
         {
             calendar_static_tooltip.parentElement.classList.add('--hidden');
             calendar_static_tooltip.dataset.day = "";
