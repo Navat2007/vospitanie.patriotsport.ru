@@ -1,0 +1,32 @@
+.notice {
+
+  &.--theme-primary {
+    background-color: lighten(map-get($colors, "primary"), 10%); 
+  }
+  
+  border-radius: 5px;
+  padding: .25em;
+  box-sizing: border-box;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: .875em 1.25em;
+  }
+
+  &__title {
+    margin: .75em 0;
+    font-size: 1.125em;
+    font-weight: bold;
+  }
+
+  &__content {
+    &.--type-two-column {
+      display: grid;
+      gap: 1.25em;
+      grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    }
+  }
+}
