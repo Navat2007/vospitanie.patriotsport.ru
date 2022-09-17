@@ -1,11 +1,35 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
 import {UserContext} from "../../context";
+import AuthService from "../../services/auth.service";
 
 import logoImage from '../../images/logo.svg';
 
+
 const Header = () => {
 
-    const {user} = React.useContext(UserContext);
+    const {user, setUser} = React.useContext(UserContext);
+    const userData = AuthService.getCurrentUser();
+    const navigate = useNavigate();
+
+    const doLogin = () => {
+
+        navigate('/login', { replace: true });
+
+    }
+
+    const doLogout = () => {
+
+        AuthService.logout();
+        setUser(false);
+        navigate('/', { replace: true });
+
+    }
+
+    if(window.global.debug){
+        console.log("User: ", userData);
+    }
 
     return (
         <header className="header">
@@ -25,11 +49,13 @@ const Header = () => {
                                     “Патриот.Спорт”
                                 </p>
                                 <div className="lk-block__person-info">
-                                    <p className="lk-block__name">{user.title}</p>
-                                    <div className="lk-block__position">{user.position}</div>
+                                    <p className="lk-block__name">{userData?.title}</p>
+                                    <div className="lk-block__position">{userData?.position}</div>
                                     <span className="lk-block__icon mdi mdi-account-circle"/>
                                     <button id="login_exit_btn"
-                                            className="lk-block__btn-exit button --theme-primary --outline">
+                                            className="lk-block__btn-exit button --theme-primary --outline"
+                                            onClick={doLogout}
+                                    >
                                         Выйти <span className="mdi mdi-exit-to-app"/>
                                     </button>
                                 </div>
@@ -40,7 +66,9 @@ const Header = () => {
                     (
                         <div id="login_block" className="lk-block --place-header">
                             <button type="button" className="lk-block__login-btn"
-                                    aria-label="Авторизация для сотрудников">
+                                    aria-label="Авторизация для сотрудников"
+                                    onClick={doLogin}
+                            >
                                 Авторизация для сотрудников <span className="lk-block__icon mdi mdi-login-variant"/>
                             </button>
                         </div>

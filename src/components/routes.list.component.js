@@ -54,13 +54,14 @@ import TeacherOnlinePage from "../pages/menu/teacher_online.page";
 import SpecialChildPage from "../pages/menu/special_child.page";
 import AdditionalEducationPage from "../pages/menu/additional_education.page";
 import ContactsPage from "../pages/contacts.page";
+import LoginPage from "../pages/login/login.page";
 
 const RoutesList = () => {
 
     const {user} = React.useContext(UserContext);
 
     if(window.global.debug){
-        console.log("Routes component user: ", user);
+        //console.log("Routes component user: ", user);
     }
 
     const privateRoutes = [
@@ -142,6 +143,8 @@ const RoutesList = () => {
 
                 {/* КОНТАКТЫ */}
                 <Route path='/contacts' element={<ContactsPage/>}/>
+
+                <Route path='/login' element={<LoginPage/>}/>
             </Routes>
         </section>
     );

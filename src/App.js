@@ -1,47 +1,45 @@
-import React, {Component} from 'react';
+import React from 'react';
 
+import AuthService from "./services/auth.service";
 import Header from "./components/header/header.component";
 import PreloaderComponent from "./components/preloader/preloader.component";
 import Menu from "./components/menu/menu.component";
+import RoutesList from "./components/routes.list.component";
+import {UserContext} from "./context";
 
 import './styles/App.scss';
-import RoutesList from "./components/routes.list.component";
 
-export default class App extends Component {
+const App = () => {
 
-    constructor(props) {
-        super(props);
+    const [user, setUser] = React.useState(!!AuthService.getCurrentUser());
+    const [openState, setOpenState] = React.useState(false);
 
-        this.state = {
-            loaded: false
-        }
-    }
+    setTimeout(() => {
+        setOpenState(true);
+    }, 1000);
 
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState(state => ({
-                loaded: true
-            }));
-        }, 1000);
-    }
-
-    render() {
-        return (
+    return (
+        <UserContext.Provider value={{
+            user,
+            setUser
+        }}>
             <div className="page">
                 <div className="page__container">
 
-                    <PreloaderComponent loaded={this.state.loaded}/>
+                    <PreloaderComponent loaded={openState}/>
 
                     <Header/>
 
                     <main className="content">
 
-                        <Menu opened />
+                        <Menu opened/>
                         <RoutesList/>
 
                     </main>
                 </div>
             </div>
-        )
-    }
+        </UserContext.Provider>
+    )
 }
+
+export default App;
