@@ -79,7 +79,7 @@ const RoutesList = () => {
     const publicRoutes = [
         // СОБЫТИЯ И МЕРОПРИЯТИЯ
         {path: '/', element: CalendarPage, exact: true},
-        {path: '/federal_project', element: CalendarPage, exact: true},
+        {path: '/federal_project', element: FederalProjectPage, exact: true},
     ];
 
     return (

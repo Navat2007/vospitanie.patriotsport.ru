@@ -34,61 +34,30 @@ const LoginPage = () => {
     }
 
     return (
-        <div className="m-popup m-login-bg">
-            <div className="m-popup__card">
-                <div className="m-login-form">
-                    <div className="m-login-form__section">
-                        <p className="m-login-form__title">Вход</p>
-                        <div className="a-field">
-                            <div className="a-field__inner">
-                                <input className="a-field__input"
-                                       name="email"
-                                       type="email"
-                                       autoComplete="email"
-                                       placeholder="Введите логин"
-                                       onChange={event => setUsername(event.target.value)}>
-                                </input>
-                                <i className="a-field__icon"/>
-                                <span className="a-field__info"/>
-                            </div>
-                        </div>
-                        <div className="a-field">
-                            <div className="a-field__inner">
-                                <input className="a-field__input"
-                                       name="password"
-                                       type="password"
-                                       autoComplete="password"
-                                       placeholder="Введите пароль"
-                                       onChange={event => setPassword(event.target.value)}>
-                                </input>
-                                <i className="a-field__icon"/>
-                                <i className="a-field__eye-icon"/>
-                                <span className="a-field__info"/>
-                            </div>
-                        </div>
-                        <button
-                            onClick={() => doLogin()}
-                            className="m-login-form__btn"
-                            type="button"
-                        >
-                            Войти
-                        </button>
-                    </div>
-                    <div className="m-login-form__social --hide">
-                        <p className="m-login-form__label">Вход с помощью:</p>
-                        <button className="a-social-icon-link --facebook"></button>
-                        <button className="a-social-icon-link --vk"></button>
-                        <button className="a-social-icon-link --telegram"></button>
-                        <button className="a-social-icon-link --viber"></button>
-                        <button className="a-social-icon-link --whatsapp"></button>
-                    </div>
-                    <div className="m-login-form__bottom --hide">
-                        <Link to="/forgot">Забыли пароль?</Link>
-                        <Link className="a-link-btn" to="/register">Регистрация</Link>
-                    </div>
-                </div>
+        <form name="login-form" className="field-group">
+            <div className="field">
+                <label className="field__label" htmlFor="">Логин</label>
+                <input
+                    className="field__input" name="login" type="text" autoComplete="login" placeholder="Введите логин"
+                    onChange={event => setUsername(event.target.value)}
+                />
+                    <span className="field__icon --type-error mdi mdi-alert-circle"/>
             </div>
-        </div>
+            <div className="field">
+                <label className="field__label" htmlFor="">Пароль</label>
+                <input
+                    className="field__input" name="password" type="password" autoComplete="password" placeholder="Введите пароль"
+                    onChange={event => setPassword(event.target.value)}
+                />
+                    <span className="field__icon --type-error mdi mdi-alert-circle"/>
+            </div>
+            <span id="login_form_error" className="field-group__info-msg --hide">Логин или пароль указаны не
+              верно.</span>
+            <input
+                className="button --theme-primary" id="login_btn" value="Войти"
+                onClick={() => doLogin()}
+            />
+        </form>
     );
 };
 
