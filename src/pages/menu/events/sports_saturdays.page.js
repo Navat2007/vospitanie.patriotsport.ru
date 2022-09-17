@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import imageQR from '../../images/qr-codes/kod-sportivnye-subboty.jpg';
+import imageQR from '../../../images/qr-codes/kod-sportivnye-subboty.jpg';
 
 export default class SportsSaturdaysPage extends Component {
 

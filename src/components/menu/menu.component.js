@@ -1,6 +1,7 @@
 import React from 'react';
-
 import {Link} from "react-router-dom";
+
+import {UserContext} from "../../context";
 import Accordion from "../accordion/accordion.component";
 
 import './menu.component.css';
@@ -8,6 +9,7 @@ import './menu.component.css';
 const Menu = ({opened = false}) => {
 
     const [openState, setOpenState] = React.useState(opened);
+    const {user} = React.useContext(UserContext);
 
     const menuList = [
         {
@@ -283,6 +285,7 @@ const Menu = ({opened = false}) => {
         },
         {
             id: 45,
+            private: true,
             title: "Личный кабинет",
             link: "",
             children: [
@@ -336,7 +339,13 @@ const Menu = ({opened = false}) => {
 
         return (
             <>
-                {array.map(item => item.children.length === 0 ? (
+                {array.filter(item => {
+                    if(item.private && !user)
+                        return false;
+
+                    return true;
+                }).map(item => item.children.length === 0 ?
+                    (
                         <li key={item.id}>
                             <Link className="main-menu__link --no-select --no-drag" to={item.link}>{item.title}</Link>
                         </li>
@@ -346,7 +355,8 @@ const Menu = ({opened = false}) => {
                         <Accordion key={item.id} title={item.title} opened={item.opened}>
                             <MenuList array={item.children}/>
                         </Accordion>
-                    ))}
+                    )
+                )}
             </>
         )
 

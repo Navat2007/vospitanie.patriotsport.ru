@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-import imageSport from '../../images/card__img-sport.jpg';
-import imageDosug from '../../images/card__img-dosug.jpg';
-import imageEducom from '../../images/card__img-educom.jpg';
-import imageArhiv from '../../images/card__img-arhiv.jpg';
+import imageSport from '../../../images/card__img-sport.jpg';
+import imageDosug from '../../../images/card__img-dosug.jpg';
+import imageEducom from '../../../images/card__img-educom.jpg';
+import imageArhiv from '../../../images/card__img-arhiv.jpg';
 
 export default class OnlineProjectPage extends Component {
 
