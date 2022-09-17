@@ -1,6 +1,8 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
+import { Navigate } from 'react-router-dom';
 import {UserContext} from "../context";
+import ScrollToTop from "./router.scroll.top.component";
 
 import CalendarPage from "../pages/menu/events/calendar.page";
 import FederalProjectPage from "../pages/menu/events/federal_project.page";
@@ -55,7 +57,8 @@ import SpecialChildPage from "../pages/menu/special_child.page";
 import AdditionalEducationPage from "../pages/menu/additional_education.page";
 import ContactsPage from "../pages/contacts.page";
 import LoginPage from "../pages/login/login.page";
-import ScrollToTop from "./router.scroll.top.component";
+import Page404 from "../pages/404.page";
+
 
 const RoutesList = () => {
 
@@ -80,78 +83,82 @@ const RoutesList = () => {
         // СОБЫТИЯ И МЕРОПРИЯТИЯ
         {path: '/', element: CalendarPage, exact: true},
         {path: '/federal_project', element: FederalProjectPage, exact: true},
+        {path: '/online_project', element: OnlineProjectPage, exact: true},
+        {path: '/weekend_hike', element: WeekendHikePage, exact: true},
+        {path: '/team_strength', element: TeamStrengthPage, exact: true},
+        {path: '/sports_testing_of_children', element: SportsTestingOfChildrenPage, exact: true},
+        {path: '/sports_holidays', element: SportsHolidaysPage, exact: true},
+        {path: '/sports_saturdays', element: SportsSaturdaysPage, exact: true},
+        {path: '/i_walking_moscow', element: IWalkingMoscowPage, exact: true},
+        // ТРАЕКТОРИЯ УСПЕХА РЕБЕНКА
+        {path: '/professional_orientation', element: ProfessionalOrientationPage, exact: true},
+        {path: '/civil_activity', element: CivilActivityPage, exact: true},
+        {path: '/sport', element: SportPage, exact: true},
+        {path: '/creativity', element: CreativityPage, exact: true},
+        {path: '/project_activity', element: ProjectActivityPage, exact: true},
+        {path: '/education', element: EducationPage, exact: true},
+        // НОРМАТИВНЫЕ ДОКУМЕНТЫ
+        {path: '/federal_law', element: FederalLawPage, exact: true},
+        {path: '/federal_conception_strategy', element: FederalConceptionStrategyPage, exact: true},
+        {path: '/order_donm', element: OrderDonmPage, exact: true},
+        {path: '/documents_search', element: DocumentsSearchPage, exact: true},
+        {path: '/documents_useful_resources', element: DocumentsUsefulResourcesPage, exact: true},
+        // СЛОЖНЫЕ СИТУАЦИИ
+        {path: '/help', element: HelpPage, exact: true},
+        {path: '/identification_response', element: IdentificationResponsePage, exact: true},
+        {path: '/bullying', element: BullyingPage, exact: true},
+        {path: '/suicidal_behavior', element: SuicidalBehaviorPage, exact: true},
+        {path: '/difficult_child', element: DifficultChildPage, exact: true},
+        {path: '/school_shooting', element: SchoolShootingPage, exact: true},
+        {path: '/situation_useful_resources', element: SituationUsefulResourcesPage, exact: true},
+        // БЕЗОПАСНАЯ СРЕДА
+        {path: '/injury_prevention', element: InjuryPreventionPage, exact: true},
+        {path: '/road_safety', element: RoadSafetyPage, exact: true},
+        {path: '/security_laboratory', element: SecurityLaboratoryPage, exact: true},
+        {path: '/safe_summer', element: SafeSummerPage, exact: true},
+        {path: '/safe_school', element: SafeSchoolPage, exact: true},
+        {path: '/regulations', element: RegulationsPage, exact: true},
+        {path: '/briefings', element: BriefingsPage, exact: true},
+        {path: '/emergency_services', element: EmergencyServicesPage, exact: true},
+        // КЛАССНЫЙ РУКОВОДИТЕЛЬ ОНЛАЙН
+        {path: '/teacher_online', element: TeacherOnlinePage, exact: true},
+        // ОСОБЕННЫЙ РЕБЕНОК
+        {path: '/special_child', element: SpecialChildPage, exact: true},
+        // ДОПОЛНИТЕЛЬНОЕ ОБРАЗОВАНИЕ
+        {path: '/additional_education', element: AdditionalEducationPage, exact: true},
+        // КОНТАКТЫ
+        {path: '/contacts', element: ContactsPage, exact: true},
+        // ЛОГИН
+        {path: '/login', element: LoginPage, exact: true},
     ];
 
     return (
         <ScrollToTop>
             <Routes>
-                {/* СОБЫТИЯ И МЕРОПРИЯТИЯ */}
-                <Route path='/' element={<CalendarPage/>}/>
-                <Route path='/federal_project' element={<FederalProjectPage/>}/>
-                <Route path='/online_project' element={<OnlineProjectPage/>}/>
-                <Route path='/weekend_hike' element={<WeekendHikePage/>}/>
-                <Route path='/team_strength' element={<TeamStrengthPage/>}/>
-                <Route path='/sports_testing_of_children' element={<SportsTestingOfChildrenPage/>}/>
-                <Route path='/sports_holidays' element={<SportsHolidaysPage/>}/>
-                <Route path='/sports_saturdays' element={<SportsSaturdaysPage/>}/>
-                <Route path='/i_walking_moscow' element={<IWalkingMoscowPage/>}/>
-
-                {/* ТРАЕКТОРИЯ УСПЕХА РЕБЕНКА */}
-                <Route path='/professional_orientation' element={<ProfessionalOrientationPage/>}/>
-                <Route path='/civil_activity' element={<CivilActivityPage/>}/>
-                <Route path='/sport' element={<SportPage/>}/>
-                <Route path='/creativity' element={<CreativityPage/>}/>
-                <Route path='/project_activity' element={<ProjectActivityPage/>}/>
-                <Route path='/education' element={<EducationPage/>}/>
-
-                {/* НОРМАТИВНЫЕ ДОКУМЕНТЫ */}
-                <Route path='/federal_law' element={<FederalLawPage/>}/>
-                <Route path='/federal_conception_strategy' element={<FederalConceptionStrategyPage/>}/>
-                <Route path='/order_donm' element={<OrderDonmPage/>}/>
-                <Route path='/documents_search' element={<DocumentsSearchPage/>}/>
-                <Route path='/documents_useful_resources' element={<DocumentsUsefulResourcesPage/>}/>
-
-                {/* СЛОЖНЫЕ СИТУАЦИИ */}
-                <Route path='/help' element={<HelpPage/>}/>
-                <Route path='/identification_response' element={<IdentificationResponsePage/>}/>
-                <Route path='/bullying' element={<BullyingPage/>}/>
-                <Route path='/suicidal_behavior' element={<SuicidalBehaviorPage/>}/>
-                <Route path='/difficult_child' element={<DifficultChildPage/>}/>
-                <Route path='/school_shooting' element={<SchoolShootingPage/>}/>
-                <Route path='/situation_useful_resources' element={<SituationUsefulResourcesPage/>}/>
-
-                {/* БЕЗОПАСНАЯ СРЕДА */}
-                <Route path='/injury_prevention' element={<InjuryPreventionPage/>}/>
-                <Route path='/road_safety' element={<RoadSafetyPage/>}/>
-                <Route path='/security_laboratory' element={<SecurityLaboratoryPage/>}/>
-                <Route path='/safe_summer' element={<SafeSummerPage/>}/>
-                <Route path='/safe_school' element={<SafeSchoolPage/>}/>
-                <Route path='/regulations' element={<RegulationsPage/>}/>
-                <Route path='/briefings' element={<BriefingsPage/>}/>
-                <Route path='/emergency_services' element={<EmergencyServicesPage/>}/>
-
-                {/* КЛАССНЫЙ РУКОВОДИТЕЛЬ ОНЛАЙН */}
-                <Route path='/teacher_online' element={<TeacherOnlinePage/>}/>
-
-                {/* ОСОБЕННЫЙ РЕБЕНОК */}
-                <Route path='/special_child' element={<SpecialChildPage/>}/>
-
-                {/* ДОПОЛНИТЕЛЬНОЕ ОБРАЗОВАНИЕ */}
-                <Route path='/additional_education' element={<AdditionalEducationPage/>}/>
-
-                {/* ЛИЧНЫЙ КАБИНЕТ */}
-                <Route path='/my_class' element={<MyClassPage/>}/>
-                <Route path='/recommendations' element={<RecommendationsPage/>}/>
-                <Route path='/submit_application' element={<SubmitApplicationPage/>}/>
-                <Route path='/lk_documents' element={<LkDocumentsPage/>}/>
-                <Route path='/professional_communities' element={<ProfessionalCommunitiesPage/>}/>
-                <Route path='/lk_teacher_online' element={<LkTeacherOnlinePage/>}/>
-                <Route path='/lk_resources' element={<LkResourcesPage/>}/>
-
-                {/* КОНТАКТЫ */}
-                <Route path='/contacts' element={<ContactsPage/>}/>
-
-                <Route path='/login' element={<LoginPage/>}/>
+                {
+                    publicRoutes.map(route =>
+                        <Route
+                            path={route.path}
+                            element={<route.element/>}
+                            exact={route.exact}
+                            key={route.path}
+                        />
+                    )
+                }
+                {
+                    user ?
+                        privateRoutes.map(route =>
+                            <Route
+                                path={route.path}
+                                element={<route.element/>}
+                                exact={route.exact}
+                                key={route.path}
+                            />
+                        )
+                        :
+                        (<></>)
+                }
+                <Route path="*" element={<Page404/>} />
             </Routes>
         </ScrollToTop>
     );

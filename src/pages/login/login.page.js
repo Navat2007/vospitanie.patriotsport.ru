@@ -2,7 +2,7 @@ import React from "react";
 
 import AuthService from "../../services/auth.service";
 import {UserContext} from "../../context";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const LoginPage = () => {
 
@@ -27,36 +27,35 @@ const LoginPage = () => {
 
         if (result) {
             setUser(true);
-            navigate('/', { replace: true });
+            navigate('/', {replace: true});
         }
 
     }
 
     return (
-        <form name="login-form" className="field-group">
+        <div className="field-group">
             <div className="field">
                 <label className="field__label" htmlFor="">Логин</label>
                 <input
-                    className="field__input" name="login" type="text" autoComplete="login" placeholder="Введите логин"
+                    className="field__input" type="text" autoComplete="login" placeholder="Введите логин"
                     onChange={event => setUsername(event.target.value)}
                 />
-                    <span className="field__icon --type-error mdi mdi-alert-circle"/>
+                <span className="field__icon --type-error mdi mdi-alert-circle"/>
             </div>
             <div className="field">
                 <label className="field__label" htmlFor="">Пароль</label>
                 <input
-                    className="field__input" name="password" type="password" autoComplete="password" placeholder="Введите пароль"
+                    className="field__input" type="password" autoComplete="password" placeholder="Введите пароль"
                     onChange={event => setPassword(event.target.value)}
                 />
-                    <span className="field__icon --type-error mdi mdi-alert-circle"/>
+                <span className="field__icon --type-error mdi mdi-alert-circle"/>
             </div>
-            <span id="login_form_error" className="field-group__info-msg --hide">Логин или пароль указаны не
+            <span className="field-group__info-msg --hide">Логин или пароль указаны не
               верно.</span>
-            <input
-                className="button --theme-primary" id="login_btn" value="Войти"
-                onClick={() => doLogin()}
-            />
-        </form>
+            <button className="button --theme-primary" onClick={() => doLogin()}>
+                Войти
+            </button>
+        </div>
     );
 };
 
