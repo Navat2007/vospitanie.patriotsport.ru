@@ -6,7 +6,6 @@ import AuthService from "../../services/auth.service";
 
 import logoImage from '../../images/logo.svg';
 
-
 const Header = () => {
 
     const {user, setUser} = React.useContext(UserContext);
