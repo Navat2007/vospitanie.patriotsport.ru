@@ -45,8 +45,7 @@ const Header = () => {
                             <div className="lk-block__container">
                                 <p className="lk-block__school-info">
                                     <span className="lk-block__icon mdi mdi-home-city-outline"/>
-                                    ГБОУ дополнительного профессионального образования города Москвы “Московский центр
-                                    “Патриот.Спорт”
+                                    {userData?.work}
                                 </p>
                                 <div className="lk-block__person-info">
                                     <p className="lk-block__name">{userData?.title}</p>
