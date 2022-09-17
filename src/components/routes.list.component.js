@@ -83,79 +83,77 @@ const RoutesList = () => {
     ];
 
     return (
-        <section className="content__section">
-            <ScrollToTop>
-                <Routes>
-                    {/* СОБЫТИЯ И МЕРОПРИЯТИЯ */}
-                    <Route path='/' element={<CalendarPage/>}/>
-                    <Route path='/federal_project' element={<FederalProjectPage/>}/>
-                    <Route path='/online_project' element={<OnlineProjectPage/>}/>
-                    <Route path='/weekend_hike' element={<WeekendHikePage/>}/>
-                    <Route path='/team_strength' element={<TeamStrengthPage/>}/>
-                    <Route path='/sports_testing_of_children' element={<SportsTestingOfChildrenPage/>}/>
-                    <Route path='/sports_holidays' element={<SportsHolidaysPage/>}/>
-                    <Route path='/sports_saturdays' element={<SportsSaturdaysPage/>}/>
-                    <Route path='/i_walking_moscow' element={<IWalkingMoscowPage/>}/>
+        <ScrollToTop>
+            <Routes>
+                {/* СОБЫТИЯ И МЕРОПРИЯТИЯ */}
+                <Route path='/' element={<CalendarPage/>}/>
+                <Route path='/federal_project' element={<FederalProjectPage/>}/>
+                <Route path='/online_project' element={<OnlineProjectPage/>}/>
+                <Route path='/weekend_hike' element={<WeekendHikePage/>}/>
+                <Route path='/team_strength' element={<TeamStrengthPage/>}/>
+                <Route path='/sports_testing_of_children' element={<SportsTestingOfChildrenPage/>}/>
+                <Route path='/sports_holidays' element={<SportsHolidaysPage/>}/>
+                <Route path='/sports_saturdays' element={<SportsSaturdaysPage/>}/>
+                <Route path='/i_walking_moscow' element={<IWalkingMoscowPage/>}/>
 
-                    {/* ТРАЕКТОРИЯ УСПЕХА РЕБЕНКА */}
-                    <Route path='/professional_orientation' element={<ProfessionalOrientationPage/>}/>
-                    <Route path='/civil_activity' element={<CivilActivityPage/>}/>
-                    <Route path='/sport' element={<SportPage/>}/>
-                    <Route path='/creativity' element={<CreativityPage/>}/>
-                    <Route path='/project_activity' element={<ProjectActivityPage/>}/>
-                    <Route path='/education' element={<EducationPage/>}/>
+                {/* ТРАЕКТОРИЯ УСПЕХА РЕБЕНКА */}
+                <Route path='/professional_orientation' element={<ProfessionalOrientationPage/>}/>
+                <Route path='/civil_activity' element={<CivilActivityPage/>}/>
+                <Route path='/sport' element={<SportPage/>}/>
+                <Route path='/creativity' element={<CreativityPage/>}/>
+                <Route path='/project_activity' element={<ProjectActivityPage/>}/>
+                <Route path='/education' element={<EducationPage/>}/>
 
-                    {/* НОРМАТИВНЫЕ ДОКУМЕНТЫ */}
-                    <Route path='/federal_law' element={<FederalLawPage/>}/>
-                    <Route path='/federal_conception_strategy' element={<FederalConceptionStrategyPage/>}/>
-                    <Route path='/order_donm' element={<OrderDonmPage/>}/>
-                    <Route path='/documents_search' element={<DocumentsSearchPage/>}/>
-                    <Route path='/documents_useful_resources' element={<DocumentsUsefulResourcesPage/>}/>
+                {/* НОРМАТИВНЫЕ ДОКУМЕНТЫ */}
+                <Route path='/federal_law' element={<FederalLawPage/>}/>
+                <Route path='/federal_conception_strategy' element={<FederalConceptionStrategyPage/>}/>
+                <Route path='/order_donm' element={<OrderDonmPage/>}/>
+                <Route path='/documents_search' element={<DocumentsSearchPage/>}/>
+                <Route path='/documents_useful_resources' element={<DocumentsUsefulResourcesPage/>}/>
 
-                    {/* СЛОЖНЫЕ СИТУАЦИИ */}
-                    <Route path='/help' element={<HelpPage/>}/>
-                    <Route path='/identification_response' element={<IdentificationResponsePage/>}/>
-                    <Route path='/bullying' element={<BullyingPage/>}/>
-                    <Route path='/suicidal_behavior' element={<SuicidalBehaviorPage/>}/>
-                    <Route path='/difficult_child' element={<DifficultChildPage/>}/>
-                    <Route path='/school_shooting' element={<SchoolShootingPage/>}/>
-                    <Route path='/situation_useful_resources' element={<SituationUsefulResourcesPage/>}/>
+                {/* СЛОЖНЫЕ СИТУАЦИИ */}
+                <Route path='/help' element={<HelpPage/>}/>
+                <Route path='/identification_response' element={<IdentificationResponsePage/>}/>
+                <Route path='/bullying' element={<BullyingPage/>}/>
+                <Route path='/suicidal_behavior' element={<SuicidalBehaviorPage/>}/>
+                <Route path='/difficult_child' element={<DifficultChildPage/>}/>
+                <Route path='/school_shooting' element={<SchoolShootingPage/>}/>
+                <Route path='/situation_useful_resources' element={<SituationUsefulResourcesPage/>}/>
 
-                    {/* БЕЗОПАСНАЯ СРЕДА */}
-                    <Route path='/injury_prevention' element={<InjuryPreventionPage/>}/>
-                    <Route path='/road_safety' element={<RoadSafetyPage/>}/>
-                    <Route path='/security_laboratory' element={<SecurityLaboratoryPage/>}/>
-                    <Route path='/safe_summer' element={<SafeSummerPage/>}/>
-                    <Route path='/safe_school' element={<SafeSchoolPage/>}/>
-                    <Route path='/regulations' element={<RegulationsPage/>}/>
-                    <Route path='/briefings' element={<BriefingsPage/>}/>
-                    <Route path='/emergency_services' element={<EmergencyServicesPage/>}/>
+                {/* БЕЗОПАСНАЯ СРЕДА */}
+                <Route path='/injury_prevention' element={<InjuryPreventionPage/>}/>
+                <Route path='/road_safety' element={<RoadSafetyPage/>}/>
+                <Route path='/security_laboratory' element={<SecurityLaboratoryPage/>}/>
+                <Route path='/safe_summer' element={<SafeSummerPage/>}/>
+                <Route path='/safe_school' element={<SafeSchoolPage/>}/>
+                <Route path='/regulations' element={<RegulationsPage/>}/>
+                <Route path='/briefings' element={<BriefingsPage/>}/>
+                <Route path='/emergency_services' element={<EmergencyServicesPage/>}/>
 
-                    {/* КЛАССНЫЙ РУКОВОДИТЕЛЬ ОНЛАЙН */}
-                    <Route path='/teacher_online' element={<TeacherOnlinePage/>}/>
+                {/* КЛАССНЫЙ РУКОВОДИТЕЛЬ ОНЛАЙН */}
+                <Route path='/teacher_online' element={<TeacherOnlinePage/>}/>
 
-                    {/* ОСОБЕННЫЙ РЕБЕНОК */}
-                    <Route path='/special_child' element={<SpecialChildPage/>}/>
+                {/* ОСОБЕННЫЙ РЕБЕНОК */}
+                <Route path='/special_child' element={<SpecialChildPage/>}/>
 
-                    {/* ДОПОЛНИТЕЛЬНОЕ ОБРАЗОВАНИЕ */}
-                    <Route path='/additional_education' element={<AdditionalEducationPage/>}/>
+                {/* ДОПОЛНИТЕЛЬНОЕ ОБРАЗОВАНИЕ */}
+                <Route path='/additional_education' element={<AdditionalEducationPage/>}/>
 
-                    {/* ЛИЧНЫЙ КАБИНЕТ */}
-                    <Route path='/my_class' element={<MyClassPage/>}/>
-                    <Route path='/recommendations' element={<RecommendationsPage/>}/>
-                    <Route path='/submit_application' element={<SubmitApplicationPage/>}/>
-                    <Route path='/lk_documents' element={<LkDocumentsPage/>}/>
-                    <Route path='/professional_communities' element={<ProfessionalCommunitiesPage/>}/>
-                    <Route path='/lk_teacher_online' element={<LkTeacherOnlinePage/>}/>
-                    <Route path='/lk_resources' element={<LkResourcesPage/>}/>
+                {/* ЛИЧНЫЙ КАБИНЕТ */}
+                <Route path='/my_class' element={<MyClassPage/>}/>
+                <Route path='/recommendations' element={<RecommendationsPage/>}/>
+                <Route path='/submit_application' element={<SubmitApplicationPage/>}/>
+                <Route path='/lk_documents' element={<LkDocumentsPage/>}/>
+                <Route path='/professional_communities' element={<ProfessionalCommunitiesPage/>}/>
+                <Route path='/lk_teacher_online' element={<LkTeacherOnlinePage/>}/>
+                <Route path='/lk_resources' element={<LkResourcesPage/>}/>
 
-                    {/* КОНТАКТЫ */}
-                    <Route path='/contacts' element={<ContactsPage/>}/>
+                {/* КОНТАКТЫ */}
+                <Route path='/contacts' element={<ContactsPage/>}/>
 
-                    <Route path='/login' element={<LoginPage/>}/>
-                </Routes>
-            </ScrollToTop>
-        </section>
+                <Route path='/login' element={<LoginPage/>}/>
+            </Routes>
+        </ScrollToTop>
     );
 };
 

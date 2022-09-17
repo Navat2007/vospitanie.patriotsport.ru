@@ -27,7 +27,7 @@ const Header = () => {
     }
 
     if(window.global.debug){
-        console.log("User: ", userData);
+        //console.log("User: ", userData);
     }
 
     return (
