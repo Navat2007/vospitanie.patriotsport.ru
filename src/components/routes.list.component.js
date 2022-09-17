@@ -65,8 +65,14 @@ const RoutesList = () => {
     }
 
     const privateRoutes = [
-        // СОБЫТИЯ И МЕРОПРИЯТИЯ
-        {path: '/', element: CalendarPage, exact: true},
+        // ЛИЧНЫЙ КАБИНЕТ
+        {path: '/my_class', element: MyClassPage, exact: true},
+        {path: '/recommendations', element: RecommendationsPage, exact: true},
+        {path: '/submit_application', element: SubmitApplicationPage, exact: true},
+        {path: '/lk_documents', element: LkDocumentsPage, exact: true},
+        {path: '/professional_communities', element: ProfessionalCommunitiesPage, exact: true},
+        {path: '/lk_teacher_online', element: LkTeacherOnlinePage, exact: true},
+        {path: '/lk_resources', element: LkResourcesPage, exact: true},
     ];
 
     const publicRoutes = [
