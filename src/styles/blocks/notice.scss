@@ -1,4 +1,10 @@
 .notice {
+  max-width: 50em;
+
+  &.--place-federal-project {
+    margin: 0 auto 1em;
+
+  }
 
   &.--theme-primary {
     background-color: lighten(map-get($colors, "primary"), 10%); 

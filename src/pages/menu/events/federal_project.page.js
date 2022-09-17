@@ -20,7 +20,7 @@ export default class FederalProjectPage extends Component {
         return (
             <div className="content__block">
                 <h2 className="content__title">Федеральные проекты по воспитанию</h2>
-                <div className="notice --theme-primary" style={{"marginBottom": "1em"}}>
+                <div className="notice --theme-primary --place-federal-project">
                     <div className="notice__wrap">
                         <p className="notice__title">Система поддержки и реализации федеральных проектов в городе Москве </p>
                         <div className="notice__content --type-two-column">
