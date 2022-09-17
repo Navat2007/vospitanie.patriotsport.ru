@@ -30,8 +30,8 @@ const Accordion = ({children, title, opened = false, menu = true}) => {
 
     return (
         menu ?
-            <li className={openState ? "accordion --opened" : "accordion --no-select --no-drag"}>
-                <p className="main-menu__link accordion__caption --no-select" onClick={toggle}>
+            <li className={openState ? "accordion --opened" : "accordion"}>
+                <p className="main-menu__link accordion__caption --no-select --no-drag" onClick={toggle}>
                     {title} <span className="mdi mdi-menu-right"/>
                 </p>
                 <ul className="main-menu__sublist accordion__section">
