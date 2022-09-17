@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
+import {UserContext} from "../context";
 
 import CalendarPage from "../pages/events/calendar.page";
 import FederalProjectPage from "../pages/events/federal_project.page";
@@ -55,6 +56,23 @@ import AdditionalEducationPage from "../pages/additional_education.page";
 import ContactsPage from "../pages/contacts.page";
 
 const RoutesList = () => {
+
+    const {user} = React.useContext(UserContext);
+
+    if(window.global.debug){
+        console.log("Routes component user: ", user);
+    }
+
+    const privateRoutes = [
+        // СОБЫТИЯ И МЕРОПРИЯТИЯ
+        {path: '/', element: CalendarPage, exact: true},
+    ];
+
+    const publicRoutes = [
+        // СОБЫТИЯ И МЕРОПРИЯТИЯ
+        {path: '/', element: CalendarPage, exact: true},
+        {path: '/federal_project', element: CalendarPage, exact: true},
+    ];
 
     return (
         <section className="content__section">

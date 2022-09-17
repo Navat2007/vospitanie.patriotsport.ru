@@ -29,27 +29,23 @@ const Accordion = ({children, title, opened = false, menu = true}) => {
     }
 
     return (
-        <>
-            {
-                menu ?
-                    <li className={openState ? "accordion --opened" : "accordion"}>
-                        <p className="main-menu__link accordion__caption" onClick={toggle}>
-                            {title} <span className="mdi mdi-menu-right"/>
-                        </p>
-                        <ul className="main-menu__sublist accordion__section">
-                            {children}
-                        </ul>
-                    </li>
-                    :
-                    <div className={openState ? "accordion --theme-g100 --icon-caption-plus --opened" : "accordion --theme-g100 --icon-caption-plus"}>
-                        <div className="accordion__caption" onClick={toggle}>{title}</div>
-                        <div className="accordion__section">
-                            {children}
-                            <br/>
-                        </div>
-                    </div>
-            }
-        </>
+        menu ?
+            <li className={openState ? "accordion --opened" : "accordion --no-select --no-drag"}>
+                <p className="main-menu__link accordion__caption --no-select" onClick={toggle}>
+                    {title} <span className="mdi mdi-menu-right"/>
+                </p>
+                <ul className="main-menu__sublist accordion__section">
+                    {children}
+                </ul>
+            </li>
+            :
+            <div className={openState ? "accordion --theme-g100 --icon-caption-plus --opened" : "accordion --theme-g100 --icon-caption-plus"}>
+                <div className="accordion__caption" onClick={toggle}>{title}</div>
+                <div className="accordion__section">
+                    {children}
+                    <br/>
+                </div>
+            </div>
     );
 };
 

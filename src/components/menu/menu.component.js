@@ -338,7 +338,7 @@ const Menu = ({opened = false}) => {
             <>
                 {array.map(item => item.children.length === 0 ? (
                         <li key={item.id}>
-                            <Link className="main-menu__link" to={item.link}>{item.title}</Link>
+                            <Link className="main-menu__link --no-select --no-drag" to={item.link}>{item.title}</Link>
                         </li>
                     )
                     :

@@ -13,7 +13,7 @@ const baseConfig = () => {
             login: true,
             register: true,
         },
-        baseUrl: "62.113.118.96:9988",
+        baseUrl: "https://vospitanie.patriot-sport.ru",
         colors: {
             error: 'F24E38',
             success: '50B25F',
