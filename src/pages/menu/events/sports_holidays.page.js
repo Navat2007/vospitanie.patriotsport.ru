@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 export default class SportsHolidaysPage extends Component {
 
@@ -92,8 +92,8 @@ export default class SportsHolidaysPage extends Component {
                                 будут работать секции по пяти видам спорта. Чтобы позаниматься с тренером, нужно
                                 выбрать день недели и зарегистрироваться.</h3>
                             <a href="http://registration-for-event.cpvs.moscow/sport-holidays"
-                               className="button --theme-accent"
-                               target="_blank" rel="noopener noreferrer nofollow">Регистрация</a>
+                                className="button --theme-accent"
+                                target="_blank" rel="noopener noreferrer nofollow">Регистрация</a>
                         </section>
                         <section className={this.state.tab === 2 ? "tab__section --active" : "tab__section"}>
                             <h3 className="content__caption --place-tab">Участниками Фестиваль пляжного волейбола в
@@ -121,12 +121,12 @@ export default class SportsHolidaysPage extends Component {
                                 </li>
                             </ul>
                             <a href="https://patriotsport.moscow/wp-content/uploads/2022/08/obrazec-zajavki__.docx"
-                               className="button --theme-accent" target="_blank" rel="noopener noreferrer nofollow"
-                               style={{"marginTop": "1em"}}>Образец
+                                className="button --theme-accent" target="_blank" rel="noopener noreferrer nofollow"
+                                style={{ "marginTop": "1em" }}>Образец
                                 заявки</a>
                             <a href="https://patriotsport.moscow/wp-content/uploads/2022/08/polozhenie-o-provedenii-festivalja-pljazhnogo-volejbola-v-parke-gorkogo.pdf"
-                               className="button --theme-accent" target="_blank"
-                               rel="noopener noreferrer nofollow">Положение</a>
+                                className="button --theme-accent" target="_blank"
+                                rel="noopener noreferrer nofollow" style={{'marginLeft': '.25em'}}>Положение</a>
                             <h3 className="content__caption --place-tab">
                                 Регистрация закрыта
                             </h3>
@@ -168,7 +168,7 @@ export default class SportsHolidaysPage extends Component {
                             <p>
                                 <b>Контактное лицо:</b>
                                 Христич Василий Викторович, <a className="link" href="mailto:KhristichVV@edu.mos.ru"
-                                                               rel="noopener nofollow">KhristichVV@edu.mos.ru</a>
+                                    rel="noopener nofollow">KhristichVV@edu.mos.ru</a>
                             </p>
                             <h3 className="content__caption --place-tab">
                                 Регистрация закрыта
@@ -235,8 +235,8 @@ export default class SportsHolidaysPage extends Component {
                                 спортом.
                             </p>
                             <a href="https://patriotsport.moscow/wp-content/uploads/2022/08/zajavka.doc"
-                               className="button --theme-accent" target="_blank" rel="noopener noreferrer nofollow"
-                               style={{"margin": "1em 0"}}>Образец
+                                className="button --theme-accent" target="_blank" rel="noopener noreferrer nofollow"
+                                style={{ "margin": "1em 0" }}>Образец
                                 заявки</a>
                             <p>
                                 <b>Адрес проведения:</b>
@@ -253,7 +253,7 @@ export default class SportsHolidaysPage extends Component {
                             <p>
                                 <b>Также вопросы: </b>
                                 <a className="link" href="mailto:info@moscowvolley.ru" target="_blank"
-                                   rel="noopener noreferrer nofollow">info@moscowvolley.ru</a>
+                                    rel="noopener noreferrer nofollow">info@moscowvolley.ru</a>
                             </p>
                         </section>
                     </div>

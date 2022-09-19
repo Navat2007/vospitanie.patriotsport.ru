@@ -53,21 +53,20 @@
 
   &.--theme-g100 {
 
+    &.--opened > .accordion__section {
+      padding-bottom: .875em;
+    }
+    
     & > .accordion__caption {
       background-color: var(--g100); 
       padding: .75em 1.25em;
       font-weight: bold;
-      cursor: pointer;
-      margin-bottom: .5em;
+      cursor: pointer; 
+      margin-bottom: .875em;
 
       &:hover {
         color: var(--primary);
       }
-    }
-
-    & > .accordion__section {
-      display: flex;
-      flex-direction: column;
     }
   }
 

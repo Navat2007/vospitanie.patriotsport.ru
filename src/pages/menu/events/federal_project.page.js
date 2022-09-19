@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Accordion from "../../../components/accordion/accordion.component";
 
 export default class FederalProjectPage extends Component {
 
@@ -245,110 +246,108 @@ export default class FederalProjectPage extends Component {
                                     href="https://disk.yandex.ru/i/CM08JekLJCQPIA"
                                     rel="noopener noreferrer nofollow">Скачать</a>
                             </h3>
-                            <div className="iframe">
+                            <div className="iframe" style={{'marginBottom': '1em'}}>
                                 <iframe title={"Seminar"} className="iframe__item"
                                     src="https://rutube.ru/play/embed/12fedb60cf482bf9ff662e2c9861fbc9" />
                             </div>
+                            <Accordion title={"Рабочие программы, КТП и методические рекомендации по циклу занятий"} menu={false}>
+                                <ul className="list --type-empty">
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-1-2.docx">Рабочая
+                                            программа 1-2 класс</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-1-2_.docx">КТП
+                                            1-2 класс</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-3-4.docx">Рабочая
+                                            программа 3-4 класс</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-3-4_.docx">КТП
+                                            3-4 класс</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-5-7.docx">Рабочая
+                                            программа
+                                            5-7 класс</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-8-9.docx">Рабочая
+                                            программа
+                                            8-9 класс</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-8-9_.docx">КТП
+                                            8-9 класс</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-10-11-spo.docx">Рабочая
+                                            программа
+                                            10-11 класс, СПО</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-10-11-spt_.docx">КТП
+                                            10-11 класс, СПО</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/mietod._riekomiendatsii.pdf">Методические
+                                            рекомендации по
+                                            реализации
+                                            цикла внеурочных занятий «Разговоры
+                                            о
+                                            важном»</a>
+                                    </li>
+                                    <li>
+                                        <a className="link --type-pdf-icon"
+                                            rel="noopener noreferrer nofollow"
+                                            target="_blank"
+                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/metodicheskie-rekomendacii-po-organizacii-cikla-vneurochnyh-zanjatij-razgovory-o-vazhnom-pri-realizacii-adaptirovannyh-osnovnyh-obshheo.pdf">Методические
+                                            рекомендации по
+                                            организации
+                                            цикла внеурочных занятий «Разговоры
+                                            о
+                                            важном» при реализации
+                                            адаптированных
+                                            основных общеобразовательных
+                                            программ</a>
+                                    </li>
+                                </ul>
+                            </Accordion>
+
                             <div className="accordion --theme-g100 --icon-caption-plus"
                                 style={{ "marginTop": '1em' }}>
-                                <div className="accordion__caption">
-                                    Рабочие программы, КТП и методические рекомендации по циклу занятий
-                                </div>
-                                <div className="accordion__section">
-                                    <ul className="list --type-empty">
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-1-2.docx">Рабочая
-                                                программа 1-2 класс</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-1-2_.docx">КТП
-                                                1-2 класс</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-3-4.docx">Рабочая
-                                                программа 3-4 класс</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-3-4_.docx">КТП
-                                                3-4 класс</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-5-7.docx">Рабочая
-                                                программа
-                                                5-7 класс</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-8-9.docx">Рабочая
-                                                программа
-                                                8-9 класс</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-8-9_.docx">КТП
-                                                8-9 класс</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-10-11-spo.docx">Рабочая
-                                                программа
-                                                10-11 класс, СПО</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-10-11-spt_.docx">КТП
-                                                10-11 класс, СПО</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/mietod._riekomiendatsii.pdf">Методические
-                                                рекомендации по
-                                                реализации
-                                                цикла внеурочных занятий «Разговоры
-                                                о
-                                                важном»</a>
-                                        </li>
-                                        <li>
-                                            <a className="link --type-pdf-icon"
-                                                rel="noopener noreferrer nofollow"
-                                                target="_blank"
-                                                href="https://patriotsport.moscow/wp-content/uploads/2022/08/metodicheskie-rekomendacii-po-organizacii-cikla-vneurochnyh-zanjatij-razgovory-o-vazhnom-pri-realizacii-adaptirovannyh-osnovnyh-obshheo.pdf">Методические
-                                                рекомендации по
-                                                организации
-                                                цикла внеурочных занятий «Разговоры
-                                                о
-                                                важном» при реализации
-                                                адаптированных
-                                                основных общеобразовательных
-                                                программ</a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </section>
                         <section className={this.state.tab === 3 ? "tab__section --active" : "tab__section"}>

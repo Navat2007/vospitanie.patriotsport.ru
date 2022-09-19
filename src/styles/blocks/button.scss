@@ -1,6 +1,10 @@
 .button {
   @extend %reset-btn;
 
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  
   text-transform: uppercase;
   font-weight: 500;
 
@@ -21,7 +25,15 @@
 
     &:hover {
       background-color: lighten($color: get-color("primary"), $amount: 10%);
-      // color: var(--light);
+    }
+  }
+
+  &.--theme-accent {
+    color: var(--light);
+    background-color: var(--accent);
+
+    &:hover {
+      background-color: darken($color: get-color("accent"), $amount: 10%);
     }
   }
 

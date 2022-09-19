@@ -1,0 +1,17 @@
+.quote {
+  padding: .875em 1.25em;
+  box-sizing: border-box;
+  background-color: var(--g100);
+  font-style: italic;
+
+  &__text {
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__author {
+    display: block;
+    text-align: right;
+    color: var(--darkLow);
+  }
+}

@@ -55,8 +55,8 @@ export default class SportsSaturdaysPage extends Component {
                     Куратор проекта «Спортивные субботы» — Филюшкина Екатерина Игоревна FilyushkinaEI@)edu.mos.ru
                     <a className="link" rel="noopener noreferrer nofollow" target="_blank"
                        href="mailto:FilyushkinaEI@)edu.mos.ru">FilyushkinaEI@)edu.mos.ru</a>
-                    <img className="image" src={imageQR} alt="qrcode"/>
                 </p>
+                <img className="image" src={imageQR} alt="qrcode"/>
             </div>
         )
     }
