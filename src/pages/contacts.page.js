@@ -4,7 +4,7 @@ import imageVK from '../images/icons/vk.png';
 import imageOK from '../images/icons/ok.svg';
 import imageTelegram from '../images/icons/tme.png';
 import imageYoutube from '../images/icons/youtube.png';
-import imageLogo from '../images/logo-patriot-sport.svg';
+import imageLogo from '../images/logo/logo-patriot-sport.svg';
 
 export default class ContactsPage extends Component {
 

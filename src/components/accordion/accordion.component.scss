@@ -1,0 +1,104 @@
+@import "../../styles/_assets/variables";
+@import "../../styles/_assets/functions";
+@import "../../styles/_assets/mixins";
+@import "../../styles/_assets/extends"; 
+
+.accordion {
+  &.--opened {
+
+    & > .accordion__caption .mdi::before {
+      transform: rotate(90deg);
+    }
+
+    & > .accordion__section {
+      max-height: unset;
+      overflow: hidden;
+    }
+  }
+
+  &.--type-outline {
+    
+    &.--opened > .accordion__section {
+      padding-bottom: 1.25em;
+    }
+    
+    & > .accordion__caption {
+      padding: .75em 0;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  &.--theme-primary {
+    background-color: lighten(map-get($colors, "primary"), 10%); 
+    border-radius: 5px;
+    padding: .25em;
+    margin-bottom: .25em;
+
+    &.--opened > .accordion__section {
+      padding-bottom: 1.25em;
+    }
+
+    & > .accordion__caption {
+      padding: .75em 1.25em;
+      color: var(--light);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    & > .accordion__section {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--white);
+      border-radius: 0 0 5px 5px;
+
+      padding-left: 1.25em;
+    }
+  }
+
+  &.--theme-g100 {
+
+    &.--opened > .accordion__section {
+      padding-bottom: .875em;
+    }
+    
+    & > .accordion__caption {
+      background-color: var(--g100); 
+      padding: .75em 1.25em;
+      font-weight: bold;
+      cursor: pointer; 
+      margin-bottom: .875em;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  &.--icon-caption-plus {
+
+    &.--opened > .accordion__caption::before {
+      content: '\F0374';
+    }
+
+    & > .accordion__caption:before {
+      @extend %icon-on-before;
+      vertical-align: middle;
+      content: '\F0415';
+      padding-right: .25em;
+    }
+
+    & > .accordion__section {
+      padding-left: 1.875em;
+    }
+  }
+
+  // &__caption {}
+
+  &__section {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    transition-property: padding-bottom, max-height;
+  }
+}

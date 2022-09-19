@@ -4,8 +4,6 @@ import {Link} from "react-router-dom";
 import {UserContext} from "../../context";
 import Accordion from "../accordion/accordion.component";
 
-import './menu.component.css';
-
 const Menu = ({opened = false}) => {
 
     const [openState, setOpenState] = React.useState(opened);

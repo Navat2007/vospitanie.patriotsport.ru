@@ -1,5 +1,5 @@
 import React from 'react';
-import './accordion.component.css';
+import './accordion.component.scss';
 
 const Accordion = ({children, title, opened = false, menu = true}) => {
 

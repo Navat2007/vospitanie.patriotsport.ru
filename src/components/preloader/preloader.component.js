@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './preloader.component.scss';
 
 export default class PreloaderComponent extends Component {
 

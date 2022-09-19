@@ -1,0 +1,15 @@
+.resourses {
+  @extend %reset-list;
+
+  display: flex;
+  gap: 1.25em;
+  flex-wrap: wrap;
+
+  &>li {
+    transition: .25s ease-in-out;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
