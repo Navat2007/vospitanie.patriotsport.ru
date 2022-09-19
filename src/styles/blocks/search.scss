@@ -1,0 +1,34 @@
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .875em;
+
+  background-color: var(--g100);
+  border-radius: 5px;
+  padding: min(1.25vmax, 1.25em);
+  box-sizing: border-box;
+
+  &__field {
+    flex: 1 0 20em;
+
+    & input {
+      border: 1px solid var(--g200);
+      border-radius: 4px;
+      padding-left: 1.25em;
+      padding-right: 1.25em;
+    }
+
+    @include media(sm, max) {
+      flex: auto;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+    border-radius: 4px;
+
+    @include media(sm, max) {
+      width: 100%;
+    }
+  }
+}

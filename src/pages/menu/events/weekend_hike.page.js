@@ -228,7 +228,7 @@ export default class WeekendHikePage extends Component {
                     </ul>
                 </Accordion>
                 <Accordion title={"Список вещей"} menu={false}>
-                    <div className="table --place-equipment">
+                    <div className="table --type-mobile-flex --theme-standart">
                         <div className="table__wrap">
                             <table>
                                 <tbody>
