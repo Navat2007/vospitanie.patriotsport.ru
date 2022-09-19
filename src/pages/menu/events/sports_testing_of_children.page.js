@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import MyLink from '../../../components/link/link.component';
 
 export default class SportsTestingOfChildrenPage extends Component {
 
@@ -8,11 +9,7 @@ export default class SportsTestingOfChildrenPage extends Component {
                 <h2 className="content__title">Спортивное тестирование детей</h2>
                 <p>
                     Московским центром «Патриот.Спорт» и Департаментом образования и науки города Москвы на базах
-                    образовательных организаций запущен проект <a className="link"
-                                                                  href="https://www.mos.ru/pgu/ru/services/link/2082/?onsite_from=70532"
-                                                                  target="_blank"
-                                                                  rel="noopener noreferrer nofollow">«Помощь родителям в выборе
-                    вида спорта для детей».</a>
+                    образовательных организаций запущен проект <MyLink href={"https://www.mos.ru/pgu/ru/services/link/2082/?onsite_from=70532"} text={"«Помощь родителям в выборе вида спорта для детей»."} />
                 </p>
                 <p>
                     <b>Цель проекта</b>
@@ -47,12 +44,10 @@ export default class SportsTestingOfChildrenPage extends Component {
                 </ul>
                 <p><b>Консультационная поддержка:</b></p>
                 <p>
-                    <a className="link" href="84953692523" rel="noopener noreferrer nofollow">+7 (495) 369-25-23 доб. 1193</a>
+                    <MyLink href={"tel:84953692523"} text={"+7 (495) 369-25-23 доб. 1193"} />
                 </p>
                 <p style={{"marginTop": "2em"}}>
-                    <a className="button --theme-primary"
-                       href="https://patriotsport.moscow/wp-content/uploads/2021/12/prezentacija-sportivnogo-testirovanija.pdf"
-                       rel="noopener noreferrer nofollow">Презентация</a>
+                    <MyLink className={"button --theme-primary"} href={"https://patriotsport.moscow/wp-content/uploads/2021/12/prezentacija-sportivnogo-testirovanija.pdf"} text={"Презентация"} />
                 </p>
             </div>
         )

@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-
+import React, { Component } from 'react';
+import MyLink from '../../../components/link/link.component';
 import imageQR from '../../../images/qr-codes/kod-sportivnye-subboty.jpg';
 
 export default class SportsSaturdaysPage extends Component {
@@ -37,10 +37,7 @@ export default class SportsSaturdaysPage extends Component {
                 </p>
                 <p>
                     Стать участником мероприятий может любой желающий, достаточно пройти электронную регистрацию на
-                    сайте <a
-                    className="link" rel="noopener noreferrer nofollow" target="_blank" href="http://sport.educom.ru/">Субботы
-                    московского
-                    школьника.</a>
+                    сайте <MyLink href={"http://sport.educom.ru/"} text={"Субботы московского школьника"} />.
                 </p>
                 <p>
                     Проект ориентирован на школьников разных возрастов и их родителей, предусмотрены разные формы
@@ -48,15 +45,12 @@ export default class SportsSaturdaysPage extends Component {
                     индивидуальные, семейные. Занятия бесплатные.
                 </p>
                 <p>Информация о мероприятиях Проекта размещена на сайте Департамента образования и науки города Москвы в
-                    разделе <a className="link" rel="noopener noreferrer nofollow" target="_blank" href="http://sport.educom.ru/">Субботы
-                        московского школьника.</a></p>
+                    разделе <MyLink href={"http://sport.educom.ru/"} text={"Субботы московского школьника"} /></p>
                 <p>Следите за расписанием. Ждем вас на проекте «Спортивные субботы»!</p>
                 <p>
-                    Куратор проекта «Спортивные субботы» — Филюшкина Екатерина Игоревна FilyushkinaEI@)edu.mos.ru
-                    <a className="link" rel="noopener noreferrer nofollow" target="_blank"
-                       href="mailto:FilyushkinaEI@)edu.mos.ru">FilyushkinaEI@)edu.mos.ru</a>
+                    Куратор проекта «Спортивные субботы» — Филюшкина Екатерина Игоревна <MyLink href={"mailto:FilyushkinaEI@)edu.mos.ru"} text={"FilyushkinaEI@)edu.mos.ru"} />
                 </p>
-                <img className="image" src={imageQR} alt="qrcode"/>
+                <img className="image" src={imageQR} alt="qrcode" />
             </div>
         )
     }

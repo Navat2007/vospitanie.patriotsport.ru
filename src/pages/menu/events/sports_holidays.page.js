@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MyLink from '../../../components/link/link.component';
 
 export default class SportsHolidaysPage extends Component {
 
@@ -60,7 +61,7 @@ export default class SportsHolidaysPage extends Component {
                 </p>
 
                 <p>
-                    <b>Адреса спортивных площадок:</b>
+                    <b>Адреса спортивных площадок: </b>
                 </p>
                 <ul className="list">
                     <li><b>Баскетбол, пляжный волейбол, футволей, беговой клуб – улица Крымский Вал, 9Г;</b></li>
@@ -91,9 +92,7 @@ export default class SportsHolidaysPage extends Component {
                             <h3 className="content__caption --place-tab">Все лето для детей и взрослых в Парке Горького
                                 будут работать секции по пяти видам спорта. Чтобы позаниматься с тренером, нужно
                                 выбрать день недели и зарегистрироваться.</h3>
-                            <a href="http://registration-for-event.cpvs.moscow/sport-holidays"
-                                className="button --theme-accent"
-                                target="_blank" rel="noopener noreferrer nofollow">Регистрация</a>
+                            <MyLink className={"button --theme-accent"} href={"http://registration-for-event.cpvs.moscow/sport-holidays"} text={"Регистрация"} />
                         </section>
                         <section className={this.state.tab === 2 ? "tab__section --active" : "tab__section"}>
                             <h3 className="content__caption --place-tab">Участниками Фестиваль пляжного волейбола в
@@ -114,19 +113,13 @@ export default class SportsHolidaysPage extends Component {
                             <p><b>
                                 В день проведения соревнований команды должны предоставить:
                             </b></p>
-                            <ul className="list">
+                            <ul className="list" style={{ 'marginBottom': '.5em' }}>
                                 <li>оригинал заявки с допуском врача каждого участника или личные справки участников
                                     (для участников старше 18 лет разрешается заполнение расписки на месте
                                     проведения соревнований об ответственности за здоровье).
                                 </li>
                             </ul>
-                            <a href="https://patriotsport.moscow/wp-content/uploads/2022/08/obrazec-zajavki__.docx"
-                                className="button --theme-accent" target="_blank" rel="noopener noreferrer nofollow"
-                                style={{ "marginTop": "1em" }}>Образец
-                                заявки</a>
-                            <a href="https://patriotsport.moscow/wp-content/uploads/2022/08/polozhenie-o-provedenii-festivalja-pljazhnogo-volejbola-v-parke-gorkogo.pdf"
-                                className="button --theme-accent" target="_blank"
-                                rel="noopener noreferrer nofollow" style={{'marginLeft': '.25em'}}>Положение</a>
+                            <MyLink className={"button --theme-accent"} href={"https://patriotsport.moscow/wp-content/uploads/2022/08/obrazec-zajavki__.docx"} text={"Образец заявки"} /> <MyLink className={"button --theme-accent"} href={"https://patriotsport.moscow/wp-content/uploads/2022/08/polozhenie-o-provedenii-festivalja-pljazhnogo-volejbola-v-parke-gorkogo.pdf"} text={"Положение"} />
                             <h3 className="content__caption --place-tab">
                                 Регистрация закрыта
                             </h3>
@@ -136,18 +129,18 @@ export default class SportsHolidaysPage extends Component {
                                 Турнир по шахматам «Шахматный понедельник» в рамках Спортивных каникул
                             </h3>
                             <p>
-                                <b>Дата и время:</b>
+                                <b>Дата и время: </b>
                                 15 августа в 11:00
                             </p>
                             <p>
                                 Регистрация участников в 10:30
                             </p>
                             <p>
-                                <b>Место проведения:</b>
+                                <b>Место проведения: </b>
                                 ул. Крымский Вал 9, с.49; Шахматный Клуб «Белая Ладья» (метро
                                 Ленинский Проспект)
                             </p>
-                            <p><b>Категория участников:</b></p>
+                            <p><b>Категория участников: </b></p>
                             <ul className="list">
                                 <li>Мальчики и девочки 8 лет и моложе;</li>
                                 <li>Мальчики и девочки 9-14 лет;</li>
@@ -166,9 +159,8 @@ export default class SportsHolidaysPage extends Component {
                                 всех турах соответствующего турнира, раздельно среди юношей и девушек в каждой
                                 возрастной категории.</p>
                             <p>
-                                <b>Контактное лицо:</b>
-                                Христич Василий Викторович, <a className="link" href="mailto:KhristichVV@edu.mos.ru"
-                                    rel="noopener nofollow">KhristichVV@edu.mos.ru</a>
+                                <b>Контактное лицо: </b>
+                                Христич Василий Викторович, <MyLink href={"mailto:KhristichVV@edu.mos.ru"} text={"KhristichVV@edu.mos.ru"} />
                             </p>
                             <h3 className="content__caption --place-tab">
                                 Регистрация закрыта
@@ -202,15 +194,15 @@ export default class SportsHolidaysPage extends Component {
                                 3 — 4 сентября пройдет Финал Чемпионата Москвы по пляжному волейболу в Парке Горького.
                             </h3>
                             <p>
-                                <b>Сроки проведения:</b>
+                                <b>Сроки проведения: </b>
                                 3 — 4 сентября
                             </p>
                             <p>
-                                <b>Возрастная категория:</b>
+                                <b>Возрастная категория: </b>
                                 Команды юношей и команды девушек 16 лет и старше
                             </p>
                             <p>
-                                <b>Игровой состав команды:</b>
+                                <b>Игровой состав команды: </b>
                                 Команды юношей и команды девушек – 2 человека
                             </p>
                             <p>
@@ -234,13 +226,9 @@ export default class SportsHolidaysPage extends Component {
                                 Участники до 18 лет должны предоставить справки об отсутствии ограничений на занятия
                                 спортом.
                             </p>
-                            <a href="https://patriotsport.moscow/wp-content/uploads/2022/08/zajavka.doc"
-                                className="button --theme-accent" target="_blank" rel="noopener noreferrer nofollow"
-                                style={{ "margin": "1em 0" }}>Образец
-                                заявки</a>
+                            <MyLink className={"button --theme-accent"} href={"https://patriotsport.moscow/wp-content/uploads/2022/08/zajavka.doc"} text={"Образец заявки"} />
                             <p>
-                                <b>Адрес проведения:</b>
-                                Парк Горького, улица Крымский Вал, 9Г;
+                                <b>Адрес проведения: </b> Парк Горького, улица Крымский Вал, 9Г;
                             </p>
                             <p><b>Количество мест ограничено! Успейте подать заявку!</b></p>
                             <h3 className="content__caption --place-tab">
@@ -248,12 +236,11 @@ export default class SportsHolidaysPage extends Component {
                             </h3>
                             <p>
                                 <b>Контактное лицо: </b>
-                                Егор Игоревич, тел.: +7 968 683-21-30
+                                Егор Игоревич, тел.: <MyLink href={"tel:89686832130"} text={"+7 968 683-21-30"} /> 
                             </p>
                             <p>
                                 <b>Также вопросы: </b>
-                                <a className="link" href="mailto:info@moscowvolley.ru" target="_blank"
-                                    rel="noopener noreferrer nofollow">info@moscowvolley.ru</a>
+                                <MyLink href={"mailto:info@moscowvolley.ru"} text={"info@moscowvolley.ru"} />
                             </p>
                         </section>
                     </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Accordion from "../../../components/accordion/accordion.component";
+import MyLink from '../../../components/link/link.component';
 
 export default class FederalProjectPage extends Component {
 
@@ -29,8 +30,7 @@ export default class FederalProjectPage extends Component {
                                 Служба сопровождения управленческих команд школ по воспитательной деятельности
                             </p>
                             <p>
-                                <span>Горячая линия</span>
-                                <a className='link' href="tel:84953692523" rel='noopener nofollow'>+7 (495) 369 25 23 доб. 0</a>
+                                <span>Горячая линия</span> <MyLink href={"tel:84953692523"} text={"+7 (495) 369 25 23 доб. 0"} />
                             </p>
                         </div>
                     </div>
@@ -112,67 +112,33 @@ export default class FederalProjectPage extends Component {
                             </h3>
                             <ul className="list">
                                 <li>
-                                    <a className="link"
-                                        href="https://patriotsport.moscow/wp-content/uploads/2022/08/new_standart-ceremonii-podnjatija-spuska-gosudarstvennogo-flaga.pdf"
-                                        target="_blank" rel="noopener noreferrer nofollow">Стандарт Церемонии
-                                        поднятия
-                                        (спуска)
-                                        Государственного
-                                        флага Российской Федерации;</a>
+                                    <MyLink href={"https://patriotsport.moscow/wp-content/uploads/2022/08/new_standart-ceremonii-podnjatija-spuska-gosudarstvennogo-flaga.pdf"} text={"Стандарт Церемонии поднятия (спуска) Государственного флага Российской Федерации;"} />
                                 </li>
-                                <li><a className="link"
-                                    href="https://patriotsport.moscow/wp-content/uploads/2022/08/new_reglament-provedenija-ceremonii-podnjatija-spuska-gosudarstvennogo-flaga.docx"
-                                    target="_blank" rel="noopener noreferrer noreferrer nofollow">Типовой
-                                    Регламент проведения
-                                    церемонии поднятия
-                                    (спуска) Государственного флага Российской Федерации;</a></li>
-                                <li><a className="link"
-                                    href="https://patriotsport.moscow/wp-content/uploads/2022/08/new_metodicheskie-rekomendacii.docx"
-                                    target="_blank" rel="noopener noreferrer nofollow">Методические
-                                    рекомендации по
-                                    проведению Церемонии
-                                    торжественного поднятия (спуска) Государственного флага Российской
-                                    Федерации в
-                                    образовательных организациях, подведомственных Департаменту образования
-                                    и науки
-                                    города Москвы;</a></li>
-                                <li><a className="link"
-                                    href="https://patriotsport.moscow/wp-content/uploads/2022/08/new_proekt-prikaza-shkoly-po-provedeniju-ceremonii.docx"
-                                    target="_blank" rel="noopener noreferrer nofollow">Проект приказа в
-                                    ОО о
-                                    проведении Церемонии;</a></li>
-                                <li><a className="link"
-                                    href="https://patriotsport.moscow/wp-content/uploads/2022/08/new_chek-list-proverki-gotovnosti-oo-k-provedeniju-ceremonii.docx"
-                                    target="_blank" rel="noopener noreferrer nofollow">Чек-лист проверки
-                                    готовности
-                                    ОО к реализации
-                                    инициативы по регулярному проведению церемонии торжественного поднятия
-                                    флага;</a></li>
-                                <li><a className="link"
-                                    href="https://rutube.ru/video/118dcfab6349423497814fa915c3b49d/"
-                                    target="_blank"
-                                    rel="noopener noreferrer nofollow">Видеоинструкция церемонии поднятия
-                                    (спуска)
-                                    Государственного
-                                    флага
-                                    Российской Федерации в образовательной организации города Москвы</a>
+                                <li>
+                                    <MyLink href={"https://patriotsport.moscow/wp-content/uploads/2022/08/new_reglament-provedenija-ceremonii-podnjatija-spuska-gosudarstvennogo-flaga.docx"} text={"Типовой Регламент проведения церемонии поднятия (спуска) Государственного флага Российской Федерации;"} />
+                                </li>
+                                <li>
+                                    <MyLink href={"https://patriotsport.moscow/wp-content/uploads/2022/08/new_metodicheskie-rekomendacii.docx"} text={"Методические рекомендации по проведению Церемонии торжественного поднятия (спуска) Государственного флага Российской Федерации в образовательных организациях, подведомственных Департаменту образования и науки города Москвы;"} />
+                                </li>
+                                <li>
+                                    <MyLink href={"https://patriotsport.moscow/wp-content/uploads/2022/08/new_proekt-prikaza-shkoly-po-provedeniju-ceremonii.docx"} text={"Проект приказа в ОО о проведении Церемонии;"} />
+                                </li>
+                                <li>
+                                    <MyLink href={"https://patriotsport.moscow/wp-content/uploads/2022/08/new_chek-list-proverki-gotovnosti-oo-k-provedeniju-ceremonii.docx"} text={"Чек-лист проверки готовности ОО к реализации инициативы по регулярному проведению церемонии торжественного поднятия флага;"} />
+                                </li>
+                                <li>
+                                    <MyLink href={"https://rutube.ru/video/118dcfab6349423497814fa915c3b49d/"} text={"Видеоинструкция церемонии поднятия (спуска) Государственного флага Российской Федерации в образовательной организации города Москвы"} />
                                 </li>
                             </ul>
                             <h3 className="content__caption --place-tab">
-                                Государственный гимн Российской Федерации
-                                <a target="_blank" className="link"
-                                    href="https://disk.yandex.ru/i/Q7pWS9oVRsEoNg"
-                                    rel="noopener noreferrer nofollow">Скачать</a>
+                                Государственный гимн Российской Федерации <MyLink href={"https://disk.yandex.ru/i/Q7pWS9oVRsEoNg"} text={"Скачать"} />
                             </h3>
                             <div className="iframe">
                                 <iframe title={"Gimn"} className="iframe__item"
                                     src="https://rutube.ru/play/embed/af0ced005165a6e26f0b109e8c8d1db7" />
                             </div>
                             <h3 className="content__caption --place-tab">
-                                Ролик про Государственный флаг Российской Федерации
-                                <a target="_blank" className="link"
-                                    href="https://disk.yandex.ru/i/2DzvYYTUlUpPvg"
-                                    rel="noopener noreferrer nofollow">Скачать</a>
+                                Ролик про Государственный флаг Российской Федерации <MyLink href={"https://disk.yandex.ru/i/2DzvYYTUlUpPvg"} text={"Скачать"} />
                             </h3>
                             <div className="iframe">
                                 <iframe title={"Flag"} className="iframe__item"
@@ -228,120 +194,75 @@ export default class FederalProjectPage extends Component {
                                 </li>
                             </ul>
                             <p>Методические разработки, сценарии уроков и интерактивные задания можно найти
-                                на
-                                <a className="link" href="https://razgovor.edsoo.ru/" target="_blank"
-                                    rel="noopener noreferrer nofollow">официальном
-                                    сайте Проекта «Разговоры о важном»</a>.
+                                на <MyLink href={"https://razgovor.edsoo.ru/"} text={"официальном сайте Проекта «Разговоры о важном»"} />.
                             </p>
                             <p>Материалы для проведения уроков в образовательных организациях,
                                 подведомственных
-                                Департаменту образования и науки города Москвы размещены <a className="link"
-                                    href="https://patriotsport.moscow/razgovory-o-vazhnom/"
-                                    target="_blank"
-                                    rel="noopener noreferrer nofollow">в
-                                    разделе Разговоры о важном сайта ГБОУ ДПО МЦПС</a>.</p>
+                                Департаменту образования и науки города Москвы размещены
+                                <MyLink href={"https://patriotsport.moscow/razgovory-o-vazhnom/"} text={"в разделе Разговоры о важном сайта ГБОУ ДПО МЦПС"} />.</p>
                             <h3 className="content__caption --place-tab">
-                                24 августа прошел обучающий семинар для классных руководителей
-                                <a target="_blank" className="link"
-                                    href="https://disk.yandex.ru/i/CM08JekLJCQPIA"
-                                    rel="noopener noreferrer nofollow">Скачать</a>
+                                24 августа прошел обучающий семинар для классных руководителей <MyLink href={"https://disk.yandex.ru/i/CM08JekLJCQPIA"} text={"Скачать"} />
                             </h3>
-                            <div className="iframe" style={{'marginBottom': '1em'}}>
+                            <div className="iframe" style={{ 'marginBottom': '1em' }}>
                                 <iframe title={"Seminar"} className="iframe__item"
                                     src="https://rutube.ru/play/embed/12fedb60cf482bf9ff662e2c9861fbc9" />
                             </div>
                             <Accordion title={"Рабочие программы, КТП и методические рекомендации по циклу занятий"} menu={false}>
                                 <ul className="list --type-empty">
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-1-2.docx">Рабочая
-                                            программа 1-2 класс</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-1-2.docx"}
+                                            text={"Рабочая программа 1-2 класс"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-1-2_.docx">КТП
-                                            1-2 класс</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-1-2_.docx"}
+                                            text={"КТП 1-2 класс"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-3-4.docx">Рабочая
-                                            программа 3-4 класс</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-3-4.docx"}
+                                            text={"Рабочая программа 3-4 класс"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-3-4_.docx">КТП
-                                            3-4 класс</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-3-4_.docx"}
+                                            text={"КТП 3-4 класс"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-5-7.docx">Рабочая
-                                            программа
-                                            5-7 класс</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-5-7.docx"}
+                                            text={"Рабочая программа 5-7 класс"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-8-9.docx">Рабочая
-                                            программа
-                                            8-9 класс</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-8-9.docx"}
+                                            text={"Рабочая программа 8-9 класс"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-8-9_.docx">КТП
-                                            8-9 класс</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-8-9_.docx"}
+                                            text={"КТП 8-9 класс"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-10-11-spo.docx">Рабочая
-                                            программа
-                                            10-11 класс, СПО</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/rabochaja-programma-rov-10-11-spo.docx"}
+                                            text={"Рабочая программа 10-11 класс, СПО"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-10-11-spt_.docx">КТП
-                                            10-11 класс, СПО</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/ktp-10-11-spt_.docx"}
+                                            text={"КТП 10-11 класс, СПО"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/mietod._riekomiendatsii.pdf">Методические
-                                            рекомендации по
-                                            реализации
-                                            цикла внеурочных занятий «Разговоры
-                                            о
-                                            важном»</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/mietod._riekomiendatsii.pdf"}
+                                            text={"Методические рекомендации по реализации цикла внеурочных занятий «Разговоры о важном»"} />
                                     </li>
                                     <li>
-                                        <a className="link --type-pdf-icon"
-                                            rel="noopener noreferrer nofollow"
-                                            target="_blank"
-                                            href="https://patriotsport.moscow/wp-content/uploads/2022/08/metodicheskie-rekomendacii-po-organizacii-cikla-vneurochnyh-zanjatij-razgovory-o-vazhnom-pri-realizacii-adaptirovannyh-osnovnyh-obshheo.pdf">Методические
-                                            рекомендации по
-                                            организации
-                                            цикла внеурочных занятий «Разговоры
-                                            о
-                                            важном» при реализации
-                                            адаптированных
-                                            основных общеобразовательных
-                                            программ</a>
+                                        <MyLink className={"link --type-pdf-icon"}
+                                            href={"https://patriotsport.moscow/wp-content/uploads/2022/08/metodicheskie-rekomendacii-po-organizacii-cikla-vneurochnyh-zanjatij-razgovory-o-vazhnom-pri-realizacii-adaptirovannyh-osnovnyh-obshheo.pdf"}
+                                            text={"Методические рекомендации по организации цикла внеурочных занятий «Разговоры о важном» при реализации адаптированных основных общеобразовательных программ"} />
                                     </li>
                                 </ul>
                             </Accordion>
@@ -387,11 +308,7 @@ export default class FederalProjectPage extends Component {
                             <img className="image"
                                 src="https://patriotsport.moscow/wp-content/uploads/2022/08/struktura.png"
                                 alt="Федеральные проекты по воспитанию" />
-                            <p><a className="link" href="http://www.kremlin.ru/acts/bank/48153"
-                                target="_blank"
-                                rel="noopener noreferrer nofollow">Федеральный закон «О российском
-                                движении детей
-                                и молодежи»</a></p>
+                            <p><MyLink href={"http://www.kremlin.ru/acts/bank/48153"} text={"Федеральный закон «О российском движении детей и молодежи»"} /></p>
                         </section>
                         <section className={this.state.tab === 4 ? "tab__section --active" : "tab__section"}>
                             <p><b>Должность советника по воспитанию включена в перечень должностей
@@ -429,19 +346,11 @@ export default class FederalProjectPage extends Component {
                                 <li>Методическая и консультационная поддержка</li>
                                 <li>Аналитическая деятельность</li>
                             </ul>
-                            <p>Информация на <a className="link"
-                                href="https://edu.gov.ru/press/4283/dolzhnost-sovetnika-direktora-po-vospitaniyu-budet-vvedena-v-perechen-dolzhnostey-pedagogicheskih-rabotnikov/"
-                                target="_blank" rel="noopener noreferrer nofollow">сайте
-                                Министерства
-                                просвещения России</a></p>
                             <p>
-                                <a className="link"
-                                    href="https://regulation.gov.ru/projects#search=номенклатуру%20должности%20&amp;npa=121747"
-                                    target="_blank" rel="noopener noreferrer nofollow">Проект “Об утверждении
-                                    номенклатуры
-                                    должностей
-                                    педагогических работников организаций, осуществляющих образовательную
-                                    деятельность, должностей руководителей образовательных организаций”</a>
+                                Информация на <MyLink href={"https://edu.gov.ru/press/4283/dolzhnost-sovetnika-direktora-po-vospitaniyu-budet-vvedena-v-perechen-dolzhnostey-pedagogicheskih-rabotnikov/"} text={"сайте Министерства просвещения России"} />
+                            </p>
+                            <p>
+                                <MyLink href={"https://regulation.gov.ru/projects#search=номенклатуру%20должности%20&amp;npa=121747"} text={"Проект “Об утверждении номенклатуры должностей педагогических работников организаций, осуществляющих образовательную деятельность, должностей руководителей образовательных организаций”"} />
                             </p>
                         </section>
                         <section className={this.state.tab === 5 ? "tab__section --active" : "tab__section"}>
@@ -486,13 +395,7 @@ export default class FederalProjectPage extends Component {
                                 </li>
                             </ul>
                             <p>
-                                <a className="link"
-                                    href="https://edu.gov.ru/press/5022/sergey-kravcov-razyasnil-kak-budet-izuchatsya-istoriya-v-shkolah-s-pervogo-klassa/"
-                                    target="_blank" rel="noopener noreferrer nofollow">Новость на сайте
-                                    Министерства
-                                    просвещения
-                                    России
-                                    от 19.04.2022 г.</a>
+                                <MyLink href={"https://edu.gov.ru/press/5022/sergey-kravcov-razyasnil-kak-budet-izuchatsya-istoriya-v-shkolah-s-pervogo-klassa/"} text={"Новость на сайте Министерства просвещения России от 19.04.2022 г."} />
                             </p>
                         </section>
                         <section className={this.state.tab === 6 ? "tab__section --active" : "tab__section"}>
@@ -587,11 +490,9 @@ export default class FederalProjectPage extends Component {
                                 а
                                 также типовых программ по специальным театральным дисциплинам</p>
 
-                            <p><a className="link" href="http://vcht.center/metodcenter/shkolnye-teatry/"
-                                target="_blank" rel="noopener noreferrer nofollow">Перечень
-                                документов на сайте Всероссийского центра
-                                художественного
-                                творчества</a></p>
+                            <p>
+                                <MyLink href={"http://vcht.center/metodcenter/shkolnye-teatry/"} text={"Перечень документов на сайте Всероссийского центра художественного творчества"} />
+                            </p>
                         </section>
                         <section className={this.state.tab === 7 ? "tab__section --active" : "tab__section"}>
                             <p><b>Школьные спортивные клубы (ШСК) – механизм объединения всех участников

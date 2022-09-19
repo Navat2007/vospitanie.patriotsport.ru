@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import MyLink from '../../../components/link/link.component';
 
 export default class IWalkingMoscowPage extends Component {
 
@@ -7,9 +8,8 @@ export default class IWalkingMoscowPage extends Component {
             <div className="content__block">
                 <h2 className="content__title">Социально-значимый проект «Я шагаю по Москве»</h2>
                 <p>
-                    <b>Организатор:</b>
-                    <a className="link" href="https://lab-putesh.mskobr.ru/" target="_blank" rel="noopener noreferrer nofollow">ГБУ
-                        «Лаборатория путешествий»</a>
+                    <b>Организатор: </b>
+                    <MyLink href={"https://lab-putesh.mskobr.ru/"} text={"ГБУ «Лаборатория путешествий»"} />
                 </p>
                 <p>
                     "Я шагаю по Москве" - это большая увлекательная квест-прогулка по Москве для детей и взрослых от
@@ -41,9 +41,7 @@ export default class IWalkingMoscowPage extends Component {
                     Участие в игре бесплатное!
                 </p>
                 <br/>
-                <a className="button --theme-primary" target="_blank" rel="noopener noreferrer nofollow"
-                   href="https://projects.goulp.ru/shagayumoskva/#docs">Подробнее</a>
-
+                <MyLink className={"button --theme-primary"} href={"https://projects.goulp.ru/shagayumoskva/#docs"} text={"Подробнее"} />
             </div>
         )
     }

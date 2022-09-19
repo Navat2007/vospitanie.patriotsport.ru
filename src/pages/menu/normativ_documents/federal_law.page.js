@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import image from '../../../images/Emblem_of_Ministry_of_Education_and_Science_of_Russia.png';
+import MyLink from '../../../components/link/link.component';
+import imageLogo from '../../../images/Emblem_of_Ministry_of_Education_and_Science_of_Russia.png';
 
 export default class FederalLawPage extends Component {
 
@@ -8,7 +9,7 @@ export default class FederalLawPage extends Component {
             <div className="content__block">
                 <h2 className='content__title'>Федеральные законы</h2>
                 <div className='--align-center'>
-                    <img className='image' src={image} width='100' />
+                    <img className='image' src={imageLogo} width='100' />
                     <p className='content__caption'>Министерство просвещения Российской Федерации</p>
                 </div>
                 <p>
@@ -20,15 +21,9 @@ export default class FederalLawPage extends Component {
                 <p>
                     Минпросвещения России не имеет в своей структуре как представительств за рубежом, так и территориальных органов в субъектах Российской Федерации.
                 </p>
-                <a className="link --type-pdf-icon"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    href="https://voenpatriot-my.sharepoint.com/personal/kovalchukeg_cpvs_moscow/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fkovalchukeg_cpvs_moscow%2FDocuments%2FВкладка%20МЭШ%20-%20Сайт%20Организация%20воспитания%2FСодержание%20пунктов%2F%212%2E%20Пункт%20бокового%20меню%20Нормативные%20документы%2FФедеральные%20законы%2FОб%20образовании%20в%20Российской%20Федерации%2Epdf&parent=%2Fpersonal%2Fkovalchukeg_cpvs_moscow%2FDocuments%2FВкладка%20МЭШ%20-%20Сайт%20Организация%20воспитания%2FСодержание%20пунктов%2F%212%2E%20Пункт%20бокового%20меню%20Нормативные%20документы%2FФедеральные%20законы">Федеральный закон от 29.12.2012 N 273-ФЗ (ред. от 14.07.2022) "Об образовании в Российской Федерации" (с изм. и доп., вступ. в силу с 25.07.2022)</a>
+                <MyLink className={"link --type-pdf-icon"} href={"https://voenpatriot-my.sharepoint.com/personal/kovalchukeg_cpvs_moscow/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fkovalchukeg_cpvs_moscow%2FDocuments%2FВкладка%20МЭШ%20-%20Сайт%20Организация%20воспитания%2FСодержание%20пунктов%2F%212%2E%20Пункт%20бокового%20меню%20Нормативные%20документы%2FФедеральные%20законы%2FОб%20образовании%20в%20Российской%20Федерации%2Epdf&parent=%2Fpersonal%2Fkovalchukeg_cpvs_moscow%2FDocuments%2FВкладка%20МЭШ%20-%20Сайт%20Организация%20воспитания%2FСодержание%20пунктов%2F%212%2E%20Пункт%20бокового%20меню%20Нормативные%20документы%2FФедеральные%20законы"} text={"Федеральный закон от 29.12.2012 N 273-ФЗ (ред. от 14.07.2022) \"Об образовании в Российской Федерации\" (с изм. и доп., вступ. в силу с 25.07.2022)"} />
                 <p>
-                    Все нормативные правовые акты на <a className="link"
-                        rel="noopener noreferrer nofollow"
-                        target="_blank"
-                        href="https://docs.edu.gov.ru">официальном сайте Министерства просвещения Российской Федерации.</a>
+                    Все нормативные правовые акты на <MyLink href={"https://docs.edu.gov.ru"} text={"официальном сайте Министерства просвещения Российской Федерации."} /> 
                 </p>
 
             </div>

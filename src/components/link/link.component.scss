@@ -1,0 +1,29 @@
+@import "../../styles/_assets/variables";
+@import "../../styles/_assets/functions";
+@import "../../styles/_assets/mixins";
+@import "../../styles/_assets/extends"; 
+ 
+.link {
+  text-decoration: none; 
+  font-weight: 500;
+  color: var(--primary);
+
+  &:hover {
+    color: lighten(map-get($colors, "primary"), 25%);  
+  }
+
+  &.--type-pdf-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+
+    &:before {
+      flex: none;
+      content: '';
+      @include box(2.25rem);
+      margin-right: 1rem; 
+      background: url("../../../public/images/pdf-img.png") no-repeat; 
+      background-size: contain;
+    }
+  }
+}
