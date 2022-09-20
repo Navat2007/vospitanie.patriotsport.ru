@@ -1,6 +1,7 @@
 .button {
   @extend %reset-btn;
 
+  min-height: 3rem;
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;

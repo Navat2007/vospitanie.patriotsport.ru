@@ -28,10 +28,37 @@
       pointer-events: none;
     }
   }
- 
+
   &.--type-label-icon {
     & .field__input {
       padding-left: 3rem;
+    }
+  }
+
+  &.--type-label-ph {
+
+    & .field__input {
+      color: transparent;
+
+      &::valid,
+      &::focus {
+        color: var(--dark);
+
+        &~.field__label {
+          opacity: 0;
+        }
+      }
+    }
+
+    & .field__label {
+      position: absolute;
+      top: 50%;
+      left: 1.25rem;
+      transform: translateY(-50%);
+      color: var(--darkLow);
+      transition: .25s ease-in-out;
+      transition-property: opacity;
+      pointer-events: none;
     }
   }
 
@@ -105,6 +132,7 @@
   }
 
   &__label {
+    all: unset;
     font-size: 1em;
     color: var(--dark);
 

@@ -9,8 +9,15 @@
   box-sizing: border-box;
 
   &__field {
-    flex: 1 0 20em;
+    flex: 1 0 17em;
 
+    & .field__label {
+      display: inline-block;
+      font-size: .875em;
+      color: var(--darkLow);
+      padding-left: 1.25rem;
+      padding-bottom: .375rem;
+    }
     & input {
       border: 1px solid var(--g200);
       border-radius: 4px;
@@ -24,6 +31,7 @@
   }
 
   &__button {
+    align-self: flex-end;
     margin-left: auto;
     border-radius: 4px;
 
