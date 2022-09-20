@@ -35,6 +35,22 @@ if($login == "1234" && $password == "1234"){
     ];
 
 }
+else if($login == "admin" && $password == "EVEonline2007"){
+
+    $params = (object)[
+
+        'token' => "aaa",
+        'ID' => 2,
+        'title' => "Сергей Геннадьевич Т.",
+        'login' => $login,
+        'email' => "navat2007@uandex.ru",
+        'role' => "superadmin",
+        'position' => "Главный администратор",
+        'work' => "ГБОУ ДПО города Москвы “Московский центр “Патриот.Спорт”",
+
+    ];
+
+}
 else
     $error = 1;
 
