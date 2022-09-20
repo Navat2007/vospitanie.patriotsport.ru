@@ -97,27 +97,15 @@ const Menu = ({opened = false}) => {
                     children: []
                 },
                 {
-                    id: 15,
-                    title: "Спорт",
-                    link: "/sport",
-                    children: []
-                },
-                {
-                    id: 16,
-                    title: "Творчество",
-                    link: "/creativity",
-                    children: []
-                },
-                {
                     id: 17,
                     title: "Проектная деятельность",
                     link: "/project_activity",
                     children: []
                 },
                 {
-                    id: 18,
-                    title: "Образование (Ресурсы)",
-                    link: "/education",
+                    id: 15,
+                    title: "Спорт",
+                    link: "/sport",
                     children: []
                 },
             ]
