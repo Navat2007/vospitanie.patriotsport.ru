@@ -9,7 +9,7 @@ export default class FederalLawPage extends Component {
             <div className="content__block">
                 <h2 className='content__title'>Федеральные законы</h2>
                 <div className='--align-center'>
-                    <img className='image' src={imageLogo} width='100' />
+                    <img className='image' src={imageLogo} width='100' alt={"Министерство просвещения Российской Федерации"}/>
                     <p className='content__caption'>Министерство просвещения Российской Федерации</p>
                 </div>
                 <p>

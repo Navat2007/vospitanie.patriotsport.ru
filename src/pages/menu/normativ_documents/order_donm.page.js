@@ -8,7 +8,7 @@ export default class OrderDonmPage extends Component {
             <div className="content__block">
                 <h2 className='content__title'>Приказы ДОНМ</h2>
                 <div className='--align-center'>
-                    <img className='image' src={imageLogo} width='100' />
+                    <img className='image' src={imageLogo} width='100' alt={"Департамент образования и науки города Москвы"} />
                     <p className='content__caption'>Департамент образования и науки города Москвы</p>
                 </div>
                 <p>

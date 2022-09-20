@@ -128,6 +128,12 @@ const Menu = ({opened = false}) => {
             link: "",
             children: [
                 {
+                    id: 23,
+                    title: "Поиск нормативных документах",
+                    link: "/documents_search",
+                    children: []
+                },
+                {
                     id: 20,
                     title: "Федеральные Законы",
                     link: "/federal_law",
@@ -143,12 +149,6 @@ const Menu = ({opened = false}) => {
                     id: 22,
                     title: "Приказы ДОНМ",
                     link: "/order_donm",
-                    children: []
-                },
-                {
-                    id: 23,
-                    title: "Поиск нормативных документах",
-                    link: "/documents_search",
                     children: []
                 },
                 {

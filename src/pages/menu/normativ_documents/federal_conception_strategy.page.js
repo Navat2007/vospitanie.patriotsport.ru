@@ -9,7 +9,7 @@ export default class FederalConceptionStrategyPage extends Component {
         return (
             <div className="content__block">
                 <h2 className='content__title'>Федеральные концепции и стратегии</h2>
-                <img className='image' src={imageLogo} width='150' />
+                <img className='image' src={imageLogo} width='150' alt={"Национальный проект “ОБРАЗОВАНИЕ”"}/>
                 <p className='content__caption'>Национальный проект “ОБРАЗОВАНИЕ”</p>
                 <p>
                     <MyLink text={"Национальный проект «Образование»"}
