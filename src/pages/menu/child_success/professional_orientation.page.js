@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import MyLink from '../../../components/link/link.component';
 
-import image_01 from '../../../images/career-guidance-card-1.jpg';
-import image_02 from '../../../images/career-guidance-card-2.jpg';
-import image_03 from '../../../images/career-guidance-card-3.jpg';
+import card_image_01 from '../../../images/card-urban-projects.jpg';
+import card_image_02 from '../../../images/card-federal-projects.jpg';
+import card_image_03 from '../../../images/card-professional-skill-championships.jpg';
 
-import image_01_01 from '../../../images/logo/career-guidance-logo-01.png';
-import image_01_01_qr from '../../../images/qr-codes/qr-code-vocational-training-without-borders.gif';
-import image_01_02 from '../../../images/logo/career-guidance-logo-02.png';
-import image_01_02_qr from '../../../images/qr-codes/qr-code-saturdays-of-a-moscow-schoolboy.gif';
-import image_01_03 from '../../../images/logo/career-guidance-logo-03.png';
-import image_01_03_qr from '../../../images/qr-codes/qr-code-ticket-to-the-future.gif';
-import image_01_04 from '../../../images/logo/career-guidance-logo-04.png';
-import image_01_04_qr from '../../../images/qr-codes/qr-code-proektoria.gif';
-import image_01_05 from '../../../images/logo/career-guidance-logo-05.png';
-import image_01_05_qr from '../../../images/qr-codes/qr-code-profession-show.gif';
-import image_01_06 from '../../../images/logo/career-guidance-logo-06.png';
-import image_01_06_qr from '../../../images/qr-codes/qr-code-world-skills-russia.gif';
-import image_01_07 from '../../../images/logo/career-guidance-logo-07.png';
-import image_01_07_qr from '../../../images/qr-codes/qr-code-masteryata.gif';
-import image_01_08 from '../../../images/logo/career-guidance-logo-08.png';
-import image_01_08_qr from '../../../images/qr-codes/qr-code-abilimpix.gif';
+import image_01 from '../../../images/logo/professional-orientation/vocational-training-without-borders.png';
+import image_01_qr from '../../../images/qr-codes/professional-orientation/qr-code-vocational-training-without-borders.gif';
+import image_02 from '../../../images/logo/professional-orientation/saturdays-of-a-moscow-schoolboy.png';
+import image_02_qr from '../../../images/qr-codes/professional-orientation/qr-code-saturdays-of-a-moscow-schoolboy.gif';
+import image_03 from '../../../images/logo/professional-orientation/ticket-to-the-future.png';
+import image_03_qr from '../../../images/qr-codes/professional-orientation/qr-code-ticket-to-the-future.gif';
+import image_04 from '../../../images/logo/professional-orientation/proektoria.png';
+import image_04_qr from '../../../images/qr-codes/professional-orientation/qr-code-proektoria.gif';
+import image_05 from '../../../images/logo/professional-orientation/profession-show.png';
+import image_05_qr from '../../../images/qr-codes/professional-orientation/qr-code-profession-show.gif';
+import image_06 from '../../../images/logo/professional-orientation/world-skills-russia.png';
+import image_06_qr from '../../../images/qr-codes/professional-orientation/qr-code-world-skills-russia.gif';
+import image_07 from '../../../images/logo/professional-orientation/masteryata.png';
+import image_07_qr from '../../../images/qr-codes/professional-orientation/qr-code-masteryata.gif';
+import image_08 from '../../../images/logo/professional-orientation/abilimpix.png';
+import image_08_qr from '../../../images/qr-codes/professional-orientation/qr-code-abilimpix.gif';
 
 export default class ProfessionalOrientationPage extends Component {
 
@@ -47,7 +47,7 @@ export default class ProfessionalOrientationPage extends Component {
                         <a className="card" href=""
                             rel="noopener noreferrer nofollow"
                             target="_blank">
-                            <img className="card__img --ratio-half" src={image_01} alt="Спорт" />
+                            <img className="card__img --ratio-half" src={card_image_01} alt="Спорт" />
                             <span className="card__more-btn">Подробнее &rarr;</span>
                         </a>
                     </li>
@@ -55,14 +55,14 @@ export default class ProfessionalOrientationPage extends Component {
                         <a className="card" href=""
                             rel="noopener noreferrer nofollow"
                             target="_blank">
-                            <img className="card__img --ratio-half" src={image_02} alt="Досуг" />
+                            <img className="card__img --ratio-half" src={card_image_02} alt="Досуг" />
                             <span className="card__more-btn">Подробнее &rarr;</span>
                         </a>
                     </li>
                     <li>
                         <a className="card" href=""
                             rel="noopener noreferrer nofollow" target="_blank">
-                            <img className="card__img --ratio-half" src={image_03} alt="Образование" />
+                            <img className="card__img --ratio-half" src={card_image_03} alt="Образование" />
                             <span className="card__more-btn">Подробнее &rarr;</span>
                         </a>
                     </li>
@@ -75,7 +75,7 @@ export default class ProfessionalOrientationPage extends Component {
                     </ul>
                     <div className="tab__container">
                         <section className={this.state.tab === 1 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_01} alt="Профессиональное обучение без границ" />
+                            <img className='image' src={image_01} alt="Профессиональное обучение без границ" />
                             <p>
                                 <b>Профессиональное обучение без границ </b>
                                 предполагает освоение основных программ профессионального обучения по программам профессиональной подготовки по профессиям рабочих, должностям служащих за счет средств бюджета города Москвы в образовательных организациях, подведомственных Департаменту образования и науки города Москвы.
@@ -106,10 +106,10 @@ export default class ProfessionalOrientationPage extends Component {
                                     Подробную информацию можно получить на сайте <MyLink href={"https://school.mcrpo.ru/o-proekte/obshhie-svedeniya/"} text={"МЦРПО"} />и на официальных сайтах образовательных организаций.
                                 </b>
                             </p>
-                            <img className='image' src={image_01_01_qr} alt="qrcode" />
+                            <img className='image' src={image_01_qr} alt="qrcode" />
                         </section>
                         <section className={this.state.tab === 2 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_02} alt="Субботы московского школьника" width={"350"} />
+                            <img className='image' src={image_02} alt="Субботы московского школьника" width={"350"} />
                             <p>
                                 <b>«Субботы московского школьника» </b>
                                 — общегородской просветительско-образовательный проект, который позволяет ученикам с пользой проводить выходные. Мероприятия проводятся в формате мастер-классов, лекций, экскурсий, спортивных тренировок, деловых игр, квестов, встреч с известными учеными, актерами, путешественниками.
@@ -129,10 +129,10 @@ export default class ProfessionalOrientationPage extends Component {
                             </p>
                             <p>
                                 <b>
-                                    Подробную информацию можно получить на сайте <MyLink href={"https://events.educom.ru/"} text={"официальном сайте проекта."} />
+                                    Подробную информацию можно получить на <MyLink href={"https://events.educom.ru/"} text={"официальном сайте проекта."} />
                                 </b>
                             </p>
-                            <img className='image' src={image_01_02_qr} alt="qrcode" />
+                            <img className='image' src={image_02_qr} alt="qrcode" />
                         </section>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ export default class ProfessionalOrientationPage extends Component {
                     </ul>
                     <div className="tab__container">
                         <section className={this.state.tab === 1 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_03} alt="Билет в будущее" width={"250"} />
+                            <img className='image' src={image_03} alt="Билет в будущее" width={"250"} />
                             <div className="quote">
                                 <blockquote className='quote__text'>
                                     «Билет в будущее - чрезвычайно значимый проект. Нет ничего важнее выбора пути в жизни. Профориентация - один из ключевых элементов работы с молодыми людьми сегодня».
@@ -173,13 +173,13 @@ export default class ProfessionalOrientationPage extends Component {
                             </ul>
                             <p>
                                 <b>
-                                    Подробную информацию можно получить на сайте <MyLink href={"https://bvbinfo.ru/"} text={"официальном сайте проекта."} />
+                                    Подробную информацию можно получить на <MyLink href={"https://bvbinfo.ru/"} text={"официальном сайте проекта."} />
                                 </b>
                             </p>
-                            <img className='image' src={image_01_03_qr} alt="qrcode" />
+                            <img className='image' src={image_03_qr} alt="qrcode" />
                         </section>
                         <section className={this.state.tab === 2 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_04} alt="ПроеКТОриЯ" />
+                            <img className='image' src={image_04} alt="ПроеКТОриЯ" />
                             <p>
                                 <b>«ПроеКТОриЯ» </b>
                                 – самый масштабный профориентационный проект, проводимый при поддержке Министерства просвещения Российской Федерации. Его основная цель – познакомить учеников 8–11-х классов с перспективными профессиями, а также достижениями отечественной науки и экономики.
@@ -198,13 +198,13 @@ export default class ProfessionalOrientationPage extends Component {
                             </div>
                             <p>
                                 <b>
-                                    Подробную информацию можно получить на сайте <MyLink href={"https://proektoria.online/"} text={"официальном сайте проекта."} />
+                                    Подробную информацию можно получить на <MyLink href={"https://proektoria.online/"} text={"официальном сайте проекта."} />
                                 </b>
                             </p>
-                            <img className='image' src={image_01_04_qr} alt="qrcode" />
+                            <img className='image' src={image_04_qr} alt="qrcode" />
                         </section>
                         <section className={this.state.tab === 3 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_05} alt="Шоу профессий" width={"250"} />
+                            <img className='image' src={image_05} alt="Шоу профессий" width={"250"} />
 
                             <p>
                                 <b>Шоу профессий </b> - проект, направленный на раннюю профориентацию учащихся общеобразовательных школ.
@@ -223,10 +223,10 @@ export default class ProfessionalOrientationPage extends Component {
                             </p>
                             <p>
                                 <b>
-                                    Подробную информацию можно получить на сайте <MyLink href={"https://шоупрофессий.рф/"} text={"официальном сайте проекта."} />
+                                    Подробную информацию можно получить на <MyLink href={"https://шоупрофессий.рф/"} text={"официальном сайте проекта."} />
                                 </b>
                             </p>
-                            <img className='image' src={image_01_05_qr} alt="qrcode" />
+                            <img className='image' src={image_05_qr} alt="qrcode" />
                         </section>
                     </div>
                 </div>
@@ -239,7 +239,7 @@ export default class ProfessionalOrientationPage extends Component {
                     </ul>
                     <div className="tab__container">
                         <section className={this.state.tab === 1 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_06} alt="Билет в будущее" />
+                            <img className='image' src={image_06} alt="Билет в будущее" />
                             <p>
                                 <b>WorldSkills Russia </b> проводит чемпионаты профессионального мастерства по всей России по 5 направлениям:
                             </p>
@@ -252,25 +252,25 @@ export default class ProfessionalOrientationPage extends Component {
                             </ul>
                             <p>
                                 <b>
-                                    Подробную информацию можно получить на сайте <MyLink href={"https://worldskills.ru/"} text={"официальном сайте проекта."} />
+                                    Подробную информацию можно получить на <MyLink href={"https://worldskills.ru/"} text={"официальном сайте проекта."} />
                                 </b>
                             </p>
-                            <img className='image' src={image_01_06_qr} alt="qrcode" />
+                            <img className='image' src={image_06_qr} alt="qrcode" />
                         </section>
                         <section className={this.state.tab === 2 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_07} alt="Московский детский чемпионат Мастерята" width={"300"} />
+                            <img className='image' src={image_07} alt="Московский детский чемпионат Мастерята" width={"300"} />
                             <p>
                                 <b>Московский детский чемпионат Мастерята </b> — это соревнования по профессиональному мастерству среди дошкольников и учеников младших классов. Они помогают сформировать и усовершенствовать умения и навыки, необходимые ребенку в будущем.
                             </p>
                             <p>
                                 <b>
-                                    Подробную информацию можно получить на сайте <MyLink href={"https://kid.mcrpo.ru/o_chempionate/"} text={"официальном сайте проекта."} />
+                                    Подробную информацию можно получить на <MyLink href={"https://kid.mcrpo.ru/o_chempionate/"} text={"официальном сайте проекта."} />
                                 </b>
                             </p>
-                            <img className='image' src={image_01_07_qr} alt="qrcode" />
+                            <img className='image' src={image_07_qr} alt="qrcode" />
                         </section>
                         <section className={this.state.tab === 3 ? "tab__section --active" : "tab__section"}>
-                            <img className='image' src={image_01_08} alt="Абилимпикс"/>
+                            <img className='image' src={image_08} alt="Абилимпикс"/>
                             <p>
                                 <b>Абилимпикс </b>– международное движение, основной деятельностью которого является проведение конкурсов профессионального мастерства для людей с инвалидностью с целью их профессиональной ориентации и содействия в трудоустройстве.
                             </p>
@@ -279,10 +279,10 @@ export default class ProfessionalOrientationPage extends Component {
                             </p>
                             <p>
                                 <b>
-                                    Подробную информацию можно получить на сайте <MyLink href={"https://abilympics.moscow/"} text={"официальном сайте проекта."} />
+                                    Подробную информацию можно получить на <MyLink href={"https://abilympics.moscow/"} text={"официальном сайте проекта."} />
                                 </b>
                             </p>
-                            <img className='image' src={image_01_08_qr} alt="qrcode" />
+                            <img className='image' src={image_08_qr} alt="qrcode" />
                         </section>
                     </div>
                 </div>
