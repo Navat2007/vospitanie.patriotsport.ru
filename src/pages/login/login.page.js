@@ -33,7 +33,8 @@ const LoginPage = () => {
     }
 
     return (
-        <div className="field-group">
+        <div className="field-group --place-login">
+            <h2 className="field-group__title">Окно входа</h2>
             <div className="field">
                 <label className="field__label" htmlFor="">Логин</label>
                 <input

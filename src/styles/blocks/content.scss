@@ -11,7 +11,7 @@
   &__section {
     overflow-y: auto;
     flex: auto;
-    padding: 1.5em 1.75em 3em;
+    padding: 1.5em min(2.25vmax, 1.75em) 3em;
     box-sizing: border-box;
   }
 
@@ -57,7 +57,7 @@
     }
 
     &__section {
-      padding-top: 2.5em;
+      padding-top: 3.5em;
     }
   }
 }

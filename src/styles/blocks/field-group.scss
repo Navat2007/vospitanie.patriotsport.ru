@@ -2,6 +2,18 @@
   display: grid;
   gap: 1.5em;
 
+  &.--place-login {
+    max-width: 25em;
+    margin: auto;
+    @extend %card-design;
+    padding: 1.5em;
+  }
+
+  &__title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
   &__info-msg {
     font-size: .875em;
     font-style: italic; 
