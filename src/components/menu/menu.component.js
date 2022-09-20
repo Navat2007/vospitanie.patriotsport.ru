@@ -117,7 +117,7 @@ const Menu = ({opened = false}) => {
             children: [
                 {
                     id: 23,
-                    title: "Поиск нормативных документах",
+                    title: "Поиск в нормативных документах",
                     link: "/documents_search",
                     children: []
                 },
