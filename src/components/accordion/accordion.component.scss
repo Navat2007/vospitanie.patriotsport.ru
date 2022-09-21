@@ -1,28 +1,40 @@
 @import "../../styles/_assets/variables";
 @import "../../styles/_assets/functions";
 @import "../../styles/_assets/mixins";
-@import "../../styles/_assets/extends"; 
+@import "../../styles/_assets/extends";
+
+%caption-with-icon {
+  display: flex;
+  align-items: center;
+  gap: .25em;
+
+  &:before {
+    flex: none;
+    align-self: flex-start;
+    @extend %icon-on-before;
+  }
+}
 
 .accordion {
   &.--opened {
 
-    & > .accordion__caption .mdi::before {
+    &>.accordion__caption .mdi::before {
       transform: rotate(90deg);
     }
 
-    & > .accordion__section {
+    &>.accordion__section {
       max-height: unset;
       overflow: hidden;
     }
   }
 
   &.--type-outline {
-    
-    &.--opened > .accordion__section {
+
+    &.--opened>.accordion__section {
       padding-bottom: 1.25em;
     }
-    
-    & > .accordion__caption {
+
+    &>.accordion__caption {
       padding: .75em 0;
       font-weight: 700;
       cursor: pointer;
@@ -30,23 +42,23 @@
   }
 
   &.--theme-primary {
-    background-color: lighten(map-get($colors, "primary"), 10%); 
+    background-color: lighten(map-get($colors, "primary"), 10%);
     border-radius: 5px;
     padding: .25em;
     margin-bottom: .25em;
 
-    &.--opened > .accordion__section {
+    &.--opened>.accordion__section {
       padding-bottom: 1.25em;
     }
 
-    & > .accordion__caption {
+    &>.accordion__caption {
       padding: .75em 1.25em;
       color: var(--light);
       font-weight: bold;
       cursor: pointer;
     }
 
-    & > .accordion__section {
+    &>.accordion__section {
       display: flex;
       flex-direction: column;
       background-color: var(--white);
@@ -58,15 +70,15 @@
 
   &.--theme-g100 {
 
-    &.--opened > .accordion__section {
+    &.--opened>.accordion__section {
       padding-bottom: .875em;
     }
-    
-    & > .accordion__caption {
-      background-color: var(--g100); 
+
+    &>.accordion__caption {
+      background-color: var(--g100);
       padding: .75em 1.25em;
       font-weight: bold;
-      cursor: pointer; 
+      cursor: pointer;
       margin-bottom: .875em;
 
       &:hover {
@@ -77,25 +89,37 @@
 
   &.--icon-caption-plus {
 
-    &.--opened > .accordion__caption::before {
+    &.--opened>.accordion__caption::before {
       content: '\F0374';
     }
 
-    & > .accordion__caption {
-      display: flex;
-      align-items: center;
-      gap: .25em;
-      &:before {
-        flex: none;
-        align-self: flex-start;
+    &>.accordion__caption {
+      @extend %caption-with-icon;
 
-        @extend %icon-on-before;
+      &:before {
         content: '\F0415';
       }
     }
 
+    &>.accordion__section {
+      padding-left: 1.875em;
+    }
+  }
 
-    & > .accordion__section {
+  &.--icon-caption-chevron {
+    &.--opened>.accordion__caption::before {
+      content: '\F0140';
+    }
+
+    &>.accordion__caption {
+      @extend %caption-with-icon;
+
+      &:before {
+        content: "\F0142";
+      }
+    }
+
+    &>.accordion__section {
       padding-left: 1.875em;
     }
   }

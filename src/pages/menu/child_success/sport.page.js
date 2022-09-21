@@ -34,7 +34,7 @@ export default class SportPage extends Component {
                 <p>
                     Всероссийский физкультурно-спортивный комплекс «Готов к труду и обороне» (ГТО) — это нормативная основа физического воспитания населения страны, нацеленная на развитие массового спорта.
                 </p>
-                <Accordion title={"Документы"}>
+                <Accordion className='accordion --theme-g100 --icon-caption-chevron' title={"Документы"}>
                     <ul className="list --type-empty">
                         <li>
                             <MyLink className='link --type-pdf-icon' href={"/files/gto/metodic.pdf"} text={"Методические рекомендации по организации и выполнению нормативов испытаний (тестов) Всероссийского физкультурно-спортивного комплекса ГТО"} />
@@ -50,7 +50,7 @@ export default class SportPage extends Component {
                         </li>
                     </ul>
                 </Accordion>
-                <Accordion title={"Результаты Фестиваля ГТО по отбору участников на Всероссийские этапы среди обучающихся профессиональных образовательных организаций"}>
+                <Accordion className='accordion --theme-g100 --icon-caption-chevron' title={"Результаты Фестиваля ГТО по отбору участников на Всероссийские этапы среди обучающихся профессиональных образовательных организаций"}>
                     <ul className="list --type-empty">
                         <li>
                             <MyLink className='link --type-pdf-icon' href={"/files/gto/itogovyj-protokol-lichnyj-zachet.pdf"} text={"Итоговый протокол личного зачета"} />
@@ -63,7 +63,7 @@ export default class SportPage extends Component {
                 <h2 className="content__caption">Полезные советы</h2>
                 <ul className="card-deck --size-md">
                     <li>
-                        <a href="" className="card">
+                        <a href="https://patriotsport.moscow/gto-so-zvezdoj/" rel="noopener noreferrer nofollow" target="_blank" className="card">
                             <img className='card__img --ratio-half' src={card_image_01} alt="ГТО со звездой" />
                             <p className='card__caption --place-gto'><span className="mdi mdi-star"></span> ГТО</p>
                             <h3 className="card__title">ГТО со звездой</h3>
@@ -71,7 +71,7 @@ export default class SportPage extends Component {
                         </a>
                     </li>
                     <li>
-                        <a href="" className="card">
+                        <a href="https://patriotsport.moscow/raspisanie-priema-normativov-vfsk-gto/" rel="noopener noreferrer nofollow" target="_blank" className="card">
                             <img className='card__img --ratio-half' src={card_image_02} alt="Расписание приема нормативов ВФСК ГТО" />
                             <p className='card__caption --place-gto'><span className="mdi mdi-star"></span> ГТО</p>
                             <h3 className="card__title">Расписание приема нормативов ВФСК ГТО</h3>
@@ -79,7 +79,7 @@ export default class SportPage extends Component {
                         </a>
                     </li>
                     <li>
-                        <a href="" className="card">
+                        <a href="https://patriotsport.moscow/zdorovye-kanikuly-normy-gto/" rel="noopener noreferrer nofollow" target="_blank" className="card">
                             <img className='card__img --ratio-half' src={card_image_03} alt="«Здоровые каникулы» Нормы ГТО" />
                             <p className='card__caption --place-gto'><span className="mdi mdi-star"></span> ГТО</p>
                             <h3 className="card__title">«Здоровые каникулы» Нормы ГТО</h3>
