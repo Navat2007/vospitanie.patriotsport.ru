@@ -30,7 +30,7 @@ export default class SportPage extends Component {
                 <p>
                     Всероссийский физкультурно-спортивный комплекс «Готов к труду и обороне» (ГТО) — это нормативная основа физического воспитания населения страны, нацеленная на развитие массового спорта.
                 </p>
-                <Accordion title={"Документы"} menu={false}>
+                <Accordion title={"Документы"}>
                     <ul className="list --type-empty">
                     <li>
                         <MyLink className='link --type-pdf-icon' href={"/files/gto/metodic.pdf"} text={"Методические рекомендации по организации и выполнению нормативов испытаний (тестов) Всероссийского физкультурно-спортивного комплекса ГТО"} />
@@ -46,7 +46,7 @@ export default class SportPage extends Component {
                     </li>
                     </ul>
                 </Accordion>
-                <Accordion title={"Результаты Фестиваля ГТО по отбору участников на Всероссийские этапы среди обучающихся профессиональных образовательных организаций"} menu={false}>
+                <Accordion title={"Результаты Фестиваля ГТО по отбору участников на Всероссийские этапы среди обучающихся профессиональных образовательных организаций"}>
                     <ul className="list --type-empty">
                     <li>
                         <MyLink className='link --type-pdf-icon' href={"/files/gto/itogovyj-protokol-lichnyj-zachet.pdf"} text={"Итоговый протокол личного зачета"} />

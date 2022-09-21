@@ -207,7 +207,7 @@ export default class FederalProjectPage extends Component {
                                 <iframe title={"Seminar"} className="iframe__item"
                                     src="https://rutube.ru/play/embed/12fedb60cf482bf9ff662e2c9861fbc9" />
                             </div>
-                            <Accordion title={"Рабочие программы, КТП и методические рекомендации по циклу занятий"} menu={false}>
+                            <Accordion title={"Рабочие программы, КТП и методические рекомендации по циклу занятий"}>
                                 <ul className="list --type-empty">
                                     <li>
                                         <MyLink className={"link --type-pdf-icon"}
