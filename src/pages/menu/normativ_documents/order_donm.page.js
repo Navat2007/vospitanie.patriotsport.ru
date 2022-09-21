@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
 import MyLink from '../../../components/link/link.component';
 import imageLogo from '../../../images/logo/logo-DOMN.png';
+
 export default class OrderDonmPage extends Component {
 
     render() {

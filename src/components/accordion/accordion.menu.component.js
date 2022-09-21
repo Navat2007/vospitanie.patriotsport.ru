@@ -1,7 +1,7 @@
 import React from 'react';
 import './accordion.component.scss';
 
-const Accordion = ({children, title, opened = false, className = 'accordion --theme-g100 --icon-caption-plus'}) => {
+const AccordionMenu = ({children, title, opened = false, className = 'accordion'}) => {
 
     const [openState, setOpenState] = React.useState(opened);
 
@@ -29,14 +29,15 @@ const Accordion = ({children, title, opened = false, className = 'accordion --th
     }
 
     return (
-        <div className={`${className}${openState ? " --opened" : ""}`}>
-            <div className="accordion__caption" onClick={toggle}>{title}</div>
-            <div className="accordion__section">
+        <li className={`${className}${openState ? " --opened" : ""}`}>
+            <p className="main-menu__link accordion__caption --no-select --no-drag" onClick={toggle}>
+                {title} <span className="mdi mdi-menu-right"/>
+            </p>
+            <ul className="main-menu__sublist accordion__section">
                 {children}
-                <br/>
-            </div>
-        </div>
+            </ul>
+        </li>
     );
 };
 
-export default Accordion;
+export default AccordionMenu;

@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 import {UserContext} from "../../context";
-import Accordion from "../accordion/accordion.component";
+import AccordionMenu from "../accordion/accordion.menu.component";
 
 const Menu = ({opened = false}) => {
 
@@ -338,9 +338,9 @@ const Menu = ({opened = false}) => {
                     )
                     :
                     (
-                        <Accordion key={item.id} title={item.title} opened={item.opened}>
+                        <AccordionMenu key={item.id} title={item.title} opened={item.opened}>
                             <MenuList array={item.children}/>
-                        </Accordion>
+                        </AccordionMenu>
                     )
                 )}
             </>
