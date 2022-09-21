@@ -5,6 +5,20 @@ import MyLink from '../../../components/link/link.component';
 import card_image_01 from '../../../images/gto/card-img-01.png';
 import card_image_02 from '../../../images/gto/card-img-02.png';
 import card_image_03 from '../../../images/gto/card-img-03.jpg';
+import card_image_04 from '../../../images/gto/card-img-04.jpg';
+import card_image_05 from '../../../images/gto/card-img-05.jpg'; 
+
+import card_person_01 from '../../../images/gto/card-person-01.jpg';
+import card_person_02 from '../../../images/gto/card-person-02.jpg';
+import card_person_04 from '../../../images/gto/card-person-04.jpg';
+import card_person_06 from '../../../images/gto/card-person-06.jpg';
+import card_person_07 from '../../../images/gto/card-person-07.jpg';
+import card_person_10 from '../../../images/gto/card-person-10.jpg';
+import card_person_12 from '../../../images/gto/card-person-12.jpg';
+import card_person_14 from '../../../images/gto/card-person-14.jpg';
+import card_person_15 from '../../../images/gto/card-person-15.jpg';
+import card_person_16 from '../../../images/gto/card-person-16.jpg';
+import img_no_photo from '../../../images/no-photo.png';
 
 export default class SportPage extends Component {
 
@@ -61,7 +75,7 @@ export default class SportPage extends Component {
                     </ul>
                 </Accordion>
                 <h2 className="content__caption">Полезные советы</h2>
-                <ul className="card-deck --size-md" style={{"marginBottom": "1.875em"}}>
+                <ul className="card-deck --size-md" style={{ "marginBottom": "1.875em" }}>
                     <li>
                         <a href="https://patriotsport.moscow/gto-so-zvezdoj/" rel="noopener noreferrer nofollow" target="_blank" className="card">
                             <img className='card__img --ratio-half' src={card_image_01} alt="ГТО со звездой" />
@@ -88,8 +102,151 @@ export default class SportPage extends Component {
                     </li>
                 </ul>
                 <Accordion className='accordion --theme-g100 --icon-caption-chevron' title={"Телефоны кураторов по округам"}>
-                    <ul className="list --type-empty">
-                        <li></li>
+                    <ul className="card-deck --size-lg">
+                        <li className="card --type-person-card">
+                            <img src={card_person_01} alt="Тищенко Марина Николаевна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Тищенко Марина Николаевна</h3>
+                                <p className="card__caption">куратор ГТО в ЦАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:TischenkoMN@edu.mos.ru"} text={"TischenkoMN@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23 доб. 1171"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_02} alt="Агеева Марина Фидануровна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Агеева Марина Фидануровна</h3>
+                                <p className="card__caption">куратор ГТО в СВАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:ageevaMF@edu.mos.ru"} text={"ageevaMF@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={img_no_photo} alt="Козлов Михаил Андреевич" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Козлов Михаил Андреевич</h3>
+                                <p className="card__caption">куратор ГТО в СВАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:KozlovMA1@edu.mos.ru"} text={"KozlovMA1@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_04} alt="Жамалетдинова Екатерина Викторовна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Жамалетдинова Екатерина Викторовна</h3>
+                                <p className="card__caption">куратор ГТО в СЗАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:zhamaletdinovaEV@edu.mos.ru"} text={"zhamaletdinovaEV@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={img_no_photo} alt="Баринов Роман Константинович" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Баринов Роман Константинович</h3>
+                                <p className="card__caption">куратор ГТО в ЮВАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:BarinovRK@edu.mos.ru"} text={"BarinovRK@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_06} alt="Мухамедияров Руслан Ринатович" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Мухамедияров Руслан Ринатович</h3>
+                                <p className="card__caption">куратор ГТО в ВАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:mukhamediyarovRR@edu.mos.ru"} text={"mukhamediyarovRR@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_07} alt="Клещева Наталья Александровна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Клещева Наталья Александровна</h3>
+                                <p className="card__caption">куратор ГТО в ВАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:KleschevaNA@edu.mos.ru"} text={"KleschevaNA@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={img_no_photo} alt="Копейкин Максим Николаевич" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Копейкин Максим Николаевич</h3>
+                                <p className="card__caption">куратор ГТО в ЮЗАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:KopeykinMN@edu.mos.ru"} text={"KopeykinMN@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={img_no_photo} alt="Бельчикова Марина Анатольевна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Бельчикова Марина Анатольевна</h3>
+                                <p className="card__caption">куратор ГТО в ЮЗАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:BelchikovaMA@edu.mos.ru"} text={"BelchikovaMA@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_10} alt="Харчук Ирина Александровна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Харчук Ирина Александровна</h3>
+                                <p className="card__caption">куратор ГТО в ЗАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:KharchukLA@edu.mos.ru"} text={"KharchukLA@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={img_no_photo} alt="Бекренев Дмитрий Николаевич" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Бекренев Дмитрий Николаевич</h3>
+                                <p className="card__caption">куратор ГТО в ЗАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:BekrenevDN1@edu.mos.ru"} text={"BekrenevDN1@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_12} alt="Заусаев Василий Валентинович" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Заусаев Василий Валентинович</h3>
+                                <p className="card__caption">куратор ГТО в ЮАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:zausaevVV@edu.mos.ru"} text={"zausaevVV@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={img_no_photo} alt="Писарева Мария Алексеевна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Писарева Мария Алексеевна</h3>
+                                <p className="card__caption">куратор ГТО в ЮАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:PisarevaMA@edu.mos.ru"} text={"PisarevaMA@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_14} alt="Чернова Елена Александровна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Чернова Елена Александровна</h3>
+                                <p className="card__caption">куратор ГТО в САО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:chernovaEA3@edu.mos.ru"} text={"chernovaEA3@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_15} alt="Соленова Марина Александровна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Соленова Марина Александровна</h3>
+                                <p className="card__caption">куратор ГТО в ЗелАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:solenovaMA@edu.mos.ru"} text={"solenovaMA@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
+                        <li className="card --type-person-card">
+                            <img src={card_person_16} alt="Салтыкова Анна Николаевна" className="card__img" />
+                            <div className="card__content">
+                                <h3 className="card__title">Салтыкова Анна Николаевна</h3>
+                                <p className="card__caption">куратор ГТО в ТиНАО</p>
+                                <MyLink className='link --type-icon --icon-email' href={"mailto:saltykovaan@edu.mos.ru"} text={"saltykovaan@edu.mos.ru"} />
+                                <MyLink className='link --type-icon --icon-phone' href={"tel:89453692523"} text={"+7(495)369 25 23"} />
+                            </div>
+                        </li>
                     </ul>
                 </Accordion>
                 <h2 className="content__caption">Ответы на вопросы</h2>
@@ -114,6 +271,41 @@ export default class SportPage extends Component {
                         </li>
                     </ul>
                 </Accordion>
+                <h2 className="content__title">Киберспорт</h2>
+                <p>
+                    - это одно из самых перспективных направлений XXI века, эффективная образовательная модель для московских школьников.
+                </p>
+                <p>
+                    Участвуя в соревнованиях Центра, ребята учатся работать в команде и быть целеустремленными, развивают тактическое мышление и ряд важнейших навыков: скорость принятия решений, реакцию, усидчивость.
+                </p>
+                <p>
+                    Благодаря интеллектуальным видам спорта московские школьники прокладывают дорогу к профессиям будущего: архитектор умного дома, оператор беспилотника, специалист по поиску уязвимостей, художник виртуальной реальности, разработчик нейронных сетей.
+                </p>
+                <p>
+                    <b>Контактная информация: </b> Отдел развития киберспорта <MyLink href={"mailto:ESports@edu.mos.ru"} text={"ESports@edu.mos.ru"} />
+                </p>
+                <h2 className="content__caption">Меропиятия</h2>
+                <ul className="card-deck --size-md">
+                    <li>
+                        <a href="" rel="noopener noreferrer nofollow" target="_blank" className="card">
+                            <img className='card__img --ratio-half' src={card_image_04} alt="Функции кураторов дополнительного образования по киберспорту в школах" />
+                            <p className='card__caption --place-gto'><span className="mdi mdi-star"></span> КиберКлуб</p>
+                            <h3 className="card__title">Функции кураторов дополнительного образования по киберспорту в школах</h3>
+                            <p className='card__more-btn'>Читать &rarr;</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" rel="noopener noreferrer nofollow" target="_blank" className="card">
+                            <img className='card__img --ratio-half' src={card_image_05} alt="Каникулы в сети" />
+                            <p className='card__caption --place-gto'><span className="mdi mdi-star"></span> Киберспорт</p>
+                            <h3 className="card__title">Каникулы в сети</h3>
+                            <p className='card__more-btn'>Читать &rarr;</p>
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    С мероприятиями Московского киберспорта Департамента спорта города Москвы можно познакомиться <MyLink href={"https://cybermos.ru/"} text={"на сайте"} />
+                </p>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 .card {
-  height: 100%;
+  @include box(100%);
 
   display: flex;
   flex-direction: column;
@@ -12,6 +12,47 @@
   overflow: hidden;
   padding-bottom: 1.25em;
   box-sizing: border-box;
+
+  &.--type-person-card {
+
+    & .card__img {
+      aspect-ratio: 1/1;
+      object-position: top;
+    }
+
+    & .card__content {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      gap: .875em;
+    }
+
+    & .card__title {
+      margin: 0;
+    }
+
+    & .card__caption {
+      margin: 0;
+    }
+
+    @include media(xs) {
+      flex-direction: row;
+      padding-bottom: 0;
+
+      & .card__img {
+        aspect-ratio: unset;
+        object-position: unset;
+
+        flex: 0 0 150px;
+        min-width: 150px;
+        max-width: 150px;
+      }
+
+      & .card__content {
+        padding: 1.25em 1.25em 1.25em 0;
+      }
+    }
+  }
 
   &.--type-sport-icon {
     align-items: center;
@@ -48,6 +89,10 @@
     &.--place-gto {
       font-weight: bold;
     }
+  }
+
+  &__content {
+    box-sizing: border-box;
   }
 
   &__img {

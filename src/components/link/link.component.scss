@@ -11,6 +11,27 @@
   &:hover {
     color: lighten(map-get($colors, "primary"), 25%);  
   }
+ 
+  &.--type-icon {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    word-break: break-all;
+
+    &:before {
+      flex: none;
+      align-self: flex-start;
+      @extend %icon-on-before;
+      font-size: 1.5em;
+    }
+
+    &.--icon-email:before {
+      content: "\F01F0";
+    }
+    &.--icon-phone:before {
+      content: "\F03F2";
+    }
+  }
 
   &.--type-pdf-icon {
     display: flex;

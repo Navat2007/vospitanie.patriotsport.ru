@@ -4,6 +4,10 @@
   display: grid;
   gap: 1.25em;
 
+  & > li:not([class]) {
+    display: flex;
+  }
+
   &.--place-accordion {
     margin-bottom: 1.25em;
   }
@@ -17,7 +21,7 @@
 
     // 2 
     &.--size-lg {
-      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(26em, 1fr));
     }
 
     // 3 

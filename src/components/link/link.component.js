@@ -9,8 +9,7 @@ const MyLink = ({text, href, target = "_blank", className = "link", rel = "noope
            rel={rel}
            target={target}
            href={href}>
-            {text} &nbsp;
-        </a>
+            {text}</a>
 
     );
 };
