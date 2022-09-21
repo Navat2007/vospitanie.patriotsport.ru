@@ -79,7 +79,7 @@ export default class WeekendHikePage extends Component {
                 <p>
                     Ведущий специалист Михалевская Юлия Вадимовна, эл. адрес: <MyLink href={"mailto:MikhalevskayaYV@edu.mos.ru"} text={"MikhalevskayaYV@edu.mos.ru"} />, тел.: <MyLink href={"tel:84953692526"} text={"8 (495) 369-25-23 доб. 1189"} />
                 </p>
-                <Accordion title={"Инструкция"} menu={false}>
+                <Accordion title={"Инструкция"}>
                     <MyLink href={"#form"} text={"Заполните форму регистрации."} />
                     <p>
                         Дождитесь звонка нашего специалиста. За вами будет закреплен куратор, который будет
@@ -118,7 +118,7 @@ export default class WeekendHikePage extends Component {
                         участие в фестивале авторских видео на канале <MyLink href={"https://www.youtube.com/channel/UCA9UkxqGvkIS5kmwAhVJ6mg"} text={"ПроПоходТВ"} />.
                     </p>
                 </Accordion>
-                <Accordion title={"Снаряжение для одной группы (12 человек) для двухдневного похода"} menu={false}>
+                <Accordion title={"Снаряжение для одной группы (12 человек) для двухдневного похода"}>
                     <ol className="list --type-number">
                         <li>Рюкзак 60 литров (для пеших, горных и лыжных походов) — 6 шт.</li>
                         <li>Дождевик на рюкзак — 6 шт.</li>
@@ -177,7 +177,7 @@ export default class WeekendHikePage extends Component {
                         <li>Карты</li>
                     </ol>
                 </Accordion>
-                <Accordion title={"Состав аптечки"} menu={false}>
+                <Accordion title={"Состав аптечки"}>
                     <ol className="list --type-number">
                         <li>Жгут кровоостанавливающий — 1 шт.</li>
                         <li>Бинт марлевый медицинский нестерильный, 5 м x 5 см — 1 шт.</li>
@@ -216,7 +216,7 @@ export default class WeekendHikePage extends Component {
                         <li>Авторучка — 1 шт.</li>
                     </ol>
                 </Accordion>
-                <Accordion title={"Питание в походе"} menu={false}>
+                <Accordion title={"Питание в походе"}>
                     <h3 className="content__caption">Двухдневный поход</h3>
                     <ul className="card-deck --place-accordion --size-lg">
                         <li className="card">
@@ -227,7 +227,7 @@ export default class WeekendHikePage extends Component {
                         </li>
                     </ul>
                 </Accordion>
-                <Accordion title={"Список вещей"} menu={false}>
+                <Accordion title={"Список вещей"}>
                     <div className="table --type-mobile-flex --theme-standart">
                         <div className="table__wrap">
                             <table>
