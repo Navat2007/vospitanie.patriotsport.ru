@@ -61,7 +61,7 @@ export default class SportPage extends Component {
                     </ul>
                 </Accordion>
                 <h2 className="content__caption">Полезные советы</h2>
-                <ul className="card-deck --size-md">
+                <ul className="card-deck --size-md" style={{"marginBottom": "1.875em"}}>
                     <li>
                         <a href="https://patriotsport.moscow/gto-so-zvezdoj/" rel="noopener noreferrer nofollow" target="_blank" className="card">
                             <img className='card__img --ratio-half' src={card_image_01} alt="ГТО со звездой" />
@@ -87,6 +87,33 @@ export default class SportPage extends Component {
                         </a>
                     </li>
                 </ul>
+                <Accordion className='accordion --theme-g100 --icon-caption-chevron' title={"Телефоны кураторов по округам"}>
+                    <ul className="list --type-empty">
+                        <li></li>
+                    </ul>
+                </Accordion>
+                <h2 className="content__caption">Ответы на вопросы</h2>
+                <Accordion className='accordion --theme-g100 --icon-caption-chevron' title={"Как зарегистрироваться на мероприятия по приему нормативов ВФСК ГТО"}>
+                    <ul className="list --type-empty">
+                        <li>
+                            По всем интересующим вопросам Вы можете обратиться по телефону: <MyLink href={"tel:84953692523"} text={"8(495)369-25-23"} />
+                        </li>
+                    </ul>
+                </Accordion>
+                <Accordion className='accordion --theme-g100 --icon-caption-chevron' title={"За сколько открывается онлайн-регистрация на мероприятия по приему нормативов ВФСК ГТО"}>
+                    <ul className="list --type-empty">
+                        <li>
+                            Онлайн регистрация на мероприятия по приему нормативов ВФСК ГТО открывается за 5 дней до начала мероприятия
+                        </li>
+                    </ul>
+                </Accordion>
+                <Accordion className='accordion --theme-g100 --icon-caption-chevron' title={"Как с вами связаться?"}>
+                    <ul className="list --type-empty">
+                        <li>
+                            Вы можете позвонить по телефону ГБОУ ДПО МЦПС: <MyLink href={"tel:84953692523"} text={"8(495)369-25-23"} /> или обратиться на почту: <MyLink href={"mailto:PatriotSport@edu.mos.ru"} text={"PatriotSport@edu.mos.ru"} />
+                        </li>
+                    </ul>
+                </Accordion>
             </div>
         )
     }
