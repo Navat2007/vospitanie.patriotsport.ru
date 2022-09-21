@@ -1,0 +1,12 @@
+.sport-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.--type-gto {
+    background-image: url("../../../public/images/icons/icon-sport.svg#icon-sport-192_sport-activities");
+  }
+
+  &.--type-cybersport {
+    background-image: url("../../../public/images/icons/icon-sport.svg#icon-sport-192_cybersport");
+  }
+}

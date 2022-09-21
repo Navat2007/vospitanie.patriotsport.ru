@@ -1,6 +1,6 @@
 .card {
   height: 100%;
-   
+
   display: flex;
   flex-direction: column;
   gap: .875em;
@@ -12,6 +12,33 @@
   overflow: hidden;
   padding-bottom: 1.25em;
   box-sizing: border-box;
+
+  &.--type-sport-icon {
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+    padding: 0;
+
+    &:hover {
+      box-shadow: none;
+
+      &>.card__icon {
+        transform: translate3d(0, 3px, 0) scale(1.05);
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    @include box(min(10vmax, 7em));
+    transition: transform .25s ease-in-out;
+  }
+
+  &__title {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 
   &__img {
     display: block;
