@@ -81,12 +81,19 @@
       content: '\F0374';
     }
 
-    & > .accordion__caption:before {
-      @extend %icon-on-before;
-      vertical-align: middle;
-      content: '\F0415';
-      padding-right: .25em;
+    & > .accordion__caption {
+      display: flex;
+      align-items: center;
+      gap: .25em;
+      &:before {
+        flex: none;
+        align-self: flex-start;
+
+        @extend %icon-on-before;
+        content: '\F0415';
+      }
     }
+
 
     & > .accordion__section {
       padding-left: 1.875em;
