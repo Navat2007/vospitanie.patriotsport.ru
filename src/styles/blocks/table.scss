@@ -14,7 +14,12 @@
     & table {
       border: 1px solid var(--g200);
 
-      & tr td {
+      & thead tr th {
+        background-color: var(--g100);
+      }
+
+      & tr td,
+      & tr th {
         border: 1px solid var(--g200);
         padding: .5em;
       }
@@ -39,6 +44,7 @@
   }
 
   &.--place-normative-docs {
+
     & table th:first-child,
     & table td:first-child {
       text-align: left;
@@ -50,9 +56,7 @@
     }
   }
 
-  &.--place-normative-documents {
-
-  }
+  &.--place-normative-documents {}
 
   &__wrap {
     width: 100%;

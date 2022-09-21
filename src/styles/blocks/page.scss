@@ -21,8 +21,8 @@
 
 @include media(xxl) {
   .page {
-    background-image: var(--g100);
-  
+    background-color: var(--g100);
+   
     padding: 1em;
     box-sizing: border-box;
 

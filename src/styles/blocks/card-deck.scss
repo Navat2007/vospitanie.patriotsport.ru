@@ -7,6 +7,9 @@
   &.--place-accordion {
     margin-bottom: 1.25em;
   }
+  &.--size-xs {
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  }
 }
 
 @include media(sm) {
