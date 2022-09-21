@@ -284,7 +284,7 @@ export default class SportPage extends Component {
                 <p>
                     <b>Контактная информация: </b> Отдел развития киберспорта <MyLink href={"mailto:ESports@edu.mos.ru"} text={"ESports@edu.mos.ru"} />
                 </p>
-                <h2 className="content__caption">Меропиятия</h2>
+                <h2 className="content__caption">Мероприятия</h2>
                 <ul className="card-deck --size-md">
                     <li>
                         <a href="" rel="noopener noreferrer nofollow" target="_blank" className="card">
