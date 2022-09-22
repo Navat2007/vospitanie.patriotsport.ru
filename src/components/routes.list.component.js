@@ -27,12 +27,8 @@ import OrderDonmPage from "../pages/menu/normativ_documents/order_donm.page";
 import DocumentsSearchPage from "../pages/menu/normativ_documents/documents_search.page";
 import DocumentsUsefulResourcesPage from "../pages/menu/normativ_documents/documents_useful_resources.page";
 
-import HelpPage from "../pages/menu/hard_situation/help.page";
-import IdentificationResponsePage from "../pages/menu/hard_situation/identification_response.page";
 import BullyingPage from "../pages/menu/hard_situation/bullying.page";
-import SuicidalBehaviorPage from "../pages/menu/hard_situation/suicidal_behavior.page";
-import DifficultChildPage from "../pages/menu/hard_situation/difficult_child.page";
-import SchoolShootingPage from "../pages/menu/hard_situation/school_shooting.page";
+import DeviantBehaviorPage from "../pages/menu/hard_situation/deviant_behavior.page";
 import SituationUsefulResourcesPage from "../pages/menu/hard_situation/situation_useful_resources.page";
 
 import InjuryPreventionPage from "../pages/menu/safe_environment/injury_prevention.page";
@@ -104,12 +100,8 @@ const RoutesList = () => {
         {path: '/documents_search', element: DocumentsSearchPage, exact: true},
         {path: '/documents_useful_resources', element: DocumentsUsefulResourcesPage, exact: true},
         // СЛОЖНЫЕ СИТУАЦИИ
-        {path: '/help', element: HelpPage, exact: true},
-        {path: '/identification_response', element: IdentificationResponsePage, exact: true},
         {path: '/bullying', element: BullyingPage, exact: true},
-        {path: '/suicidal_behavior', element: SuicidalBehaviorPage, exact: true},
-        {path: '/difficult_child', element: DifficultChildPage, exact: true},
-        {path: '/school_shooting', element: SchoolShootingPage, exact: true},
+        {path: '/deviant_behavior', element: DeviantBehaviorPage, exact: true},
         {path: '/situation_useful_resources', element: SituationUsefulResourcesPage, exact: true},
         // БЕЗОПАСНАЯ СРЕДА
         {path: '/injury_prevention', element: InjuryPreventionPage, exact: true},

@@ -17,60 +17,60 @@ const Menu = ({opened = false}) => {
             link: "",
             children: [
                 {
-                    id: 2,
+                    id: 10,
                     title: "Календарь",
                     link: "/",
                     children: []
                 },
                 {
-                    id: 3,
+                    id: 11,
                     title: "Федеральные проекты по воспитанию",
                     link: "/federal_project",
                     children: []
                 },
                 {
-                    id: 4,
+                    id: 12,
                     title: "Московские проекты и конкурсы",
                     link: "",
                     children: [
                         {
-                            id: 5,
+                            id: 120,
                             title: "Онлайн-проекты",
                             link: "/online_project",
                             children: []
                         },
                         {
-                            id: 6,
+                            id: 121,
                             title: "Поход выходного дня «300 ПВД»",
                             link: "/weekend_hike",
                             children: []
                         },
                         {
-                            id: 7,
+                            id: 122,
                             title: "Сила команды",
                             link: "/team_strength",
                             children: []
                         },
                         {
-                            id: 8,
+                            id: 123,
                             title: "Спортивное тестирование детей",
                             link: "/sports_testing_of_children",
                             children: []
                         },
                         {
-                            id: 9,
+                            id: 124,
                             title: "Спортивные каникулы",
                             link: "/sports_holidays",
                             children: []
                         },
                         {
-                            id: 10,
+                            id: 125,
                             title: "Спортивные субботы",
                             link: "/sports_saturdays",
                             children: []
                         },
                         {
-                            id: 11,
+                            id: 126,
                             title: "Я шагаю по Москве",
                             link: "/i_walking_moscow",
                             children: []
@@ -80,30 +80,30 @@ const Menu = ({opened = false}) => {
             ]
         },
         {
-            id: 12,
+            id: 2,
             title: "Траектория успеха ребенка",
             link: "",
             children: [
                 {
-                    id: 13,
+                    id: 20,
                     title: "Профориентация",
                     link: "/professional_orientation",
                     children: []
                 },
                 {
-                    id: 14,
+                    id: 21,
                     title: "Гражданская активность",
                     link: "/civil_activity",
                     children: []
                 },
                 {
-                    id: 17,
+                    id: 22,
                     title: "Проектная деятельность",
                     link: "/project_activity",
                     children: []
                 },
                 {
-                    id: 15,
+                    id: 23,
                     title: "Спорт",
                     link: "/sport",
                     children: []
@@ -111,36 +111,36 @@ const Menu = ({opened = false}) => {
             ]
         },
         {
-            id: 19,
+            id: 3,
             title: "Нормативные документы",
             link: "",
             children: [
                 {
-                    id: 23,
+                    id: 30,
                     title: "Поиск в нормативных документах",
                     link: "/documents_search",
                     children: []
                 },
                 {
-                    id: 20,
+                    id: 31,
                     title: "Федеральные Законы",
                     link: "/federal_law",
                     children: []
                 },
                 {
-                    id: 21,
+                    id: 32,
                     title: "Федеральные Концепции и стратегии",
                     link: "/federal_conception_strategy",
                     children: []
                 },
                 {
-                    id: 22,
+                    id: 33,
                     title: "Приказы ДОНМ",
                     link: "/order_donm",
                     children: []
                 },
                 {
-                    id: 24,
+                    id: 34,
                     title: "Полезные ресурсы",
                     link: "/documents_useful_resources",
                     children: []
@@ -148,103 +148,80 @@ const Menu = ({opened = false}) => {
             ]
         },
         {
-            id: 25,
+            id: 4,
             title: "Сложные ситуации",
             link: "",
             children: [
                 {
-                    id: 26,
-                    title: "ПОМОЩЬ",
-                    link: "/help",
-                    children: []
-                },
-                {
-                    id: 27,
-                    title: "Выявление и реагирование",
-                    link: "/identification_response",
-                    children: []
-                },
-                {
-                    id: 28,
+                    id: 40,
                     title: "Буллинг",
                     link: "/bullying",
                     children: []
                 },
                 {
-                    id: 29,
-                    title: "Суицидальное поведение",
-                    link: "/suicidal_behavior",
+                    id: 41,
+                    title: "Девиантное поведение",
+                    link: "/deviant_behavior",
                     children: []
                 },
                 {
-                    id: 30,
-                    title: "“Трудный ребенок”",
-                    link: "/difficult_child",
-                    children: []
-                },
-                {
-                    id: 31,
-                    title: "Скулшутинг",
-                    link: "/school_shooting",
-                    children: []
-                },
-                {
-                    id: 32,
+                    id: 42,
                     title: "Полезные ресурсы",
                     link: "/situation_useful_resources",
                     children: []
                 },
+                
             ]
         },
         {
-            id: 33,
+            id: 5,
             title: "Безопасная среда",
             link: "",
             children: [
                 {
-                    id: 34,
+                    id: 50,
                     title: "Профилактика травматизма",
                     link: "/injury_prevention",
                     children: []
                 },
                 {
-                    id: 35,
+                    id: 51,
                     title: "Дорожная безопасность",
                     link: "/road_safety",
                     children: []
                 },
                 {
-                    id: 36,
+                    id: 52,
                     title: "Лаборатория безопасности (с сайта МЦПС “Воспитательная деятельность)",
                     link: "/security_laboratory",
                     children: []
                 },
                 {
-                    id: 37,
+                    id: 53,
                     title: "Безопасное лето (с сайта МЦПС “Воспитательная деятельность)",
                     link: "/safe_summer",
                     children: []
                 },
                 {
-                    id: 38,
+                    id: 54,
                     title: "Безопасная школа (с сайта МЦПС “Воспитательная деятельность)",
                     link: "/safe_school",
                     children: []
                 },
                 {
-                    id: 39,
+                    id: 55,
                     title: "Регламенты",
                     link: "/regulations",
                     children: []
                 },
                 {
-                    id: 40,
+                    id: 56,
                     title: "Инструктажи ТБ",
                     link: "/briefings",
                     children: []
                 },
                 {
-                    id: 41,
+                    id: 57,
                     title: "Контакты экстренных служб",
                     link: "/emergency_services",
                     children: []
@@ -252,67 +229,67 @@ const Menu = ({opened = false}) => {
             ]
         },
         {
-            id: 42,
+            id: 6,
             title: "Классный руководитель онлайн",
             link: "/teacher_online",
             children: []
         },
         {
-            id: 43,
+            id: 7,
             title: "Особенный ребенок",
             link: "/special_child",
             children: []
         },
         {
-            id: 44,
+            id: 8,
             title: "Дополнительное образование",
             link: "/additional_education",
             children: []
         },
         {
-            id: 45,
+            id: 9,
             private: true,
             title: "Личный кабинет",
             link: "",
             children: [
                 {
-                    id: 46,
+                    id: 90,
                     title: "Мой класс",
                     link: "/my_class",
                     children: []
                 },
                 {
-                    id: 47,
+                    id: 91,
                     title: "Рекомендации",
                     link: "/recommendations",
                     children: []
                 },
                 {
-                    id: 48,
+                    id: 92,
                     title: "Подать заявку",
                     link: "/submit_application",
                     children: []
                 },
                 {
-                    id: 49,
+                    id: 93,
                     title: "Документы",
                     link: "/lk_documents",
                     children: []
                 },
                 {
-                    id: 50,
+                    id: 94,
                     title: "Профессиональные сообщества",
                     link: "/professional_communities",
                     children: []
                 },
                 {
-                    id: 51,
+                    id: 95,
                     title: "Классный руководитель онлайн",
                     link: "/lk_teacher_online",
                     children: []
                 },
                 {
-                    id: 52,
+                    id: 96,
                     title: "Ресурсы",
                     link: "/lk_resources",
                     children: []

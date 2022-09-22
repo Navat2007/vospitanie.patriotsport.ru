@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class DifficultChildPage extends Component {
+export default class DeviantBehaviorPage extends Component {
 
     render() {
         return (
