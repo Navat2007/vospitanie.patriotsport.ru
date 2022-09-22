@@ -8,7 +8,6 @@ export default class BullyingPage extends Component {
     render() {
         return (
             <div className="content__block">
-
                 <h2 className="content__title">Буллинг</h2>
                 <img src={imageLogo} alt="Травли нет" className="image" width={"150"} />
                 <p>

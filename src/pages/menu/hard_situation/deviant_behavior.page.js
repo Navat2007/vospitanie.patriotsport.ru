@@ -34,6 +34,7 @@ export default class DeviantBehaviorPage extends Component {
     render() {
         return (
             <div className="content__block">
+                <h2 className="content__title">Девиантное поведение</h2>
                 <img src={imageLogo} alt="Инфографика девиантное поведение" className="image" />
                 <p>
                     <b>Девиантность </b>
