@@ -299,6 +299,7 @@ const Menu = ({opened = false}) => {
     ];
 
     const activeClassName = "main-menu__link --no-select --no-drag --active";
+    const className = "main-menu__link --no-select --no-drag";
 
     const MenuList = ({array}) => {
 
@@ -312,7 +313,7 @@ const Menu = ({opened = false}) => {
                 }).map(item => item.children.length === 0 ?
                     (
                         <li key={item.id}>
-                            <NavLink exact={true} className={({isActive}) => isActive ? activeClassName : 'main-menu__link --no-select --no-drag'} to={item.link}>{item.title}</NavLink>
+                            <NavLink className={({isActive}) => isActive ? activeClassName : className} to={item.link}>{item.title}</NavLink>
                         </li>
                     )
                     :

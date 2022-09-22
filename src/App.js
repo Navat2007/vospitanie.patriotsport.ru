@@ -30,12 +30,8 @@ const App = () => {
 
                     <Header/>
 
-                    <main className="content">
+                    <RoutesList/>
 
-                        <Menu opened/>
-                        <RoutesList/>
-
-                    </main>
                 </div>
             </div>
         </UserContext.Provider>
