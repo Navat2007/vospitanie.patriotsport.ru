@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
-import { Navigate } from 'react-router-dom';
 import {UserContext} from "../context";
 import ScrollToTop from "./router.scroll.top.component";
 
@@ -15,6 +14,9 @@ import SportsSaturdaysPage from "../pages/menu/events/sports_saturdays.page";
 import IWalkingMoscowPage from "../pages/menu/events/i_walking_moscow.page";
 
 import ProfessionalOrientationPage from "../pages/menu/child_success/professional_orientation.page";
+import CityProjectsPage from "../pages/menu/child_success/professional_orientation/city_projects.page";
+import FederalProjectsPage from "../pages/menu/child_success/professional_orientation/federal_projects.page";
+import ChampionshipMasteryPage from "../pages/menu/child_success/professional_orientation/championship_mastery.page";
 import CivilActivityPage from "../pages/menu/child_success/civil_activity.page";
 import SportPage from "../pages/menu/child_success/sport.page";
 import GtoPage from "../pages/menu/child_success/sport/gto.page";
@@ -89,6 +91,9 @@ const RoutesList = () => {
         {path: '/i_walking_moscow', element: IWalkingMoscowPage, exact: true},
         // ТРАЕКТОРИЯ УСПЕХА РЕБЕНКА
         {path: '/professional_orientation', element: ProfessionalOrientationPage, exact: true},
+        {path: '/professional_orientation/city_projects', element: CityProjectsPage, exact: true},
+        {path: '/professional_orientation/federal_projects', element: FederalProjectsPage, exact: true},
+        {path: '/professional_orientation/championship_mastery', element: ChampionshipMasteryPage, exact: true},
         {path: '/civil_activity', element: CivilActivityPage, exact: true},
         {path: '/sport', element: SportPage, exact: true},
         {path: '/sport/gto', element: GtoPage, exact: true},

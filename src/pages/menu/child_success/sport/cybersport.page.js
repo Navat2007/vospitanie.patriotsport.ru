@@ -24,20 +24,20 @@ const CyberSportPage = () => {
             <h2 className="content__caption">Мероприятия</h2>
             <ul className="card-deck --size-md">
                 <li>
-                    <a href="" rel="noopener noreferrer nofollow" target="_blank" className="card">
+                    <div href="#" rel="noopener noreferrer nofollow" target="_blank" className="card">
                         <img className='card__img --ratio-half' src={card_image_04} alt="Функции кураторов дополнительного образования по киберспорту в школах" />
-                        <p className='card__caption --place-gto'><span className="mdi mdi-star"></span> КиберКлуб</p>
+                        <p className='card__caption --place-gto'><span className="mdi mdi-star"/> КиберКлуб</p>
                         <h3 className="card__title">Функции кураторов дополнительного образования по киберспорту в школах</h3>
                         <p className='card__more-btn'>Читать &rarr;</p>
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="" rel="noopener noreferrer nofollow" target="_blank" className="card">
+                    <div href="#" rel="noopener noreferrer nofollow" target="_blank" className="card">
                         <img className='card__img --ratio-half' src={card_image_05} alt="Каникулы в сети" />
-                        <p className='card__caption --place-gto'><span className="mdi mdi-star"></span> Киберспорт</p>
+                        <p className='card__caption --place-gto'><span className="mdi mdi-star"/> Киберспорт</p>
                         <h3 className="card__title">Каникулы в сети</h3>
                         <p className='card__more-btn'>Читать &rarr;</p>
-                    </a>
+                    </div>
                 </li>
             </ul>
             <p>
