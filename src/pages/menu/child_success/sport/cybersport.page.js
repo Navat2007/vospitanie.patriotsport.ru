@@ -6,6 +6,12 @@ import card_image_05 from "../../../../images/gto/card-img-05.jpg";
 
 const CyberSportPage = () => {
 
+    React.useEffect(() => {
+
+        document.title = "Киберспорт";
+
+    }, []);
+
     return (
         <div className="content__block">
             <h2 className="content__title">Киберспорт</h2>

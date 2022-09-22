@@ -21,9 +21,7 @@ import CivilActivityPage from "../pages/menu/child_success/civil_activity.page";
 import SportPage from "../pages/menu/child_success/sport.page";
 import GtoPage from "../pages/menu/child_success/sport/gto.page";
 import CybersportPage from "../pages/menu/child_success/sport/cybersport.page";
-import CreativityPage from "../pages/menu/child_success/creativity.page";
 import ProjectActivityPage from "../pages/menu/child_success/project_activity.page";
-import EducationPage from "../pages/menu/child_success/education.page";
 
 import FederalLawPage from "../pages/menu/normativ_documents/federal_law.page";
 import FederalConceptionStrategyPage from "../pages/menu/normativ_documents/federal_conception_strategy.page";
@@ -58,7 +56,6 @@ import AdditionalEducationPage from "../pages/menu/additional_education.page";
 import ContactsPage from "../pages/contacts.page";
 import LoginPage from "../pages/login/login.page";
 import Page404 from "../pages/404.page";
-import Page from "./page/page.component";
 import Menu from "./menu/menu.component";
 
 const RoutesList = () => {
@@ -96,9 +93,7 @@ const RoutesList = () => {
         {path: '/sport', element: SportPage, exact: true, title: ""},
         {path: '/sport/gto', element: GtoPage, exact: true, title: ""},
         {path: '/sport/cybersport', element: CybersportPage, exact: true, title: ""},
-        {path: '/creativity', element: CreativityPage, exact: true, title: ""},
         {path: '/project_activity', element: ProjectActivityPage, exact: true, title: ""},
-        {path: '/education', element: EducationPage, exact: true, title: ""},
         // НОРМАТИВНЫЕ ДОКУМЕНТЫ
         {path: '/federal_law', element: FederalLawPage, exact: true, title: ""},
         {path: '/federal_conception_strategy', element: FederalConceptionStrategyPage, exact: true, title: ""},

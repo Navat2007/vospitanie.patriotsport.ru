@@ -19,6 +19,12 @@ import card_person_16 from "../../../../images/gto/card-person-16.jpg";
 
 const GtoPage = () => {
 
+    React.useEffect(() => {
+
+        document.title = "ГТО";
+
+    }, []);
+
     return (
         <div className="content__block">
             <h2 className="content__title">ГТО</h2>

@@ -3,7 +3,6 @@ import React from 'react';
 import AuthService from "./services/auth.service";
 import Header from "./components/header/header.component";
 import PreloaderComponent from "./components/preloader/preloader.component";
-import Menu from "./components/menu/menu.component";
 import RoutesList from "./components/routes.list.component";
 import {UserContext} from "./context";
 

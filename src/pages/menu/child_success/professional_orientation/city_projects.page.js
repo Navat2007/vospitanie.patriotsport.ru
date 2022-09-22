@@ -12,6 +12,12 @@ const CityProjectsPage = () => {
 
     const [tab, setTab] = React.useState(1);
 
+    React.useEffect(() => {
+
+        document.title = "Городские проекты";
+
+    }, []);
+
     return (
         <div className="content__block">
             <h2 className="content__title">Городские проекты</h2>

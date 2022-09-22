@@ -7,6 +7,12 @@ import card_image_03 from '../../../images/card-professional-skill-championships
 
 const ProfessionalOrientationPage = () => {
 
+    React.useEffect(() => {
+
+        document.title = "Профориентация";
+
+    }, []);
+
     return (
         <div className="content__block">
             <h2 className="content__title">Профориентация</h2>

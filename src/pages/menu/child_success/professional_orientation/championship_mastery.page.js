@@ -12,6 +12,12 @@ const ChampionshipMasteryPage = () => {
 
     const [tab, setTab] = React.useState(1);
 
+    React.useEffect(() => {
+
+        document.title = "Чемпионаты профессионального мастерства";
+
+    }, []);
+
     return (
         <div className="content__block">
             <h2 className="content__title">Чемпионаты профессионального мастерства</h2>
