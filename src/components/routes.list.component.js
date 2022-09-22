@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, Navigate } from "react-router-dom";
 import {UserContext} from "../context";
 import ScrollToTop from "./router.scroll.top.component";
 
@@ -80,7 +80,7 @@ const RoutesList = () => {
 
     const publicRoutes = [
         // СОБЫТИЯ И МЕРОПРИЯТИЯ
-        {path: '/', element: CalendarPage, exact: true},
+        {path: '/calendar', element: CalendarPage, exact: true},
         {path: '/federal_project', element: FederalProjectPage, exact: true},
         {path: '/online_project', element: OnlineProjectPage, exact: true},
         {path: '/weekend_hike', element: WeekendHikePage, exact: true},
@@ -158,6 +158,7 @@ const RoutesList = () => {
                         :
                         (<></>)
                 }
+                <Route path="/" exact={true} element={<Navigate to="/calendar" />} />
                 <Route path="*" element={<Page404/>} />
             </Routes>
         </ScrollToTop>

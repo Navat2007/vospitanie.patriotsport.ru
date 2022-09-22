@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 import {UserContext} from "../../context";
 import AccordionMenu from "../accordion/accordion.menu.component";
@@ -19,7 +19,7 @@ const Menu = ({opened = false}) => {
                 {
                     id: 10,
                     title: "Календарь",
-                    link: "/",
+                    link: "/calendar",
                     children: []
                 },
                 {
@@ -170,7 +170,7 @@ const Menu = ({opened = false}) => {
                     link: "/situation_useful_resources",
                     children: []
                 },
-                
+
             ]
         },
         {
@@ -298,19 +298,21 @@ const Menu = ({opened = false}) => {
         }
     ];
 
+    const activeClassName = "main-menu__link --no-select --no-drag --active";
+
     const MenuList = ({array}) => {
 
         return (
             <>
                 {array.filter(item => {
-                    if(item.private && !user)
+                    if (item.private && !user)
                         return false;
 
                     return true;
                 }).map(item => item.children.length === 0 ?
                     (
                         <li key={item.id}>
-                            <Link className="main-menu__link --no-select --no-drag" to={item.link}>{item.title}</Link>
+                            <NavLink exact={true} className={({isActive}) => isActive ? activeClassName : 'main-menu__link --no-select --no-drag'} to={item.link}>{item.title}</NavLink>
                         </li>
                     )
                     :
@@ -338,11 +340,13 @@ const Menu = ({opened = false}) => {
             <div className="control-panel main-menu__control-panel">
                 <ul className="control-panel__list">
                     <li>
-                        <Link style={{color: 'white'}} className="control-panel__icon-btn mdi mdi-information-outline" to={"/contacts"}
+                        <Link style={{color: 'white'}} className="control-panel__icon-btn mdi mdi-information-outline"
+                              to={"/contacts"}
                               aria-label="Контактная информация"/>
                     </li>
                     <li>
-                        <Link style={{color: 'white'}} className="control-panel__icon-btn mdi mdi-home" aria-label="" to={"/"}/>
+                        <Link style={{color: 'white'}} className="control-panel__icon-btn mdi mdi-home" aria-label=""
+                              to={"/"}/>
                     </li>
                 </ul>
                 <div className="field --type-label-icon control-panel__search-field">
