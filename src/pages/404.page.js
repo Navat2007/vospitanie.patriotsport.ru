@@ -1,13 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class Page404 extends Component {
+const Page404 = () => {
 
-    render() {
-        return (
-            <div className="content__block">
-                <p>К сожалению данная страница не найдена!</p>
-            </div>
-        )
-    }
+    React.useEffect(() => {
+
+        document.title = "404";
+
+    }, []);
+
+    return (
+        <div className="content__block">
+            <p>К сожалению данная страница не найдена!</p>
+        </div>
+    )
 
 }
+
+export default Page404;
+

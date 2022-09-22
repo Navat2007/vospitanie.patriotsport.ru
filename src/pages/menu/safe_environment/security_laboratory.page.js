@@ -1,13 +1,19 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class SecurityLaboratoryPage extends Component {
+const SecurityLaboratoryPage = () => {
 
-    render() {
-        return (
-            <div className="content__block">
+    React.useEffect(() => {
 
-            </div>
-        )
-    }
+        document.title = "";
+
+    }, []);
+
+    return (
+        <div className="content__block">
+
+        </div>
+    )
 
 }
+
+export default SecurityLaboratoryPage;

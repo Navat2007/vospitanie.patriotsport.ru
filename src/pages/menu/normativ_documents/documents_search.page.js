@@ -27,6 +27,8 @@ const DocumentsSearchPage = () => {
 
     React.useEffect(() => {
 
+        document.title = "Поиск в нормативных документах";
+
         setItems([
             {
                 id: 1,
