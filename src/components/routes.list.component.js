@@ -17,6 +17,8 @@ import IWalkingMoscowPage from "../pages/menu/events/i_walking_moscow.page";
 import ProfessionalOrientationPage from "../pages/menu/child_success/professional_orientation.page";
 import CivilActivityPage from "../pages/menu/child_success/civil_activity.page";
 import SportPage from "../pages/menu/child_success/sport.page";
+import GtoPage from "../pages/menu/child_success/sport/gto.page";
+import CybersportPage from "../pages/menu/child_success/sport/cybersport.page";
 import CreativityPage from "../pages/menu/child_success/creativity.page";
 import ProjectActivityPage from "../pages/menu/child_success/project_activity.page";
 import EducationPage from "../pages/menu/child_success/education.page";
@@ -55,7 +57,6 @@ import ContactsPage from "../pages/contacts.page";
 import LoginPage from "../pages/login/login.page";
 import Page404 from "../pages/404.page";
 
-
 const RoutesList = () => {
 
     const {user} = React.useContext(UserContext);
@@ -90,6 +91,8 @@ const RoutesList = () => {
         {path: '/professional_orientation', element: ProfessionalOrientationPage, exact: true},
         {path: '/civil_activity', element: CivilActivityPage, exact: true},
         {path: '/sport', element: SportPage, exact: true},
+        {path: '/sport/gto', element: GtoPage, exact: true},
+        {path: '/sport/cybersport', element: CybersportPage, exact: true},
         {path: '/creativity', element: CreativityPage, exact: true},
         {path: '/project_activity', element: ProjectActivityPage, exact: true},
         {path: '/education', element: EducationPage, exact: true},
