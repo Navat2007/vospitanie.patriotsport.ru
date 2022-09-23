@@ -35,11 +35,7 @@ import SituationUsefulResourcesPage from "../pages/menu/hard_situation/situation
 
 import InjuryPreventionPage from "../pages/menu/safe_environment/injury_prevention.page";
 import RoadSafetyPage from "../pages/menu/safe_environment/road_safety.page";
-import SecurityLaboratoryPage from "../pages/menu/safe_environment/security_laboratory.page";
-import SafeSummerPage from "../pages/menu/safe_environment/safe_summer.page";
-import SafeSchoolPage from "../pages/menu/safe_environment/safe_school.page";
-import RegulationsPage from "../pages/menu/safe_environment/regulations.page";
-import BriefingsPage from "../pages/menu/safe_environment/briefings.page";
+import AccidentInvestigationPage from "../pages/menu/safe_environment/accident_investigation.page";
 import EmergencyServicesPage from "../pages/menu/safe_environment/emergency_services.page";
 
 import MyClassPage from "../pages/menu/lk/my_class.page";
@@ -107,11 +103,7 @@ const RoutesList = () => {
         // БЕЗОПАСНАЯ СРЕДА
         {path: '/injury_prevention', element: InjuryPreventionPage, exact: true, title: ""},
         {path: '/road_safety', element: RoadSafetyPage, exact: true, title: ""},
-        {path: '/security_laboratory', element: SecurityLaboratoryPage, exact: true, title: ""},
-        {path: '/safe_summer', element: SafeSummerPage, exact: true, title: ""},
-        {path: '/safe_school', element: SafeSchoolPage, exact: true, title: ""},
-        {path: '/regulations', element: RegulationsPage, exact: true, title: ""},
-        {path: '/briefings', element: BriefingsPage, exact: true, title: ""},
+        {path: '/accident_investigation', element: AccidentInvestigationPage, exact: true, title: ""},
         {path: '/emergency_services', element: EmergencyServicesPage, exact: true, title: ""},
         // КЛАССНЫЙ РУКОВОДИТЕЛЬ ОНЛАЙН
         {path: '/teacher_online', element: TeacherOnlinePage, exact: true, title: ""},

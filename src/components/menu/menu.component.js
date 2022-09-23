@@ -186,42 +186,18 @@ const Menu = ({opened = false}) => {
                 },
                 {
                     id: 51,
+                    title: "Расследование несчастного случая",
+                    link: "/accident_investigation",
+                    children: []
+                },
+                {
+                    id: 52,
                     title: "Дорожная безопасность",
                     link: "/road_safety",
                     children: []
                 },
                 {
-                    id: 52,
-                    title: "Лаборатория безопасности (с сайта МЦПС “Воспитательная деятельность)",
-                    link: "/security_laboratory",
-                    children: []
-                },
-                {
                     id: 53,
-                    title: "Безопасное лето (с сайта МЦПС “Воспитательная деятельность)",
-                    link: "/safe_summer",
-                    children: []
-                },
-                {
-                    id: 54,
-                    title: "Безопасная школа (с сайта МЦПС “Воспитательная деятельность)",
-                    link: "/safe_school",
-                    children: []
-                },
-                {
-                    id: 55,
-                    title: "Регламенты",
-                    link: "/regulations",
-                    children: []
-                },
-                {
-                    id: 56,
-                    title: "Инструктажи ТБ",
-                    link: "/briefings",
-                    children: []
-                },
-                {
-                    id: 57,
                     title: "Контакты экстренных служб",
                     link: "/emergency_services",
                     children: []
