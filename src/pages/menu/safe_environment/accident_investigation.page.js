@@ -87,7 +87,7 @@ const AccidentInvestigationPage = () => {
                                 <MyLink className='link --type-pdf-icon' href={"./files/safe_environment/accident_investigation/Акт о расследовании легкого НС.rtf"} text={"Акт о расследовании легкого НС."} />
                             </li>
                             <li>
-                                <MyLink className='link --type-pdf-icon' href={"./files/safe_environment/accident_investigation/"} text={"Акт о расследовании тяжёлого/смертельного/группового НС"} />
+                                <MyLink className='link --type-pdf-icon' href={"./files/safe_environment/accident_investigation/Акт_о_расследовании_тяжелог_смертельного_группового_НС.rtf"} text={"Акт о расследовании тяжёлого/смертельного/группового НС"} />
                             </li>
                         </ul>
                     </section>

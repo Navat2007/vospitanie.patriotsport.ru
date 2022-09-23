@@ -1,6 +1,8 @@
 import React from 'react';
 import MyLink from '../../../components/link/link.component';
 
+import logo from '../../../images/Лаборатория безопасности.jpg';
+
 const RoadSafetyPage = () => {
 
     const [tab, setTab] = React.useState(1);
@@ -58,6 +60,7 @@ const RoadSafetyPage = () => {
                         <MyLink className='link --type-pdf-icon' href={"https://www.youtube.com/watch?v=V5F7WMLLrtY&list=TLGGJ7bOdyGZNYcyMzA4MjAyMg&t=26s"} text={"Пешеход и его безопасность"} />
                     </section>
                     <section className={tab === 4 ? "tab__section --active" : "tab__section"}>
+                        <img src={logo} alt="Лаборатория безопасности" className="image" />
                         <p>
                             <b>«Лаборатория безопасности» </b>
                             — общероссийский проект, который реализуется с 2017 года по поручению Президента России Владимира Путина Российским союзом автостраховщиков совместно с Госавтоинспекцией МВД России при поддержке Минпросвещения России, Минтранса России и Экспертного центра «Движение без опасности» в рамках всероссийской программы, направленной на снижение числа аварий с участием детей
