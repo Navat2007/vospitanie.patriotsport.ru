@@ -5,7 +5,11 @@
   "devDependencies": {
     "postcss-loader": "^7.0.1",
     "sass": "^1.54.9",
-    "sass-loader": "^13.0.2"
+    "sass-loader": "^13.0.2",
+    "@svgr/webpack": "^6.3.1"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
