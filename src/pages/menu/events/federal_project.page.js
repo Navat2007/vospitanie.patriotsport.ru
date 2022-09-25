@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Accordion from "../../../components/accordion/accordion.component";
 import MyLink from '../../../components/link/link.component';
-import Calendar from "../../../components/calendar/calendar";
 
 const FederalProjectPage = () => {
 

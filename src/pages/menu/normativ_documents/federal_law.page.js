@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MyLink from '../../../components/link/link.component';
 
 import imageLogo from '../../../images/logo/Emblem_of_Ministry_of_Education_and_Science_of_Russia.png';
