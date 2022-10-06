@@ -21,16 +21,16 @@
 
     // 2 
     &.--size-lg {
-      grid-template-columns: repeat(auto-fit, minmax(26em, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(26em, 1fr));
     }
 
     // 3 
     &.--size-md {
-      grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(21em, 1fr));
     }
 
     &.--size-sm {
-      grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     }
   }
 }

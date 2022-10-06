@@ -71,7 +71,8 @@
 
   &__icon {
     display: block;
-    @include box(min(10vmax, 7em));
+    aspect-ratio: 1/1;
+    @include box(100%);
     transition: transform .25s ease-in-out;
   }
 

@@ -12,7 +12,7 @@ const SportPage = () => {
     return (
         <div className="content__block">
             <h2 className="content__title">Спорт</h2>
-            <ul className="card-deck --size-xs">
+            <ul className="card-deck --size-md">
                 <li>
                     <Link to="/sport/gto/" className="card --type-sport-icon">
                         <span className="card__icon sport-icon --type-gto"/>
