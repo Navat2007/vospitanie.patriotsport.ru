@@ -67,7 +67,26 @@ Calendar.prototype.showMonth = function (y, m) {
 
     let thead = document.createElement('thead');
     thead.className = "calendar__head";
-    thead.innerHTML = `<tr class="calendar__row"><td class="calendar__caption" colspan="7">${this.Months[m]} ${y}</td></tr>`;
+    thead.innerHTML = `
+    <tr class="calendar__row --type-caption">
+        <td>
+            <button 
+                type="button" 
+                class="mdi mdi-menu-left calendar__thumb --icon-left" 
+                aria-label="Предыдущий месяц">
+            </button>
+        </td>
+        <td colspan="5">
+            <p class="calendar__caption">${this.Months[m]} ${y}</p>
+        </td>
+        <td>
+            <button 
+                type="button" 
+                class="mdi mdi-menu-right calendar__thumb --icon-right" 
+                aria-label="Следующий месяц">
+            </button>
+        </td>
+    </tr>`;
 
     let tbody = document.createElement('tbody');
     tbody.className = "calendar__body";

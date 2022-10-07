@@ -17,7 +17,7 @@ const CalendarPage = () => {
         <div className="content__block" id="calendar_section">
             <h2 className="content__title">Календарь</h2>
 
-            <ul className="mounth-list">
+            <ul className="mounth-list --hide">
                 <li>
                     <button className="button --theme-light-primary mounth-list__btn" type="button" id="september_btn">
                         Сентябрь

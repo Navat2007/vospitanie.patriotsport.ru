@@ -14,20 +14,58 @@
 
   &__head .calendar__day {
     background-color: var(--g100);
-    // border-bottom: 1px solid var(--g200);
     font-weight: 600;
     color: var(--darkLow);
     cursor: default;
   }
-  
+
+  &__row {
+    &.--type-caption {
+      background-color: lighten(map-get($colors, "primary"), 25%);
+      border-bottom: 1px solid var(--primary);
+      text-align: center;
+
+      & td {
+        border-right: none;
+      }
+    }
+  }
+
   &__caption {
-    text-align: center;
+    margin: 0;
     font-size: 1.25em;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: lighten(map-get($colors, "primary"), 25%);  
-    border-bottom: 1px solid var(--primary);
     padding: .5em 1.25em;
+  }
+
+  &__thumb {
+    @extend .button;
+    width: 100%;
+    height: 100%;
+    min-width: unset;
+    min-height: unset;
+    padding: 0;
+    color: var(--dark);
+    opacity: .75;
+
+    &::before {
+      font-size: 2em;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+
+    &:disabled {
+      opacity: .26;
+      pointer-events: none;
+      user-select: none;
+    }
   }
 
   & td {
@@ -44,7 +82,7 @@
   }
 
   & tbody td:hover:not(.--not-current):not(.--today) {
-    background-color: lighten(map-get($colors, "primary"), 55%);  
+    background-color: lighten(map-get($colors, "primary"), 55%);
   }
 
   &__day {
@@ -63,7 +101,7 @@
     }
 
     &.--today {
-      background-color: lighten(map-get($colors, "primary"), 25%);  
+      background-color: lighten(map-get($colors, "primary"), 25%);
       font-weight: 600;
       font-size: 1.25em;
     }
@@ -79,7 +117,7 @@
       &::before {
         content: '\F09DF';
         @extend %icon-on-before;
-        
+
         position: absolute;
         top: 0;
         right: 0;
