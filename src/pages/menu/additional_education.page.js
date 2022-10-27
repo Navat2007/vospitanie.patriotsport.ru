@@ -144,7 +144,7 @@ const AdditionalEducationPage = () => {
             <a className='link' href="https://dom.educom.ru/" target='_blank' rel='noreferrer noopener nofollow'>
                 <img src={online_dom} alt="Дополнительное образование Москвы Онлайн" className="image" />
             </a>
-            <a className='link' href="./files/additional_education/алгоритм регистрации на программу дополнительного образования мос.ру.pdf" rel='noopener nofollow noreferrer' target='_blank'>
+            <a className='link' href="/files/additional_education/алгоритм регистрации на программу дополнительного образования мос.ру.pdf" rel='noopener nofollow noreferrer' target='_blank'>
                 <img src={mos_ru} alt="Инструкция по записи на программы, реализуемые учреждениями дополнительного образования" className="image" />
             </a>
         </div>

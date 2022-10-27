@@ -4,7 +4,16 @@ import {UserContext} from "../context";
 import ScrollToTop from "./router.scroll.top.component";
 
 import CalendarPage from "../pages/menu/events/calendar.page";
-import FederalProjectPage from "../pages/menu/events/federal_project.page";
+
+import FederalProjectFlagPage from "../pages/menu/events/federal_projects/flag.federal_project.page";
+import FederalProjectImportantPage from "../pages/menu/events/federal_projects/important.federal_project.page";
+import FederalProjectChildrenPage from "../pages/menu/events/federal_projects/children.federal_project.page";
+import FederalProjectEducationPage from "../pages/menu/events/federal_projects/education.federal_project.page";
+import FederalProjectHistoricalEducationPage
+    from "../pages/menu/events/federal_projects/historical_education.federal_project.page";
+import FederalProjectTheatrePage from "../pages/menu/events/federal_projects/theatre.federal_project.page";
+import FederalProjectClubsPage from "../pages/menu/events/federal_projects/clubs.federal_project.page";
+
 import OnlineProjectPage from "../pages/menu/events/online_project.page";
 import WeekendHikePage from "../pages/menu/events/weekend_hike.page";
 import TeamStrengthPage from "../pages/menu/events/team_strength.page";
@@ -71,10 +80,16 @@ const RoutesList = () => {
 
     const publicRoutes = [
         // СОБЫТИЯ И МЕРОПРИЯТИЯ
-        {path: '/calendar', element: CalendarPage, exact: true, title: "Календарь"},
-        {path: '/federal_project', element: FederalProjectPage, exact: true, title: "Федеральные проекты по воспитанию"},
-        {path: '/online_project', element: OnlineProjectPage, exact: true, title: "Онлайн-проекты"},
-        {path: '/weekend_hike', element: WeekendHikePage, exact: true, title: "Поход выходного дня «300 ПВД»"},
+        {path: '/calendar', element: CalendarPage, exact: true, title: ""},
+        {path: '/federal_project/flag', element: FederalProjectFlagPage, exact: true, title: ""},
+        {path: '/federal_project/important', element: FederalProjectImportantPage, exact: true, title: ""},
+        {path: '/federal_project/children', element: FederalProjectChildrenPage, exact: true, title: ""},
+        {path: '/federal_project/education', element: FederalProjectEducationPage, exact: true, title: ""},
+        {path: '/federal_project/historical_education', element: FederalProjectHistoricalEducationPage, exact: true, title: ""},
+        {path: '/federal_project/theatre', element: FederalProjectTheatrePage, exact: true, title: ""},
+        {path: '/federal_project/clubs', element: FederalProjectClubsPage, exact: true, title: ""},
+        {path: '/online_project', element: OnlineProjectPage, exact: true, title: ""},
+        {path: '/weekend_hike', element: WeekendHikePage, exact: true, title: ""},
         {path: '/team_strength', element: TeamStrengthPage, exact: true, title: ""},
         {path: '/sports_testing_of_children', element: SportsTestingOfChildrenPage, exact: true, title: ""},
         {path: '/sports_holidays', element: SportsHolidaysPage, exact: true, title: ""},

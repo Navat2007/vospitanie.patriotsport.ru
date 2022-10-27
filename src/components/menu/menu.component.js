@@ -25,8 +25,51 @@ const Menu = ({opened = false}) => {
                 {
                     id: 11,
                     title: "Федеральные проекты по воспитанию",
-                    link: "/federal_project",
-                    children: []
+                    link: "",
+                    children: [
+                        {
+                            id: 110,
+                            title: "Церемония поднятия (спуска) государственного флага Российской Федерации",
+                            link: "/federal_project/flag",
+                            children: []
+                        },
+                        {
+                            id: 111,
+                            title: "«Разговоры о важном»",
+                            link: "/federal_project/important",
+                            children: []
+                        },
+                        {
+                            id: 112,
+                            title: "Российское движение детей и молодежи",
+                            link: "/federal_project/children",
+                            children: []
+                        },
+                        {
+                            id: 113,
+                            title: "Советник по воспитанию и взаимодействию с детскими общественными объединениями",
+                            link: "/federal_project/education",
+                            children: []
+                        },
+                        {
+                            id: 114,
+                            title: "Историческое просвещение",
+                            link: "/federal_project/historical_education",
+                            children: []
+                        },
+                        {
+                            id: 115,
+                            title: "Школьный театр",
+                            link: "/federal_project/theatre",
+                            children: []
+                        },
+                        {
+                            id: 116,
+                            title: "Школьные спортивные клубы",
+                            link: "/federal_project/clubs",
+                            children: []
+                        },
+                    ]
                 },
                 {
                     id: 12,
