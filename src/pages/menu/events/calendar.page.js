@@ -8,8 +8,7 @@ const CalendarPage = () => {
         document.title = "Календарь";
 
         let calendar = new Calendar("calendar");
-        calendar.initMonthButtons();
-        calendar.selectMonth(document.querySelector('#september_btn'), calendar.currYear, 8);
+        calendar.selectMonth(null, calendar.currYear, calendar.currMonth);
 
     }, []);
 
@@ -78,7 +77,7 @@ const CalendarPage = () => {
             </ul>
 
             <div className="calendar-container">
-                <div className="calendar" id="calendar"></div>
+                <div className="calendar" id="calendar"/>
                 <div className="calendar-container__tooltip tooltip --hidden">
                     <div id="calendar_static_tooltip" className="tooltip__content">
                         <p className="tooltip__title">День знаний</p>

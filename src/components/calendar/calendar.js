@@ -71,9 +71,10 @@ Calendar.prototype.showMonth = function (y, m) {
     <tr class="calendar__row --type-caption">
         <td>
             <button 
+                id="calendar_prev_btn"
                 type="button" 
                 class="mdi mdi-menu-left calendar__thumb --icon-left" 
-                aria-label="Предыдущий месяц">
+                aria-label="Предыдущий месяц">                
             </button>
         </td>
         <td colspan="5">
@@ -81,6 +82,7 @@ Calendar.prototype.showMonth = function (y, m) {
         </td>
         <td>
             <button 
+                id="calendar_next_btn"
                 type="button" 
                 class="mdi mdi-menu-right calendar__thumb --icon-right" 
                 aria-label="Следующий месяц">
@@ -257,6 +259,9 @@ Calendar.prototype.showMonth = function (y, m) {
     table.append(tbody);
     document.getElementById(this.divId).append(table);
 
+    document.getElementById('calendar_prev_btn').onclick = () => this.previousMonth();
+    document.getElementById('calendar_next_btn').onclick = () => this.nextMonth();
+
 };
 //
 Calendar.prototype.initMonthButtons = function () {
@@ -294,8 +299,6 @@ Calendar.prototype.selectMonth = function (button, year, month) {
     Array.from(document.querySelector('#calendar_section').getElementsByTagName('button')).forEach(item => {
         item.classList.remove('--selected');
     });
-
-    button.classList.add('--selected');
 
     this.showMonth(year, month);
 
