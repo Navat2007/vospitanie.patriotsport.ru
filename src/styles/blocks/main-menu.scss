@@ -27,9 +27,9 @@
   }
 
   &__list {
-    flex: auto;
+    flex: auto; 
     overflow-y: auto;
-    @include scroll-bar();
+    @include scroll-bar($width: 10px, $color: var(--g200));
 
     @extend %reset-list;
     display: flex;
