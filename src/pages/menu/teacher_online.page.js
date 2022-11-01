@@ -648,6 +648,34 @@ const TeacherOnlinePage = () => {
                                 <h3 className="content__caption --place-tab">
                                     Google: виртуальные выставки и интерактивные туры
                                 </h3>
+                                <Accordion className='--type-outline --icon-caption-plus' title={"Google Arts & Culture"}>
+                                    <p>
+                                        <MyLink href={"https://artsandculture.google.com/"} text={"Глобальный интерактивный образовательный проект,"} />
+                                        который объединяет в одном месте оцифрованное культурное и историческое наследие планеты и дает к нему доступ интернет-пользователям во всем мире. Google Arts & Culture также доступно в мобильной версии для iOS и Android.
+                                    </p>
+                                </Accordion>
+                                <Accordion className='--type-outline --icon-caption-plus' title={"Экскурсии по ведущим музеям мира на платформе Google Arts & Culture"}>
+                                    <p>
+                                        На <MyLink href={"https://artsandculture.google.com/partner?hl=en"} text={"платформе "} /> доступны коллекции крупнейших международных и российских музеев: <br />
+                                        - <MyLink href={"https://artsandculture.google.com/streetview/государственный-музей-а-с-пушкина/iwHnd_IQrs-80g?sv_lng=37.59765120937985&sv_lat=55.74355785445232&sv_h=146.2330932617188&sv_p=-0.37322235107421875&sv_pid=mUEeSNVtPCW6sshf2KXskw&sv_z=0.14802264361870265"} text={"Государственный музей изобразительных искусств имени А.С. Пушкина, "} /> <br />
+                                        - <MyLink href={"https://artsandculture.google.com/partner/the-state-tretyakov-gallery"} text={"Третьяковская галерея, "} /> <br />
+                                        - <MyLink href={"https://artsandculture.google.com/streetview/the-state-russian-museum-st-petersburg/dAGBydNbKO5HZg?sv_lng=30.3315453&sv_lat=59.9386266&sv_h=322.7726375401773&sv_p=8.866305992446726&sv_pid=aIVeVQE00A4nQ__wYJpWdg&sv_z=1.0000000000000004&fbclid=IwAR3nuG2oU8OeVJ-Ld7m4AYyg4UjBzyoNi8XGcH5kUaZ_PtvdibAlgjNSTOE"} text={"Русский музей в Санкт-Петербурге, "} /> <br />
+                                        - <MyLink href={"https://artsandculture.google.com/partner/the-state-hermitage-museum"} text={"Государственный Эрмитаж, "} /> <br />
+                                        - <MyLink href={"https://artsandculture.google.com/partner/memorial-museum-of-cosmonautics?hl=en"} text={"Государственный музей истории космонавтики, "} /> <br />
+                                        - <MyLink href={"https://artsandculture.google.com/partner/state-darwin-museum?hl=en"} text={"Государственный Дарвиновский музей "} /> и многие другие. <br />
+                                        Возможен просмотр культурных учреждений как по странам, так и по отдельным <MyLink href={"https://artsandculture.google.com/partner?hl=en"} text={"коллекциям."} />
+                                    </p>
+                                </Accordion>
+                                <Accordion className='--type-outline --icon-caption-plus' title={"Виртуальная экскурсия по Международной космической станции на платформе Google Arts & Culture"}>
+                                    <p>
+                                        <MyLink href={"https://artsandculture.google.com/streetview/international-space-station/WgFE9b04h8A0ww?sv_lng=-95.08533878466375&sv_lat=29.56040149436038&sv_h=66.24&sv_p=-13.299999999999997&sv_pid=2Lx7fxjE5hcAAAQvxgbyLQ&sv_z=1"} text={"Виртуальная экскурсия "} />в формате 3D на борту МКС
+                                    </p>
+                                </Accordion>
+                                <Accordion className='--type-outline --icon-caption-plus' title={"Экскурсии по знаковым достопримечательностям мира на Google картах"}>
+                                    <p>
+                                        <MyLink href={"https://www.google.com/maps/about/treks/#/grid"} text={"Виртуальные экскурсии "} />в формате 3D по мировым достопримечательностям, доступны на разных языках
+                                    </p>
+                                </Accordion>
                             </Accordion>
                         </Accordion>
                     </section>

@@ -1,21 +1,9 @@
 .logo {
 
   &.--place-header {
+    margin: .5em 1em;
     flex: none;
-    width: 40px;
-  }
-
-  &.--place-contact {
-    flex: auto;
-    max-width: 50%;
-  }
-}
-
-@include media(md) {
-  .logo {
-
-    &.--place-header {
-      width: 80px;
-    }
+    max-width: 16em;
+    width: 100%;
   }
 }

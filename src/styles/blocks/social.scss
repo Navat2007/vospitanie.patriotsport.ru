@@ -2,6 +2,7 @@
   @extend %reset-list;
 
   display: flex;
+  flex-wrap: wrap;
   gap: .975em;
   
   &.--place-contact {
@@ -16,7 +17,7 @@
     }
 
     & img {
-      @include box(4em);
+      @include box(min(6vmax, 4em));
       transition: transform .25s ease-in-out;
     }
   }

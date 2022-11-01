@@ -26,16 +26,16 @@ const Header = () => {
 
     }
 
-    if(window.global.debug){
+    // if(window.global.debug){
         //console.log("User: ", userData);
-    }
+    // }
 
     return (
         <header className="header">
-            <div className="header__logo-block">
+            {/* <div className="header__logo-block"> */}
                 <img className="logo --place-header" src={logoImage} alt="Логотип"/>
-                <h1 className="header__title">Организация воспитания</h1>
-            </div>
+                {/* <h1 className="header__title">Организация воспитания</h1> */}
+            {/* </div> */}
 
             {
                 user ?

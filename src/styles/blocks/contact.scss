@@ -12,17 +12,17 @@
   &__caption {
     margin: 0 0 1rem;
     color: var(--accent);
-    font-size: 1.75em;
+    font-size: min(3vmax, 1.75em);
     font-weight: bold;
   }
 
   &__link {
     display: block;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: min(2.25vmax, 1.5em);
     font-weight: 500;
     color: inherit;
-    
+
     & .mdi {
       font-size: 125%;
       vertical-align: middle;
@@ -35,7 +35,7 @@
       margin-left: 1.25em;
       padding-top: .875em;
       max-width: 450px;
-      
+
       & img {
         vertical-align: middle;
         width: 100%;
@@ -43,4 +43,23 @@
     }
   }
 
+}
+
+@include media(sm, max) {
+  .contact {
+    &__card {
+      flex-direction: column;
+    }
+
+    &__info {
+      min-width: unset;
+    }
+
+    &__link.--logo {
+      order: -1;
+      padding: 0;
+      margin: 0 0 1.875em;
+      max-width: 80%;
+    }
+  }
 }
