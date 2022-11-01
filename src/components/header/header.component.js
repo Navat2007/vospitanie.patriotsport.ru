@@ -62,14 +62,15 @@ const Header = () => {
                     )
                     :
                     (
-                        <div id="login_block" className="lk-block --place-header">
-                            <button type="button" className="lk-block__login-btn"
-                                    aria-label="Авторизация для сотрудников"
-                                    onClick={doLogin}
-                            >
-                                Авторизация для сотрудников <span className="lk-block__icon mdi mdi-login-variant"/>
-                            </button>
-                        </div>
+                        <></>
+                        // <div id="login_block" className="lk-block --place-header">
+                        //     <button type="button" className="lk-block__login-btn"
+                        //             aria-label="Авторизация для сотрудников"
+                        //             onClick={doLogin}
+                        //     >
+                        //         Авторизация для сотрудников <span className="lk-block__icon mdi mdi-login-variant"/>
+                        //     </button>
+                        // </div>
                     )
             }
         </header>
