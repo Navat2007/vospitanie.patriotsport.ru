@@ -33,7 +33,6 @@ const Accordion = ({children, title, opened = false, className = 'accordion --th
             <div className="accordion__caption" onClick={toggle}>{title}</div>
             <div className="accordion__section">
                 {children}
-                <br/>
             </div>
         </div>
     );

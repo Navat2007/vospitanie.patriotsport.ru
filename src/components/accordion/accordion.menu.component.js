@@ -1,7 +1,7 @@
 import React from 'react';
 import './accordion.component.scss';
 
-const AccordionMenu = ({children, title, opened = false, className = 'accordion'}) => {
+const AccordionMenu = ({children, title, opened = false, className = 'accordion --place-main-menu'}) => {
 
     const [openState, setOpenState] = React.useState(opened);
 

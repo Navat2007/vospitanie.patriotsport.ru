@@ -21,23 +21,31 @@
     &>.accordion__caption .mdi::before {
       transform: rotate(90deg);
     }
-
+ 
     &>.accordion__section {
       max-height: unset;
       overflow: hidden;
+      padding: .875em;
+    }
+  }
+
+  &.--place-main-menu {
+    &>.accordion__section {
+      padding: 0;
     }
   }
 
   &.--type-outline {
 
-    &.--opened>.accordion__section {
-      padding-bottom: 1.25em;
-    }
-
     &>.accordion__caption {
       padding: .75em 0;
       font-weight: 700;
       cursor: pointer;
+      transition: background-color .25s ease-in-out;
+
+      &:hover {
+        background-color: var(--g100);
+      }
     }
   }
 
@@ -46,10 +54,6 @@
     border-radius: 5px;
     padding: .25em;
     margin-bottom: .25em;
-
-    &.--opened>.accordion__section {
-      padding-bottom: 1.25em;
-    }
 
     &>.accordion__caption {
       padding: .75em 1.25em;
@@ -64,15 +68,11 @@
       background-color: var(--white);
       border-radius: 0 0 5px 5px;
 
-      padding-left: 1.25em;
+      // padding-left: 1.25em;
     }
   }
 
   &.--theme-g100 {
-
-    &.--opened>.accordion__section {
-      padding-bottom: .875em;
-    }
 
     &>.accordion__caption {
       background-color: var(--g100);
@@ -102,7 +102,7 @@
     }
 
     &>.accordion__section {
-      padding-left: 1.875em;
+      padding-left: 1em;
     }
   }
 
@@ -120,16 +120,16 @@
     }
 
     &>.accordion__section {
-      padding-left: 1.875em;
+      padding-left: 1em;
     }
   }
 
-  // &__caption {}
+  // &__caption {} 
 
   &__section {
     max-height: 0;
     overflow: hidden;
     transition: .5s ease-in-out;
-    transition-property: padding-bottom, max-height;
+    transition-property: padding, max-height;
   }
 }
