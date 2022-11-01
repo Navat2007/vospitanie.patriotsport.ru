@@ -29,7 +29,7 @@ const Accordion = ({children, title, opened = false, className = 'accordion --th
     }
 
     return (
-        <div className={`${className}${openState ? " --opened" : ""}`}>
+        <div className={`accordion ${className}${openState ? " --opened" : ""}`}>
             <div className="accordion__caption" onClick={toggle}>{title}</div>
             <div className="accordion__section">
                 {children}
