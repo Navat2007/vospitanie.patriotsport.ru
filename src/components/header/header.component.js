@@ -1,14 +1,14 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
-import {UserContext} from "../../context";
+import { UserContext } from "../../context";
 import AuthService from "../../services/auth.service";
 
 import logoImage from '../../images/logo.svg';
 
 const Header = () => {
 
-    const {user, setUser} = React.useContext(UserContext);
+    const { user, setUser } = React.useContext(UserContext);
     const userData = AuthService.getCurrentUser();
     const navigate = useNavigate();
 
@@ -27,15 +27,15 @@ const Header = () => {
     }
 
     // if(window.global.debug){
-        //console.log("User: ", userData);
+    //console.log("User: ", userData);
     // }
 
     return (
         <header className="header">
-            {/* <div className="header__logo-block"> */}
-                <img className="logo --place-header" src={logoImage} alt="Логотип"/>
-                {/* <h1 className="header__title">Организация воспитания</h1> */}
-            {/* </div> */}
+            <a href="https://patriotsport.moscow/" className='header__logo' target={'_blank'} rel='noopener nofollow noreferer'>
+                <img className="logo --place-header" src={logoImage} alt="Логотип" />
+            </a>
+            <h1 className='header__title'>Организация воспитания</h1>
 
             {
                 user ?
@@ -43,18 +43,18 @@ const Header = () => {
                         <div id="lk_block" className="lk-block --place-header">
                             <div className="lk-block__container">
                                 <p className="lk-block__school-info">
-                                    <span className="lk-block__icon mdi mdi-home-city-outline"/>
+                                    <span className="lk-block__icon mdi mdi-home-city-outline" />
                                     {userData?.work}
                                 </p>
                                 <div className="lk-block__person-info">
                                     <p className="lk-block__name">{userData?.title}</p>
                                     <div className="lk-block__position">{userData?.position}</div>
-                                    <span className="lk-block__icon mdi mdi-account-circle"/>
+                                    <span className="lk-block__icon mdi mdi-account-circle" />
                                     <button id="login_exit_btn"
-                                            className="lk-block__btn-exit button --theme-primary --outline"
-                                            onClick={doLogout}
+                                        className="lk-block__btn-exit button --theme-primary --outline"
+                                        onClick={doLogout}
                                     >
-                                        Выйти <span className="mdi mdi-exit-to-app"/>
+                                        Выйти <span className="mdi mdi-exit-to-app" />
                                     </button>
                                 </div>
                             </div>

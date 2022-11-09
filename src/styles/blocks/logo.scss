@@ -1,9 +1,19 @@
 .logo {
 
   &.--place-header {
-    margin: .5em 1em;
     flex: none;
     max-width: 16em;
     width: 100%;
+  }
+}
+
+@include media(sm, max) {
+  .logo {
+    &.--place-header {
+      max-width: 3.5em;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: left center;
+    }
   }
 }
