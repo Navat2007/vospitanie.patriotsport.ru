@@ -95,15 +95,15 @@ const AdditionalEducationPage = () => {
                         ГБОУ ДО ЦДТ «Ново-Переделкино» (<MyLink href={"https://cdtnp.mskobr.ru"} text={"https://cdtnp.mskobr.ru"} />)
                     </li>
                     <li>
-                        ГБОУДО ДТДМ «Неоткрытые острова» (<MyLink href={"https://dtdim.mskobr.ru/#/"} text={"https://dtdim.mskobr.ru/#/"} />)
-                    </li>
-                    <li>
                         ГБОУДО ЦВР «Синегория» (<MyLink href={"https://sinegoriya.mskobr.ru"} text={"https://sinegoriya.mskobr.ru"} />)
                     </li>
                 </ul>
             </Accordion>
             <Accordion title={"СЗАО"}>
                 <ul className="list">
+                    <li>
+                        ГБОУДО ДТДМ «Неоткрытые острова» (<MyLink href={"https://dtdim.mskobr.ru/#/"} text={"https://dtdim.mskobr.ru/#/"} />)
+                    </li>
                     <li>
                         ГБОУ ДО ДТДМ «Хорошево» (<MyLink href={"https://dtim.mskobr.ru/#/"} text={"https://dtim.mskobr.ru/#/"} />)
                     </li>
